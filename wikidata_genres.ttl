@@ -1,3 +1,4 @@
+@prefix bte: <https://bravoteamis.us/entity/> .
 @prefix bts: <https://bravoteamis.us/schema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
@@ -713,385 +714,385 @@ wd:Q99015944 rdfs:label "parkour video game"@en ;
     bts:isSubgenre wd:Q828322,
         wd:Q868217 .
 
-wd:Q101900049 a wd:Q659563 ;
+wd:Q101900049 a bte:Genre ;
     rdfs:label "supernatural video game"@en .
 
-wd:Q105098453 a wd:Q659563 ;
+wd:Q105098453 a bte:Genre ;
     rdfs:label "roguelite"@en ;
     bts:isSubgenre wd:Q1143132 .
 
-wd:Q105906396 a wd:Q659563 ;
+wd:Q105906396 a bte:Genre ;
     rdfs:label "turn-based role-playing game"@en ;
     bts:isSubgenre wd:Q744038 .
 
-wd:Q108901409 a wd:Q659563 ;
+wd:Q108901409 a bte:Genre ;
     rdfs:label "paddle-and-ball video game"@en ;
     bts:isSubgenre wd:Q15613992 .
 
-wd:Q111519486 a wd:Q659563 ;
+wd:Q111519486 a bte:Genre ;
     rdfs:label "shooting gallery game"@en ;
     bts:isSubgenre wd:Q4282636 .
 
-wd:Q11590806 a wd:Q659563 ;
+wd:Q11590806 a bte:Genre ;
     rdfs:label "point-and-click adventure"@en ;
     bts:isSubgenre wd:Q2628513 .
 
-wd:Q1163960 a wd:Q659563 ;
+wd:Q1163960 a bte:Genre ;
     rdfs:label "hack and slash"@en ;
     bts:isSubgenre wd:Q846224 .
 
-wd:Q11756212 a wd:Q659563 ;
+wd:Q11756212 a bte:Genre ;
     rdfs:label "physics game"@en ;
     bts:isSubgenre wd:Q1610017 .
 
-wd:Q11771157 a wd:Q659563 ;
+wd:Q11771157 a bte:Genre ;
     rdfs:label "massively multiplayer online strategy game"@en ;
     bts:isSubgenre wd:Q862490 .
 
-wd:Q1189206 a wd:Q659563 ;
+wd:Q1189206 a bte:Genre ;
     rdfs:label "multiplayer online battle arena"@en ;
     bts:isSubgenre wd:Q208189 .
 
-wd:Q1339223 a wd:Q659563 ;
+wd:Q1339223 a bte:Genre ;
     rdfs:label "dating sim"@en ;
     bts:isSubgenre wd:Q1610017 .
 
-wd:Q1417032 a wd:Q659563 ;
+wd:Q1417032 a bte:Genre ;
     rdfs:label "sim racing"@en ;
     bts:isSubgenre wd:Q578868,
         wd:Q860750 .
 
-wd:Q1422746 a wd:Q659563 ;
+wd:Q1422746 a bte:Genre ;
     rdfs:label "action role-playing game"@en ;
     bts:isSubgenre wd:Q270948,
         wd:Q744038 .
 
-wd:Q1506693 a wd:Q659563 ;
+wd:Q1506693 a bte:Genre ;
     rdfs:label "serious game"@en .
 
-wd:Q17049225 a wd:Q659563 ;
+wd:Q17049225 a bte:Genre ;
     rdfs:label "vertically scrolling video game"@en .
 
-wd:Q19643088 a wd:Q659563 ;
+wd:Q19643088 a bte:Genre ;
     rdfs:label "Metroidvania"@en ;
     bts:isSubgenre wd:Q343568,
         wd:Q828322 .
 
-wd:Q21030988 a wd:Q659563 ;
+wd:Q21030988 a bte:Genre ;
     rdfs:label "survival game"@en ;
     bts:isSubgenre wd:Q270948 .
 
-wd:Q2281709 a wd:Q659563 ;
+wd:Q2281709 a bte:Genre ;
     rdfs:label "side-scrolling beat 'em up"@en ;
     bts:isSubgenre wd:Q1223895,
         wd:Q401831 .
 
-wd:Q2454898 a wd:Q659563 ;
+wd:Q2454898 a bte:Genre ;
     rdfs:label "computer wargame"@en ;
     bts:isSubgenre wd:Q472055 .
 
-wd:Q25397095 a wd:Q659563 ;
+wd:Q25397095 a bte:Genre ;
     rdfs:label "sandbox game"@en .
 
-wd:Q2632782 a wd:Q659563 ;
+wd:Q2632782 a bte:Genre ;
     rdfs:label "rhythm game"@en ;
     bts:isSubgenre wd:Q584105 .
 
-wd:Q26692802 a wd:Q659563 ;
+wd:Q26692802 a bte:Genre ;
     rdfs:label "endless video game"@en .
 
-wd:Q3765017 a wd:Q659563 ;
+wd:Q3765017 a bte:Genre ;
     rdfs:label "online role-playing game"@en ;
     bts:isSubgenre wd:Q744038 .
 
-wd:Q380266 a wd:Q659563 ;
+wd:Q380266 a bte:Genre ;
     rdfs:label "third-person shooter"@en ;
     bts:isSubgenre wd:Q4282636,
         wd:Q60617960 .
 
-wd:Q401831 a wd:Q659563 ;
+wd:Q401831 a bte:Genre ;
     rdfs:label "beat 'em up"@en ;
     bts:isSubgenre wd:Q846224 .
 
-wd:Q5923736 a wd:Q659563 ;
+wd:Q5923736 a bte:Genre ;
     rdfs:label "first-person adventure"@en ;
     bts:isSubgenre wd:Q23916 .
 
-wd:Q5923834 a wd:Q659563 ;
+wd:Q5923834 a bte:Genre ;
     rdfs:label "Eastern role-playing game"@en ;
     bts:isSubgenre wd:Q744038 .
 
-wd:Q60256879 a wd:Q659563 ;
+wd:Q60256879 a bte:Genre ;
     rdfs:label "golf video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q60617825 a wd:Q659563 ;
+wd:Q60617825 a bte:Genre ;
     rdfs:label "detective and mystery video game"@en .
 
-wd:Q60617925 a wd:Q659563 ;
+wd:Q60617925 a bte:Genre ;
     rdfs:label "logic video game"@en ;
     bts:isSubgenre wd:Q1050023,
         wd:Q54767 .
 
-wd:Q60617960 a wd:Q659563 ;
+wd:Q60617960 a bte:Genre ;
     rdfs:label "third-person video games"@en .
 
-wd:Q60982656 a wd:Q659563 ;
+wd:Q60982656 a bte:Genre ;
     rdfs:label "auto-runner video game"@en ;
     bts:isSubgenre wd:Q828322 .
 
-wd:Q61793886 a wd:Q659563 ;
+wd:Q61793886 a bte:Genre ;
     rdfs:label "tennis video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q62019077 a wd:Q659563 ;
+wd:Q62019077 a bte:Genre ;
     rdfs:label "volleyball video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q63644993 a wd:Q659563 ;
+wd:Q63644993 a bte:Genre ;
     rdfs:label "cycling video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q71443612 a wd:Q659563 ;
+wd:Q71443612 a bte:Genre ;
     rdfs:label "wrestling video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q71467370 a wd:Q659563 ;
+wd:Q71467370 a bte:Genre ;
     rdfs:label "skiing video game"@en ;
     bts:isSubgenre wd:Q71467408 .
 
-wd:Q71474750 a wd:Q659563 ;
+wd:Q71474750 a bte:Genre ;
     rdfs:label "ice hockey video game"@en ;
     bts:isSubgenre wd:Q63466098,
         wd:Q71467408 .
 
-wd:Q71679871 a wd:Q659563 ;
+wd:Q71679871 a bte:Genre ;
     rdfs:label "chess video game"@en ;
     bts:isSubgenre wd:Q71593876 .
 
-wd:Q71683262 a wd:Q659563 ;
+wd:Q71683262 a bte:Genre ;
     rdfs:label "massively multiplayer browser game"@en ;
     bts:isSubgenre wd:Q862490 .
 
-wd:Q7832342 a wd:Q659563 ;
+wd:Q7832342 a bte:Genre ;
     rdfs:label "traditional video game"@en .
 
-wd:Q84322932 a wd:Q659563 ;
+wd:Q84322932 a bte:Genre ;
     rdfs:label "horror eroge"@en ;
     bts:isSubgenre wd:Q11338014 .
 
-wd:Q87741364 a wd:Q659563 ;
+wd:Q87741364 a bte:Genre ;
     rdfs:label "VR video game"@en .
 
-wd:Q1037904 a wd:Q659563 ;
+wd:Q1037904 a bte:Genre ;
     rdfs:label "scrolling shooter"@en ;
     bts:isSubgenre wd:Q1044478 .
 
-wd:Q103842351 a wd:Q659563 ;
+wd:Q103842351 a bte:Genre ;
     rdfs:label "poker video game"@en ;
     bts:isSubgenre wd:Q29471320,
         wd:Q60617897 .
 
-wd:Q111411020 a wd:Q659563 ;
+wd:Q111411020 a bte:Genre ;
     rdfs:label "motorcycle racing video game"@en ;
     bts:isSubgenre wd:Q860750 .
 
-wd:Q111490490 a wd:Q659563 ;
+wd:Q111490490 a bte:Genre ;
     rdfs:label "action puzzle video game"@en ;
     bts:isSubgenre wd:Q54767 .
 
-wd:Q1143132 a wd:Q659563 ;
+wd:Q1143132 a bte:Genre ;
     rdfs:label "roguelike"@en ;
     bts:isSubgenre wd:Q105906396 .
 
-wd:Q1198141 a wd:Q659563 ;
+wd:Q1198141 a bte:Genre ;
     rdfs:label "business simulation game"@en ;
     bts:isSubgenre wd:Q1036289 .
 
-wd:Q1635956 a wd:Q659563 ;
+wd:Q1635956 a bte:Genre ;
     rdfs:label "interactive film"@en .
 
-wd:Q1823737 a wd:Q659563 ;
+wd:Q1823737 a bte:Genre ;
     rdfs:label "text-based game"@en .
 
-wd:Q2628513 a wd:Q659563 ;
+wd:Q2628513 a bte:Genre ;
     rdfs:label "graphic adventure game"@en ;
     bts:isSubgenre wd:Q23916 .
 
-wd:Q584105 a wd:Q659563 ;
+wd:Q584105 a bte:Genre ;
     rdfs:label "music video game"@en .
 
-wd:Q60617897 a wd:Q659563 ;
+wd:Q60617897 a bte:Genre ;
     rdfs:label "gambling video game"@en .
 
-wd:Q60617909 a wd:Q659563 ;
+wd:Q60617909 a bte:Genre ;
     rdfs:label "health video game"@en .
 
-wd:Q63466098 a wd:Q659563 ;
+wd:Q63466098 a bte:Genre ;
     rdfs:label "hockey video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q7802107 a wd:Q659563 ;
+wd:Q7802107 a bte:Genre ;
     rdfs:label "tile-matching video game"@en ;
     bts:isSubgenre wd:Q54767 .
 
-wd:Q95124454 a wd:Q659563 ;
+wd:Q95124454 a bte:Genre ;
     rdfs:label "arcade racing game"@en ;
     bts:isSubgenre wd:Q15613992,
         wd:Q860750 .
 
-wd:Q106542313 a wd:Q659563 ;
+wd:Q106542313 a bte:Genre ;
     rdfs:label "NSFW video game"@en .
 
-wd:Q11338014 a wd:Q659563 ;
+wd:Q11338014 a bte:Genre ;
     rdfs:label "horror video game"@en .
 
-wd:Q1223895 a wd:Q659563 ;
+wd:Q1223895 a bte:Genre ;
     rdfs:label "side-scrolling video game"@en .
 
-wd:Q1478420 a wd:Q659563 ;
+wd:Q1478420 a bte:Genre ;
     rdfs:label "association football video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q175173 a wd:Q659563 ;
+wd:Q175173 a bte:Genre ;
     rdfs:label "massively multiplayer online role-playing game"@en ;
     bts:isSubgenre wd:Q3765017,
         wd:Q862490 .
 
-wd:Q1892535 a wd:Q659563 ;
+wd:Q1892535 a bte:Genre ;
     rdfs:label "space flight simulation game"@en ;
     bts:isSubgenre wd:Q578868,
         wd:Q60617880 .
 
-wd:Q208189 a wd:Q659563 ;
+wd:Q208189 a bte:Genre ;
     rdfs:label "real-time strategy"@en ;
     bts:isSubgenre wd:Q472055 .
 
-wd:Q29471320 a wd:Q659563 ;
+wd:Q29471320 a bte:Genre ;
     rdfs:label "card game video game"@en .
 
-wd:Q4438162 a wd:Q659563 ;
+wd:Q4438162 a bte:Genre ;
     rdfs:label "sports manager video game"@en ;
     bts:isSubgenre wd:Q1198141,
         wd:Q868217 .
 
-wd:Q60617880 a wd:Q659563 ;
+wd:Q60617880 a bte:Genre ;
     rdfs:label "flight simulation video game"@en ;
     bts:isSubgenre wd:Q578868 .
 
-wd:Q62022558 a wd:Q659563 ;
+wd:Q62022558 a bte:Genre ;
     rdfs:label "cue sports video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q689445 a wd:Q659563 ;
+wd:Q689445 a bte:Genre ;
     rdfs:label "visual novel"@en ;
     bts:isSubgenre wd:Q1143118 .
 
-wd:Q71593876 a wd:Q659563 ;
+wd:Q71593876 a bte:Genre ;
     rdfs:label "board game video game"@en .
 
-wd:Q751424 a wd:Q659563 ;
+wd:Q751424 a bte:Genre ;
     rdfs:label "MUD"@en ;
     bts:isSubgenre wd:Q175173,
         wd:Q1823737 .
 
-wd:Q781048 a wd:Q659563 ;
+wd:Q781048 a bte:Genre ;
     rdfs:label "audio game"@en .
 
-wd:Q1036289 a wd:Q659563 ;
+wd:Q1036289 a bte:Genre ;
     rdfs:label "construction and management simulation"@en ;
     bts:isSubgenre wd:Q1610017 .
 
-wd:Q1143118 a wd:Q659563 ;
+wd:Q1143118 a bte:Genre ;
     rdfs:label "interactive fiction"@en ;
     bts:isSubgenre wd:Q1823737,
         wd:Q23916 .
 
-wd:Q1199309 a wd:Q659563 ;
+wd:Q1199309 a bte:Genre ;
     rdfs:label "life simulation game"@en ;
     bts:isSubgenre wd:Q1610017 .
 
-wd:Q185029 a wd:Q659563 ;
+wd:Q185029 a bte:Genre ;
     rdfs:label "first-person shooter"@en ;
     bts:isSubgenre wd:Q4282636 .
 
-wd:Q343568 a wd:Q659563 ;
+wd:Q343568 a bte:Genre ;
     rdfs:label "action-adventure game"@en ;
     bts:isSubgenre wd:Q23916,
         wd:Q270948 .
 
-wd:Q63645108 a wd:Q659563 ;
+wd:Q63645108 a bte:Genre ;
     rdfs:label "martial arts video game"@en ;
     bts:isSubgenre wd:Q846224,
         wd:Q868217 .
 
-wd:Q1050023 a wd:Q659563 ;
+wd:Q1050023 a bte:Genre ;
     rdfs:label "casual game"@en .
 
-wd:Q1224999 a wd:Q659563 ;
+wd:Q1224999 a bte:Genre ;
     rdfs:label "educational video game"@en .
 
-wd:Q15613992 a wd:Q659563 ;
+wd:Q15613992 a bte:Genre ;
     rdfs:label "arcade game"@en .
 
-wd:Q2056928 a wd:Q659563 ;
+wd:Q2056928 a bte:Genre ;
     rdfs:label "patience"@en .
 
-wd:Q71467408 a wd:Q659563 ;
+wd:Q71467408 a bte:Genre ;
     rdfs:label "winter sports video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q846224 a wd:Q659563 ;
+wd:Q846224 a bte:Genre ;
     rdfs:label "fighting game"@en ;
     bts:isSubgenre wd:Q270948 .
 
-wd:Q71476528 a wd:Q659563 ;
+wd:Q71476528 a bte:Genre ;
     rdfs:label "water sports video game"@en ;
     bts:isSubgenre wd:Q868217 .
 
-wd:Q862490 a wd:Q659563 ;
+wd:Q862490 a bte:Genre ;
     rdfs:label "massively multiplayer online game"@en .
 
-wd:Q23916 a wd:Q659563 ;
+wd:Q23916 a bte:Genre ;
     rdfs:label "adventure game"@en .
 
-wd:Q270948 a wd:Q659563 ;
+wd:Q270948 a bte:Genre ;
     rdfs:label "action game"@en .
 
-wd:Q1044478 a wd:Q659563 ;
+wd:Q1044478 a bte:Genre ;
     rdfs:label "shoot 'em up"@en ;
     bts:isSubgenre wd:Q4282636 .
 
-wd:Q4282636 a wd:Q659563 ;
+wd:Q4282636 a bte:Genre ;
     rdfs:label "shooter game"@en ;
     bts:isSubgenre wd:Q270948 .
 
-wd:Q472055 a wd:Q659563 ;
+wd:Q472055 a bte:Genre ;
     rdfs:label "strategy video game"@en .
 
-wd:Q828322 a wd:Q659563 ;
+wd:Q828322 a bte:Genre ;
     rdfs:label "platform game"@en ;
     bts:isSubgenre wd:Q270948 .
 
-wd:Q578868 a wd:Q659563 ;
+wd:Q578868 a bte:Genre ;
     rdfs:label "vehicle simulation game"@en ;
     bts:isSubgenre wd:Q1610017 .
 
-wd:Q744038 a wd:Q659563 ;
+wd:Q744038 a bte:Genre ;
     rdfs:label "role-playing video game"@en .
 
-wd:Q860750 a wd:Q659563 ;
+wd:Q860750 a bte:Genre ;
     rdfs:label "racing video game"@en ;
     bts:isSubgenre wd:Q578868,
         wd:Q868217 .
 
-wd:Q54767 a wd:Q659563 ;
+wd:Q54767 a bte:Genre ;
     rdfs:label "puzzle video game"@en .
 
-wd:Q1610017 a wd:Q659563 ;
+wd:Q1610017 a bte:Genre ;
     rdfs:label "simulation video game"@en .
 
-wd:Q868217 a wd:Q659563 ;
+wd:Q868217 a bte:Genre ;
     rdfs:label "sports video game"@en ;
     bts:isSubgenre wd:Q1610017 .
 
