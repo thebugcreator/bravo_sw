@@ -1,0 +1,27 @@
+@prefix bts: <https://bravoteamis.us/schema#> .
+@prefix bte: <https://bravoteamis.us/entity/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+"keenjo"@en bts:hasUsername bte:Username.
+"Joe Keenan"@en a bte:Name.
+"Male"@en a bte:Gender.
+"25" a bte:Age.
+
+"joeyxnv" a bte:Username.
+"Duy Ngo"@en a bte:Name.
+"Male"@en a bte:Gender.
+"25" a bte:Age.
+
+"sahilchopra" a bte:Username.
+"Sahil Chopra"@en a bte:Name.
+"Male"@en a bte:Gender.
+"25" a bte:Age.
+
+"kevinchan" a bte:Username.
+"Kevin Chan"@en a bte:Name.
+"Male"@en a bte:Gender.
+"25" a bte:Age.
