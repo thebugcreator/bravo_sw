@@ -1,0 +1,43 @@
+@prefix bts: <https://bravoteamis.us/schema#> .
+@prefix bte: <https://bravoteamis.us/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#bts:partofGenre rdf:type owl:ObjectProperty
+#bts:hasModes rdf:type owl:ObjectProperty
+#bts:usesPlatform rdf:type owl:ObjectProperty
+#bts:partofSeries rdf:type owl:ObjectProperty
+#bts:madebyPublisher rdf:type owl:ObjectProperty
+#bts:isSubgenre rdf:type owl:ObjectProperty
+
+bts:partofGenre rdf:Property bte:VideoGame .
+bts:hasModes rdf:Property bte:VideoGame .
+bts:usesPlatform rdf:Property bte:VideoGame .
+bts:partofSeries rdf:Property bte:VideoGame .
+bts:madebyPublisher rdf:Property bte:VideoGame .
+bts:isSubgenre rdf:Property bte:Genre .
+
+
+bts:partofGenre rdfs:domain bte:VideoGame ;
+	  rdfs:range bte:Genre .
+
+bts:hasModes rdfs:domain bte:VideoGame ;
+	  rdfs:range bte:Mode .
+
+bts:usesPlatform rdfs:domain bte:VideoGame ;
+	  rdfs:range bte:Platform .
+
+bts:partofSeries rdfs:domain bte:VideoGame ;
+	  rdfs:range bte:Series .
+
+bts:madebyPublisher rdfs:domain bte:VideoGame ;
+	  rdfs:range bte:Publisher .
+
+bts:isSubgenre rdfs:domain bte:Genre ;
+		rdfs:range bte:Genre .
+
+
+
+
+
+
