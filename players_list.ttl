@@ -6,22 +6,16 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 
-"keenjo"@en bts:hasUsername bte:Username.
-"Joe Keenan"@en a bte:Name.
-"Male"@en a bte:Gender.
-"25" a bte:Age.
 
-"joeyxnv" a bte:Username.
-"Duy Ngo"@en a bte:Name.
-"Male"@en a bte:Gender.
-"25" a bte:Age.
+bte:keenjo a bte:Player.
+bte:keenjo bts:hasUsername "keenjo"@en.
 
-"sahilchopra" a bte:Username.
-"Sahil Chopra"@en a bte:Name.
-"Male"@en a bte:Gender.
-"25" a bte:Age.
+bte:joeyxnv a bte:Player.
+bte:joeyxnv bts:hasUsername "joeyxnv"@en.
 
-"kevinchan" a bte:Username.
-"Kevin Chan"@en a bte:Name.
-"Male"@en a bte:Gender.
-"25" a bte:Age.
+bte:sahil a bte:Player.
+bte:sahil bts:hasUsername "sahil"@en.
+
+bte:kevinchan a bte:Player.
+bte:kevinchan bts:hasUsername "kevinchan"@en.
+
