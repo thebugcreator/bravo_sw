@@ -37,8 +37,7 @@ wd:Q109653359 a bte:Series ;
     rdfs:label "Battlezone"@en .
 
 wd:Q11168 a bte:VideoGame ;
-    rdfs:label wd:Q11168,
-        "Super Mario Bros."@en ;
+    rdfs:label "Super Mario Bros."@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q828322 ;
@@ -115,8 +114,7 @@ wd:Q1210316 a bte:Series ;
     rdfs:label "Professor Layton"@en .
 
 wd:Q12384 a bte:VideoGame ;
-    rdfs:label wd:Q12384,
-        "Donkey Kong"@en ;
+    rdfs:label "Donkey Kong"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q828322 ;
@@ -137,8 +135,7 @@ wd:Q12384 a bte:VideoGame ;
         wd:Q99775 .
 
 wd:Q12395 a bte:VideoGame ;
-    rdfs:label wd:Q12395,
-        "The Legend of Zelda"@en ;
+    rdfs:label "The Legend of Zelda"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q343568 ;
@@ -147,8 +144,7 @@ wd:Q12395 a bte:VideoGame ;
         wd:Q172742 .
 
 wd:Q1255578 a bte:VideoGame ;
-    rdfs:label wd:Q1255578,
-        "IL-2 Sturmovik: Forgotten Battles"@en ;
+    rdfs:label "IL-2 Sturmovik: Forgotten Battles"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q77202 ;
     bts:partofGenre wd:Q603481 ;
@@ -156,8 +152,7 @@ wd:Q1255578 a bte:VideoGame ;
     bts:usesPlatform wd:Q1406 .
 
 wd:Q1257652 a bte:VideoGame ;
-    rdfs:label wd:Q1257652,
-        "IL-2 Sturmovik"@en ;
+    rdfs:label "IL-2 Sturmovik"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q77202 ;
     bts:partofGenre wd:Q603481 ;
@@ -165,8 +160,7 @@ wd:Q1257652 a bte:VideoGame ;
     bts:usesPlatform wd:Q1406 .
 
 wd:Q1257775 a bte:VideoGame ;
-    rdfs:label wd:Q1257775,
-        "Crash Twinsanity"@en ;
+    rdfs:label "Crash Twinsanity"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q2264873 ;
     bts:partofGenre wd:Q828322 ;
@@ -190,8 +184,7 @@ wd:Q1261715 a bte:VideoGame ;
         wd:Q471094 .
 
 wd:Q1261992 a bte:VideoGame ;
-    rdfs:label wd:Q1261992,
-        "Caesar IV"@en ;
+    rdfs:label "Caesar IV"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q494614 ;
     bts:partofGenre wd:Q588289 ;
@@ -199,8 +192,7 @@ wd:Q1261992 a bte:VideoGame ;
     bts:usesPlatform wd:Q1406 .
 
 wd:Q1264433 a bte:VideoGame ;
-    rdfs:label wd:Q1264433,
-        "Duke Nukem"@en ;
+    rdfs:label "Duke Nukem"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q2858431 ;
     bts:partofGenre wd:Q27670585,
@@ -223,8 +215,7 @@ wd:Q1264434 a bte:VideoGame ;
         wd:Q48493 .
 
 wd:Q1265742 a bte:VideoGame ;
-    rdfs:label wd:Q1265742,
-        "Dungeon Keeper"@en ;
+    rdfs:label "Dungeon Keeper"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q173941 ;
     bts:partofGenre wd:Q208189 ;
@@ -254,8 +245,7 @@ wd:Q1265969 a bte:VideoGame ;
         wd:Q188808 .
 
 wd:Q1277009 a bte:VideoGame ;
-    rdfs:label wd:Q1277009,
-        "Psychonauts"@en ;
+    rdfs:label "Psychonauts"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1972036,
         wd:Q403714,
@@ -291,8 +281,7 @@ wd:Q13631188 a bte:Series ;
     rdfs:label "Cannon Fodder"@en .
 
 wd:Q13699 a bte:VideoGame ;
-    rdfs:label wd:Q13699,
-        "Stronghold: Crusader Extreme"@en ;
+    rdfs:label "Stronghold: Crusader Extreme"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q5519987 ;
     bts:partofGenre wd:Q208189 ;
@@ -321,8 +310,7 @@ wd:Q1501543 a bte:Genre ;
     rdfs:label "wargame"@en .
 
 wd:Q151531 a bte:VideoGame ;
-    rdfs:label wd:Q151531,
-        "Sonic Chaos"@en ;
+    rdfs:label "Sonic Chaos"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q122741 ;
     bts:partofGenre wd:Q828322 ;
@@ -351,8 +339,7 @@ wd:Q17138 a bte:VideoGame ;
         wd:Q5014725 .
 
 wd:Q17452 a bte:VideoGame ;
-    rdfs:label wd:Q17452,
-        "Grand Theft Auto V"@en ;
+    rdfs:label "Grand Theft Auto V"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q94912,
         wd:Q94933 ;
@@ -422,8 +409,7 @@ wd:Q18940 a bte:VideoGame ;
         wd:Q48493 .
 
 wd:Q189784 a bte:VideoGame ;
-    rdfs:label wd:Q189784,
-        "Doom"@en ;
+    rdfs:label "Doom"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q200491,
         wd:Q207922,
@@ -502,8 +488,7 @@ wd:Q210844 a bte:VideoGame ;
         wd:Q14116 .
 
 wd:Q211096 a bte:VideoGame ;
-    rdfs:label wd:Q211096,
-        "call"@en ;
+    rdfs:label "call"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q200491,
         wd:Q6805413,
@@ -517,8 +502,7 @@ wd:Q211096 a bte:VideoGame ;
         wd:Q48263 .
 
 wd:Q211735 a bte:VideoGame ;
-    rdfs:label wd:Q211735,
-        "Assassin's Creed II"@en ;
+    rdfs:label "Assassin's Creed II"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q188273 ;
     bts:partofGenre wd:Q343568,
@@ -559,8 +543,7 @@ wd:Q213217 a bte:VideoGame ;
         wd:Q1406 .
 
 wd:Q213911 a bte:VideoGame ;
-    rdfs:label wd:Q213911,
-        "The Legend of Zelda: Ocarina of Time"@en ;
+    rdfs:label "The Legend of Zelda: Ocarina of Time"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q343568 ;
@@ -616,8 +599,7 @@ wd:Q220102 a bte:VideoGame ;
         wd:Q14116 .
 
 wd:Q220107 a bte:VideoGame ;
-    rdfs:label wd:Q220107,
-        "Zoo Tycoon 2"@en ;
+    rdfs:label "Zoo Tycoon 2"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q73801 ;
     bts:partofGenre wd:Q1198141 ;
@@ -626,8 +608,7 @@ wd:Q220107 a bte:VideoGame ;
         wd:Q14116 .
 
 wd:Q220365 a bte:VideoGame ;
-    rdfs:label wd:Q220365,
-        "Need for Speed: Most Wanted"@en ;
+    rdfs:label "Need for Speed: Most Wanted"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q173941 ;
     bts:partofGenre wd:Q860750 ;
@@ -678,8 +659,7 @@ wd:Q220965 a bte:VideoGame ;
         wd:Q94 .
 
 wd:Q221164 a bte:VideoGame ;
-    rdfs:label wd:Q221164,
-        "Fallout 3"@en ;
+    rdfs:label "Fallout 3"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q684425 ;
     bts:partofGenre wd:Q1422746,
@@ -694,8 +674,7 @@ wd:Q221164 a bte:VideoGame ;
         wd:Q48263 .
 
 wd:Q222473 a bte:VideoGame ;
-    rdfs:label wd:Q222473,
-        "Hearts of Iron III"@en ;
+    rdfs:label "Hearts of Iron III"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q217493 ;
     bts:partofGenre wd:Q1501543,
@@ -710,8 +689,7 @@ wd:Q2227411 a bte:Series ;
     rdfs:label "Sly Cooper"@en .
 
 wd:Q223381 a bte:VideoGame ;
-    rdfs:label wd:Q223381,
-        "Final Fantasy X"@en ;
+    rdfs:label "Final Fantasy X"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q739552 ;
     bts:partofGenre wd:Q744038 ;
@@ -731,8 +709,7 @@ wd:Q223629 a bte:VideoGame ;
         wd:Q388 .
 
 wd:Q225861 a bte:VideoGame ;
-    rdfs:label wd:Q225861,
-        "Professor Layton and the Unwound Future"@en ;
+    rdfs:label "Professor Layton and the Unwound Future"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q23916,
@@ -744,8 +721,7 @@ wd:Q225861 a bte:VideoGame ;
         wd:Q48493 .
 
 wd:Q225912 a bte:VideoGame ;
-    rdfs:label wd:Q225912,
-        "Kingdom Hearts"@en ;
+    rdfs:label "Kingdom Hearts"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q739552 ;
     bts:partofGenre wd:Q1422746,
@@ -762,8 +738,7 @@ wd:Q2264873 a bte:Publisher ;
     rdfs:label "Vivendi Games"@en .
 
 wd:Q226805 a bte:VideoGame ;
-    rdfs:label wd:Q226805,
-        "Torchlight II"@en ;
+    rdfs:label "Torchlight II"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1358751 ;
     bts:partofGenre wd:Q1422746,
@@ -775,8 +750,7 @@ wd:Q226805 a bte:VideoGame ;
         wd:Q388 .
 
 wd:Q227612 a bte:VideoGame ;
-    rdfs:label wd:Q227612,
-        "Fate: Undiscovered Realms"@en ;
+    rdfs:label "Fate: Undiscovered Realms"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8000452 ;
     bts:partofGenre wd:Q1143132,
@@ -798,8 +772,7 @@ wd:Q236821 a bte:Series ;
     rdfs:label "Silent Hill"@en .
 
 wd:Q2374 a bte:VideoGame ;
-    rdfs:label wd:Q2374,
-        "Civilization III"@en ;
+    rdfs:label "Civilization III"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1782700,
         wd:Q207922,
@@ -830,8 +803,7 @@ wd:Q2377 a bte:VideoGame ;
         wd:Q14116 .
 
 wd:Q2385 a bte:VideoGame ;
-    rdfs:label wd:Q2385,
-        "Civilization V"@en ;
+    rdfs:label "Civilization V"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q738135,
         wd:Q94937 ;
@@ -843,8 +815,7 @@ wd:Q2385 a bte:VideoGame ;
         wd:Q388 .
 
 wd:Q2387 a bte:VideoGame ;
-    rdfs:label wd:Q2387,
-        "Commandos 2: Men of Courage"@en ;
+    rdfs:label "Commandos 2: Men of Courage"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q10902322,
         wd:Q679933 ;
@@ -856,8 +827,7 @@ wd:Q2387 a bte:VideoGame ;
         wd:Q14116 .
 
 wd:Q239889 a bte:VideoGame ;
-    rdfs:label wd:Q239889,
-        "Hitman: Blood Money"@en ;
+    rdfs:label "Hitman: Blood Money"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q679933 ;
     bts:partofGenre wd:Q343568,
@@ -879,8 +849,7 @@ wd:Q245006 a bte:VideoGame ;
         wd:Q48493 .
 
 wd:Q247161 a bte:VideoGame ;
-    rdfs:label wd:Q247161,
-        "Dynasty Warriors 5"@en ;
+    rdfs:label "Dynasty Warriors 5"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q845047 ;
     bts:partofGenre wd:Q270948 ;
@@ -917,8 +886,7 @@ wd:Q253111 a bte:VideoGame ;
     bts:usesPlatform wd:Q170325 .
 
 wd:Q254090 a bte:VideoGame ;
-    rdfs:label wd:Q254090,
-        "F1 2011"@en ;
+    rdfs:label "F1 2011"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q23901 ;
     bts:partofGenre wd:Q860750 ;
@@ -926,8 +894,7 @@ wd:Q254090 a bte:VideoGame ;
     bts:usesPlatform wd:Q1406 .
 
 wd:Q254723 a bte:VideoGame ;
-    rdfs:label wd:Q254723,
-        "Cannon Fodder"@en ;
+    rdfs:label "Cannon Fodder"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1481820 ;
     bts:partofGenre wd:Q1044478 ;
@@ -1129,8 +1096,7 @@ wd:Q54300 a bte:Series ;
     rdfs:label "Star Wars video game"@en .
 
 wd:Q54304 a bte:VideoGame ;
-    rdfs:label wd:Q54304,
-        "Star Wars Rogue Squadron III: Rebel Strike"@en ;
+    rdfs:label "Star Wars Rogue Squadron III: Rebel Strike"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q216611 ;
     bts:partofGenre wd:Q270948 ;
@@ -1147,8 +1113,7 @@ wd:Q54307 a bte:VideoGame ;
     bts:usesPlatform wd:Q182172 .
 
 wd:Q54317 a bte:VideoGame ;
-    rdfs:label wd:Q54317,
-        "Star Wars"@en ;
+    rdfs:label "Star Wars"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1235040,
         wd:Q13409231,
@@ -1171,8 +1136,7 @@ wd:Q54317 a bte:VideoGame ;
         wd:Q99775 .
 
 wd:Q54322 a bte:VideoGame ;
-    rdfs:label wd:Q54322,
-        "Super Star Wars"@en ;
+    rdfs:label "Super Star Wars"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1229035,
         wd:Q20651008,
@@ -1189,8 +1153,7 @@ wd:Q54323360 a bte:Genre ;
     rdfs:label "cyberpunk video game"@en .
 
 wd:Q54327 a bte:VideoGame ;
-    rdfs:label wd:Q54327,
-        "Star Wars: The Empire Strikes Back"@en ;
+    rdfs:label "Star Wars: The Empire Strikes Back"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1061580,
         wd:Q1235040 ;
@@ -1215,8 +1178,7 @@ wd:Q54330 a bte:VideoGame ;
         wd:Q8079 .
 
 wd:Q54334 a bte:VideoGame ;
-    rdfs:label wd:Q54334,
-        "Star Wars: Return of the Jedi"@en ;
+    rdfs:label "Star Wars: Return of the Jedi"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1235040,
         wd:Q13409231 ;
@@ -1308,8 +1270,7 @@ wd:Q55312 a bte:VideoGame ;
         wd:Q170434 .
 
 wd:Q55314 a bte:VideoGame ;
-    rdfs:label wd:Q55314,
-        "Star Wars: X-Wing vs. TIE Fighter"@en ;
+    rdfs:label "Star Wars: X-Wing vs. TIE Fighter"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1229035 ;
     bts:partofGenre wd:Q21154509 ;
@@ -1317,8 +1278,7 @@ wd:Q55314 a bte:VideoGame ;
     bts:usesPlatform wd:Q751046 .
 
 wd:Q55616 a bte:VideoGame ;
-    rdfs:label wd:Q55616,
-        "Battlezone"@en ;
+    rdfs:label "Battlezone"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q13409231 ;
     bts:partofGenre wd:Q1610017,
@@ -1458,8 +1418,7 @@ wd:Q71932 a bte:VideoGame ;
     bts:usesPlatform wd:Q188808 .
 
 wd:Q71936 a bte:VideoGame ;
-    rdfs:label wd:Q71936,
-        "Wii Sports"@en ;
+    rdfs:label "Wii Sports"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q8093 ;
     bts:partofGenre wd:Q868217 ;
@@ -1486,8 +1445,7 @@ wd:Q743222 a bte:Platform ;
     rdfs:label "Atari 5200"@en .
 
 wd:Q74545 a bte:VideoGame ;
-    rdfs:label wd:Q74545,
-        "Lego Batman: The Videogame"@en ;
+    rdfs:label "Lego Batman: The Videogame"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q2319420 ;
     bts:partofGenre wd:Q343568 ;
@@ -1551,8 +1509,7 @@ wd:Q751719 a bte:Platform ;
     rdfs:label "Sega Game Gear"@en .
 
 wd:Q751936 a bte:VideoGame ;
-    rdfs:label wd:Q751936,
-        "Devil May Cry 4"@en ;
+    rdfs:label "Devil May Cry 4"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q14428 ;
     bts:partofGenre wd:Q343568 ;
@@ -1598,8 +1555,7 @@ wd:Q7676662 a bte:Series ;
     rdfs:label "Devil May Cry"@en .
 
 wd:Q76868 a bte:VideoGame ;
-    rdfs:label wd:Q76868,
-        "Assassin's Creed III: Liberation"@en ;
+    rdfs:label "Assassin's Creed III: Liberation"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q188273 ;
     bts:partofGenre wd:Q343568,
@@ -1617,8 +1573,7 @@ wd:Q8000452 a bte:Publisher ;
     rdfs:label "WildTangent"@en .
 
 wd:Q81288 a bte:VideoGame ;
-    rdfs:label wd:Q81288,
-        "Dragon Quest III"@en ;
+    rdfs:label "Dragon Quest III"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q1343212 ;
     bts:partofGenre wd:Q744038 ;
@@ -1630,8 +1585,7 @@ wd:Q81288 a bte:VideoGame ;
         wd:Q94 .
 
 wd:Q81777 a bte:VideoGame ;
-    rdfs:label wd:Q81777,
-        "Panzer Dragoon Saga"@en ;
+    rdfs:label "Panzer Dragoon Saga"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q122741 ;
     bts:partofGenre wd:Q744038 ;
@@ -1639,8 +1593,7 @@ wd:Q81777 a bte:VideoGame ;
     bts:usesPlatform wd:Q200912 .
 
 wd:Q82050 a bte:VideoGame ;
-    rdfs:label wd:Q82050,
-        "Tales of the Abyss"@en ;
+    rdfs:label "Tales of the Abyss"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q309996 ;
     bts:partofGenre wd:Q1422746,
@@ -1747,8 +1700,7 @@ wd:Q88947 a bte:VideoGame ;
         wd:Q99775 .
 
 wd:Q94460 a bte:VideoGame ;
-    rdfs:label wd:Q94460,
-        "Grand Theft Auto 2"@en ;
+    rdfs:label "Grand Theft Auto 2"@en ;
     bts:hasModes wd:Q208850 ;
     bts:madebyPublisher wd:Q94912 ;
     bts:partofGenre wd:Q343568 ;
