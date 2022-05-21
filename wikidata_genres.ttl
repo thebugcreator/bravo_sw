@@ -12,7 +12,7 @@
  ] .
 
 #################################################################
-#    Object properties
+#    Object Properties
 #################################################################
 
 ###  https://bravoteamis.us/schema#isSubgenre
@@ -23,8 +23,122 @@ bts:isSubgenre rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
+###  https://bravoteamis.us/entity/AdultGenre
+bte:AdultGenre rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty bts:isSubgenre ;
+                                     owl:hasValue wd:Q106542313
+                                   ] ;
+               rdfs:subClassOf <https://bravoteamis.us/entity/18+Genre> .
+
+
 ###  https://bravoteamis.us/entity/Genre
 bte:Genre rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/RacingGenre
+bte:RacingGenre rdf:type owl:Class ;
+                rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/SimulationGenre
+bte:SimulationGenre rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1036289
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1198141
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1199309
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1610017
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1892535
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q578868
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q60617880
+                                        ] ;
+                    rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/SportsGenre
+bte:SportsGenre rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q1478420
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q60256879
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q62019077
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63466098
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63644993
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63645108
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71467370
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71467408
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71474750
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71476528
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q868217
+                                    ] ;
+                rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/ViolentGenre
+bte:ViolentGenre rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty bts:isSubgenre ;
+                                       owl:hasValue wd:Q185029
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty bts:isSubgenre ;
+                                       owl:hasValue wd:Q4282636
+                                     ] ;
+                 rdfs:subClassOf <https://bravoteamis.us/entity/18+Genre> .
+
+
+###  https://bravoteamis.us/entity/18+Genre
+<https://bravoteamis.us/entity/18+Genre> rdf:type owl:Class ;
+                                         rdfs:subClassOf bte:Genre .
 
 
 #################################################################
@@ -40,103 +154,103 @@ wd:Q101900049 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q102040062
 wd:Q102040062 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "spot the difference"@en ;
               bts:isSubgenre wd:Q1050023 ,
-                             wd:Q54767 .
+                             wd:Q54767 ;
+              rdfs:label "spot the difference"@en .
 
 
 ###  http://www.wikidata.org/entity/Q102128235
 wd:Q102128235 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "interactive DVD game"@en ;
-              bts:isSubgenre wd:Q1635956 .
+              bts:isSubgenre wd:Q1635956 ;
+              rdfs:label "interactive DVD game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q10269379
 wd:Q10269379 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "e-business Games"@en ;
-             bts:isSubgenre wd:Q1198141 .
+             bts:isSubgenre wd:Q1198141 ;
+             rdfs:label "e-business Games"@en .
 
 
 ###  http://www.wikidata.org/entity/Q10308060
 wd:Q10308060 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "falling block puzzle game"@en ;
              bts:isSubgenre wd:Q111490490 ,
-                            wd:Q7802107 .
+                            wd:Q7802107 ;
+             rdfs:label "falling block puzzle game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1036289
 wd:Q1036289 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "construction and management simulation"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "construction and management simulation"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1037904
 wd:Q1037904 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "scrolling shooter"@en ;
-            bts:isSubgenre wd:Q1044478 .
+            bts:isSubgenre wd:Q1044478 ;
+            rdfs:label "scrolling shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q103821052
 wd:Q103821052 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "strip poker video game"@en ;
-              bts:isSubgenre wd:Q103842351 .
+              bts:isSubgenre wd:Q103842351 ;
+              rdfs:label "strip poker video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q103842351
 wd:Q103842351 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "poker video game"@en ;
               bts:isSubgenre wd:Q29471320 ,
-                             wd:Q60617897 .
+                             wd:Q60617897 ;
+              rdfs:label "poker video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q104093099
 wd:Q104093099 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "massively multiplayer online third-person shooter game"@en ;
               bts:isSubgenre wd:Q380266 ,
-                             wd:Q862490 .
+                             wd:Q862490 ;
+              rdfs:label "massively multiplayer online third-person shooter game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1044478
 wd:Q1044478 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "shoot 'em up"@en ;
-            bts:isSubgenre wd:Q4282636 .
+            bts:isSubgenre wd:Q4282636 ;
+            rdfs:label "shoot 'em up"@en .
 
 
 ###  http://www.wikidata.org/entity/Q104735362
 wd:Q104735362 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "Turn based JRPG"@en ;
-              bts:isSubgenre wd:Q5923834 .
+              bts:isSubgenre wd:Q5923834 ;
+              rdfs:label "Turn based JRPG"@en .
 
 
 ###  http://www.wikidata.org/entity/Q104760508
 wd:Q104760508 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "sudoku video game"@en ;
-              bts:isSubgenre wd:Q54767 .
+              bts:isSubgenre wd:Q54767 ;
+              rdfs:label "sudoku video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q104819482
 wd:Q104819482 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "collect-a-thon platformer"@en ;
-              bts:isSubgenre wd:Q828322 .
+              bts:isSubgenre wd:Q828322 ;
+              rdfs:label "collect-a-thon platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q104830011
 wd:Q104830011 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "hero shooter"@en ;
-              bts:isSubgenre wd:Q4282636 .
+              bts:isSubgenre wd:Q4282636 ;
+              rdfs:label "hero shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1050023
@@ -148,44 +262,44 @@ wd:Q1050023 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q105098453
 wd:Q105098453 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "roguelite"@en ;
-              bts:isSubgenre wd:Q1143132 .
+              bts:isSubgenre wd:Q1143132 ;
+              rdfs:label "roguelite"@en .
 
 
 ###  http://www.wikidata.org/entity/Q105221690
 wd:Q105221690 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "professional wrestling video game"@en ;
               bts:isSubgenre wd:Q71443612 ,
-                             wd:Q846224 .
+                             wd:Q846224 ;
+              rdfs:label "professional wrestling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q105475134
 wd:Q105475134 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "soulslike"@en ;
-              bts:isSubgenre wd:Q1422746 .
+              bts:isSubgenre wd:Q1422746 ;
+              rdfs:label "soulslike"@en .
 
 
 ###  http://www.wikidata.org/entity/Q105906396
 wd:Q105906396 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "turn-based role-playing game"@en ;
-              bts:isSubgenre wd:Q744038 .
+              bts:isSubgenre wd:Q744038 ;
+              rdfs:label "turn-based role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q106405894
 wd:Q106405894 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "arena shooter"@en ;
-              bts:isSubgenre wd:Q4282636 .
+              bts:isSubgenre wd:Q4282636 ;
+              rdfs:label "arena shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q106542308
 wd:Q106542308 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "You must be 18+ to view this content"@en ;
-              bts:isSubgenre wd:Q106542313 .
+              bts:isSubgenre wd:Q106542313 ;
+              rdfs:label "You must be 18+ to view this content"@en .
 
 
 ###  http://www.wikidata.org/entity/Q106542313
@@ -197,311 +311,311 @@ wd:Q106542313 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q106764019
 wd:Q106764019 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "photography game"@en ;
-              bts:isSubgenre wd:Q1610017 .
+              bts:isSubgenre wd:Q1610017 ;
+              rdfs:label "photography game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q107377911
 wd:Q107377911 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "Electro-mechanical game"@en ;
-              bts:isSubgenre wd:Q15613992 .
+              bts:isSubgenre wd:Q15613992 ;
+              rdfs:label "Electro-mechanical game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q107608170
 wd:Q107608170 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "massively multiplayer online virtual reality game"@en ;
               bts:isSubgenre wd:Q862490 ,
-                             wd:Q87741364 .
+                             wd:Q87741364 ;
+              rdfs:label "massively multiplayer online virtual reality game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q107631040
 wd:Q107631040 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "side-scrolling role-playing video game"@en ;
               bts:isSubgenre wd:Q1223895 ,
-                             wd:Q744038 .
+                             wd:Q744038 ;
+              rdfs:label "side-scrolling role-playing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1080071
 wd:Q1080071 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "submarine simulator"@en ;
-            bts:isSubgenre wd:Q578868 .
+            bts:isSubgenre wd:Q578868 ;
+            rdfs:label "submarine simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108099476
 wd:Q108099476 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "jigsaw puzzle video game"@en ;
-              bts:isSubgenre wd:Q54767 .
+              bts:isSubgenre wd:Q54767 ;
+              rdfs:label "jigsaw puzzle video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108099928
 wd:Q108099928 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "billiard video game"@en ;
-              bts:isSubgenre wd:Q62022558 .
+              bts:isSubgenre wd:Q62022558 ;
+              rdfs:label "billiard video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108380937
 wd:Q108380937 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "traffic simulation game"@en ;
-              bts:isSubgenre wd:Q1036289 .
+              bts:isSubgenre wd:Q1036289 ;
+              rdfs:label "traffic simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108611897
 wd:Q108611897 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "horse racing video game"@en ;
               bts:isSubgenre wd:Q860750 ,
-                             wd:Q868217 .
+                             wd:Q868217 ;
+              rdfs:label "horse racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108882014
 wd:Q108882014 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "looter shooter"@en ;
-              bts:isSubgenre wd:Q4282636 .
+              bts:isSubgenre wd:Q4282636 ;
+              rdfs:label "looter shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108901409
 wd:Q108901409 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "paddle-and-ball video game"@en ;
-              bts:isSubgenre wd:Q15613992 .
+              bts:isSubgenre wd:Q15613992 ;
+              rdfs:label "paddle-and-ball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108924240
 wd:Q108924240 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "racing management video game"@en ;
               bts:isSubgenre wd:Q4438162 ,
-                             wd:Q860750 .
+                             wd:Q860750 ;
+              rdfs:label "racing management video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q108934731
 wd:Q108934731 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "ice hockey management game"@en ;
               bts:isSubgenre wd:Q4438162 ,
-                             wd:Q71474750 .
+                             wd:Q71474750 ;
+              rdfs:label "ice hockey management game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109470190
 wd:Q109470190 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "NASCAR video game"@en ;
-              bts:isSubgenre wd:Q860750 .
+              bts:isSubgenre wd:Q860750 ;
+              rdfs:label "NASCAR video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109520717
 wd:Q109520717 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "biathlon video game"@en ;
-              bts:isSubgenre wd:Q71467370 .
+              bts:isSubgenre wd:Q71467370 ;
+              rdfs:label "biathlon video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109539832
 wd:Q109539832 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "belt scroller"@en ;
-              bts:isSubgenre wd:Q2281709 .
+              bts:isSubgenre wd:Q2281709 ;
+              rdfs:label "belt scroller"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109598322
 wd:Q109598322 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "roguevania"@en ;
               bts:isSubgenre wd:Q105098453 ,
-                             wd:Q19643088 .
+                             wd:Q19643088 ;
+              rdfs:label "roguevania"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109599573
 wd:Q109599573 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "online crane game"@en ;
-              bts:isSubgenre wd:Q15613992 .
+              bts:isSubgenre wd:Q15613992 ;
+              rdfs:label "online crane game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109656536
 wd:Q109656536 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "futuristic racing game"@en ;
-              bts:isSubgenre wd:Q95124454 .
+              bts:isSubgenre wd:Q95124454 ;
+              rdfs:label "futuristic racing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q109942850
 wd:Q109942850 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "motocross racing video game"@en ;
-              bts:isSubgenre wd:Q111411020 .
+              bts:isSubgenre wd:Q111411020 ;
+              rdfs:label "motocross racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110068411
 wd:Q110068411 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "blackjack video game"@en ;
               bts:isSubgenre wd:Q29471320 ,
-                             wd:Q60617897 .
+                             wd:Q60617897 ;
+              rdfs:label "blackjack video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110505373
 wd:Q110505373 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "nonogram video game"@en ;
-              bts:isSubgenre wd:Q54767 .
+              bts:isSubgenre wd:Q54767 ;
+              rdfs:label "nonogram video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110546562
 wd:Q110546562 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "Texas hold 'em video game"@en ;
-              bts:isSubgenre wd:Q103842351 .
+              bts:isSubgenre wd:Q103842351 ;
+              rdfs:label "Texas hold 'em video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110547060
 wd:Q110547060 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "backgammon video game"@en ;
-              bts:isSubgenre wd:Q71593876 .
+              bts:isSubgenre wd:Q71593876 ;
+              rdfs:label "backgammon video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110639931
 wd:Q110639931 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "Platform fighter"@en ;
-              bts:isSubgenre wd:Q846224 .
+              bts:isSubgenre wd:Q846224 ;
+              rdfs:label "Platform fighter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11064557
 wd:Q11064557 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "advergame"@en ;
-             bts:isSubgenre wd:Q1050023 .
+             bts:isSubgenre wd:Q1050023 ;
+             rdfs:label "advergame"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110763412
 wd:Q110763412 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "gomoku video game"@en ;
-              bts:isSubgenre wd:Q71593876 .
+              bts:isSubgenre wd:Q71593876 ;
+              rdfs:label "gomoku video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q110887639
 wd:Q110887639 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "crowd-combat video game"@en ;
-              bts:isSubgenre wd:Q1163960 .
+              bts:isSubgenre wd:Q1163960 ;
+              rdfs:label "crowd-combat video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111149309
 wd:Q111149309 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "farming simulation video game"@en ;
-              bts:isSubgenre wd:Q1610017 .
+              bts:isSubgenre wd:Q1610017 ;
+              rdfs:label "farming simulation video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111196346
 wd:Q111196346 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "wakeboarding video game"@en ;
-              bts:isSubgenre wd:Q71476528 .
+              bts:isSubgenre wd:Q71476528 ;
+              rdfs:label "wakeboarding video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111306718
 wd:Q111306718 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "supercross racing video game"@en ;
-              bts:isSubgenre wd:Q860750 .
+              bts:isSubgenre wd:Q860750 ;
+              rdfs:label "supercross racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111391909
 wd:Q111391909 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "raising sim video game"@en ;
-              bts:isSubgenre wd:Q1199309 .
+              bts:isSubgenre wd:Q1199309 ;
+              rdfs:label "raising sim video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111411020
 wd:Q111411020 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "motorcycle racing video game"@en ;
-              bts:isSubgenre wd:Q860750 .
+              bts:isSubgenre wd:Q860750 ;
+              rdfs:label "motorcycle racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111411588
 wd:Q111411588 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "Superbike racing video game"@en ;
-              bts:isSubgenre wd:Q111411020 .
+              bts:isSubgenre wd:Q111411020 ;
+              rdfs:label "Superbike racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111490490
 wd:Q111490490 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "action puzzle video game"@en ;
-              bts:isSubgenre wd:Q54767 .
+              bts:isSubgenre wd:Q54767 ;
+              rdfs:label "action puzzle video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111515094
 wd:Q111515094 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "isometric RPG"@en ;
-              bts:isSubgenre wd:Q744038 .
+              bts:isSubgenre wd:Q744038 ;
+              rdfs:label "isometric RPG"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111515095
 wd:Q111515095 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "vertical platformer"@en ;
-              bts:isSubgenre wd:Q828322 .
+              bts:isSubgenre wd:Q828322 ;
+              rdfs:label "vertical platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111515096
 wd:Q111515096 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "elimination platformer"@en ;
               bts:isSubgenre wd:Q270948 ,
-                             wd:Q828322 .
+                             wd:Q828322 ;
+              rdfs:label "elimination platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111515101
 wd:Q111515101 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "precision platformer"@en ;
-              bts:isSubgenre wd:Q828322 .
+              bts:isSubgenre wd:Q828322 ;
+              rdfs:label "precision platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q111519486
 wd:Q111519486 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "shooting gallery game"@en ;
-              bts:isSubgenre wd:Q4282636 .
+              bts:isSubgenre wd:Q4282636 ;
+              rdfs:label "shooting gallery game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q112074728
 wd:Q112074728 rdf:type owl:NamedIndividual ,
                        bte:Genre ;
-              rdfs:label "rally racing video game"@en ;
-              bts:isSubgenre wd:Q860750 .
+              bts:isSubgenre wd:Q860750 ;
+              rdfs:label "rally racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11248529
 wd:Q11248529 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "sound novel"@en ;
              bts:isSubgenre wd:Q1143118 ,
-                            wd:Q781048 .
+                            wd:Q781048 ;
+             rdfs:label "sound novel"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11323299
 wd:Q11323299 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "dream novel"@en ;
-             bts:isSubgenre wd:Q1143118 .
+             bts:isSubgenre wd:Q1143118 ;
+             rdfs:label "dream novel"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11338014
@@ -513,94 +627,94 @@ wd:Q11338014 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q11350034
 wd:Q11350034 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "LaserDisc video game"@en ;
-             bts:isSubgenre wd:Q1635956 .
+             bts:isSubgenre wd:Q1635956 ;
+             rdfs:label "LaserDisc video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1137896
 wd:Q1137896 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "tower defense"@en ;
             bts:isSubgenre wd:Q208189 ,
-                           wd:Q54767 .
+                           wd:Q54767 ;
+            rdfs:label "tower defense"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1143087
 wd:Q1143087 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "massively multiplayer online real-time strategy game"@en ;
-            bts:isSubgenre wd:Q11771157 .
+            bts:isSubgenre wd:Q11771157 ;
+            rdfs:label "massively multiplayer online real-time strategy game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1143118
 wd:Q1143118 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "interactive fiction"@en ;
             bts:isSubgenre wd:Q1823737 ,
-                           wd:Q23916 .
+                           wd:Q23916 ;
+            rdfs:label "interactive fiction"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1143132
 wd:Q1143132 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "roguelike"@en ;
-            bts:isSubgenre wd:Q105906396 .
+            bts:isSubgenre wd:Q105906396 ;
+            rdfs:label "roguelike"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11590806
 wd:Q11590806 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "point-and-click adventure"@en ;
-             bts:isSubgenre wd:Q2628513 .
+             bts:isSubgenre wd:Q2628513 ;
+             rdfs:label "point-and-click adventure"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1163960
 wd:Q1163960 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "hack and slash"@en ;
-            bts:isSubgenre wd:Q846224 .
+            bts:isSubgenre wd:Q846224 ;
+            rdfs:label "hack and slash"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11756212
 wd:Q11756212 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "physics game"@en ;
-             bts:isSubgenre wd:Q1610017 .
+             bts:isSubgenre wd:Q1610017 ;
+             rdfs:label "physics game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q11771157
 wd:Q11771157 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "massively multiplayer online strategy game"@en ;
-             bts:isSubgenre wd:Q862490 .
+             bts:isSubgenre wd:Q862490 ;
+             rdfs:label "massively multiplayer online strategy game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1189206
 wd:Q1189206 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "multiplayer online battle arena"@en ;
-            bts:isSubgenre wd:Q208189 .
+            bts:isSubgenre wd:Q208189 ;
+            rdfs:label "multiplayer online battle arena"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1198141
 wd:Q1198141 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "business simulation game"@en ;
-            bts:isSubgenre wd:Q1036289 .
+            bts:isSubgenre wd:Q1036289 ;
+            rdfs:label "business simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1199309
 wd:Q1199309 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "life simulation game"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "life simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1201679
 wd:Q1201679 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "escape the room"@en ;
-            bts:isSubgenre wd:Q11590806 .
+            bts:isSubgenre wd:Q11590806 ;
+            rdfs:label "escape the room"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1223895
@@ -618,87 +732,87 @@ wd:Q1224999 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q1260861
 wd:Q1260861 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "tactical shooter"@en ;
-            bts:isSubgenre wd:Q185029 .
+            bts:isSubgenre wd:Q185029 ;
+            rdfs:label "tactical shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1265717
 wd:Q1265717 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "dungeon crawl"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "dungeon crawl"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1298366
 wd:Q1298366 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "everyday role-play"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "everyday role-play"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1311927
 wd:Q1311927 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "railway game"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "railway game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1323555
 wd:Q1323555 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "bishōjo game"@en ;
-            bts:isSubgenre wd:Q1339223 .
+            bts:isSubgenre wd:Q1339223 ;
+            rdfs:label "bishōjo game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1339223
 wd:Q1339223 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "dating sim"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "dating sim"@en .
 
 
 ###  http://www.wikidata.org/entity/Q13717398
 wd:Q13717398 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "maze video game"@en ;
-             bts:isSubgenre wd:Q54767 .
+             bts:isSubgenre wd:Q54767 ;
+             rdfs:label "maze video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1395452
 wd:Q1395452 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "fan-adventure"@en ;
-            bts:isSubgenre wd:Q23916 .
+            bts:isSubgenre wd:Q23916 ;
+            rdfs:label "fan-adventure"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1417032
 wd:Q1417032 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "sim racing"@en ;
             bts:isSubgenre wd:Q578868 ,
-                           wd:Q860750 .
+                           wd:Q860750 ;
+            rdfs:label "sim racing"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1422746
 wd:Q1422746 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "action role-playing game"@en ;
             bts:isSubgenre wd:Q270948 ,
-                           wd:Q744038 .
+                           wd:Q744038 ;
+            rdfs:label "action role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1443965
 wd:Q1443965 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Sugaku"@en ;
-            bts:isSubgenre wd:Q60617925 .
+            bts:isSubgenre wd:Q60617925 ;
+            rdfs:label "Sugaku"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1478420
 wd:Q1478420 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "association football video game"@en ;
-            bts:isSubgenre wd:Q868217 .
+            bts:isSubgenre wd:Q868217 ;
+            rdfs:label "association football video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1506693
@@ -710,8 +824,8 @@ wd:Q1506693 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q1529437
 wd:Q1529437 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "tactical role-playing game"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "tactical role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q15613992
@@ -735,15 +849,15 @@ wd:Q1635956 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q16381999
 wd:Q16381999 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Myst-like"@en ;
-             bts:isSubgenre wd:Q5923736 .
+             bts:isSubgenre wd:Q5923736 ;
+             rdfs:label "Myst-like"@en .
 
 
 ###  http://www.wikidata.org/entity/Q16935625
 wd:Q16935625 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "fishing video game"@en ;
-             bts:isSubgenre wd:Q71476528 .
+             bts:isSubgenre wd:Q71476528 ;
+             rdfs:label "fishing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q17049225
@@ -755,9 +869,9 @@ wd:Q17049225 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q175173
 wd:Q175173 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "massively multiplayer online role-playing game"@en ;
            bts:isSubgenre wd:Q3765017 ,
-                          wd:Q862490 .
+                          wd:Q862490 ;
+           rdfs:label "massively multiplayer online role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1823737
@@ -769,66 +883,66 @@ wd:Q1823737 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q18351283
 wd:Q18351283 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "incremental game"@en ;
-             bts:isSubgenre wd:Q1050023 .
+             bts:isSubgenre wd:Q1050023 ;
+             rdfs:label "incremental game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q185029
 wd:Q185029 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "first-person shooter"@en ;
-           bts:isSubgenre wd:Q4282636 .
+           bts:isSubgenre wd:Q4282636 ;
+           rdfs:label "first-person shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q18759108
 wd:Q18759108 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "kart racing game"@en ;
-             bts:isSubgenre wd:Q860750 .
+             bts:isSubgenre wd:Q860750 ;
+             rdfs:label "kart racing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q18822231
 wd:Q18822231 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "time management video game"@en ;
-             bts:isSubgenre wd:Q472055 .
+             bts:isSubgenre wd:Q472055 ;
+             rdfs:label "time management video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q1892535
 wd:Q1892535 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "space flight simulation game"@en ;
             bts:isSubgenre wd:Q578868 ,
-                           wd:Q60617880 .
+                           wd:Q60617880 ;
+            rdfs:label "space flight simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q19643088
 wd:Q19643088 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Metroidvania"@en ;
              bts:isSubgenre wd:Q343568 ,
-                            wd:Q828322 .
+                            wd:Q828322 ;
+             rdfs:label "Metroidvania"@en .
 
 
 ###  http://www.wikidata.org/entity/Q19683335
 wd:Q19683335 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "ship simulator"@en ;
-             bts:isSubgenre wd:Q578868 .
+             bts:isSubgenre wd:Q578868 ;
+             rdfs:label "ship simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q19683436
 wd:Q19683436 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "truck simulator"@en ;
-             bts:isSubgenre wd:Q578868 .
+             bts:isSubgenre wd:Q578868 ;
+             rdfs:label "truck simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2016457
 wd:Q2016457 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "exergaming"@en ;
-            bts:isSubgenre wd:Q60617909 .
+            bts:isSubgenre wd:Q60617909 ;
+            rdfs:label "exergaming"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2056928
@@ -840,101 +954,101 @@ wd:Q2056928 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q2070892
 wd:Q2070892 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "vehicular combat game"@en ;
-            bts:isSubgenre wd:Q578868 .
+            bts:isSubgenre wd:Q578868 ;
+            rdfs:label "vehicular combat game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q208189
 wd:Q208189 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "real-time strategy"@en ;
-           bts:isSubgenre wd:Q472055 .
+           bts:isSubgenre wd:Q472055 ;
+           rdfs:label "real-time strategy"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21030988
 wd:Q21030988 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "survival game"@en ;
-             bts:isSubgenre wd:Q270948 .
+             bts:isSubgenre wd:Q270948 ;
+             rdfs:label "survival game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21055677
 wd:Q21055677 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "NP-complete game"@en ;
-             bts:isSubgenre wd:Q54767 .
+             bts:isSubgenre wd:Q54767 ;
+             rdfs:label "NP-complete game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21087661
 wd:Q21087661 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "serious video game"@en ;
-             bts:isSubgenre wd:Q1506693 .
+             bts:isSubgenre wd:Q1506693 ;
+             rdfs:label "serious video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21154509
 wd:Q21154509 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "space combat simulation game"@en ;
-             bts:isSubgenre wd:Q1892535 .
+             bts:isSubgenre wd:Q1892535 ;
+             rdfs:label "space combat simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2127647
 wd:Q2127647 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "rail shooter"@en ;
-            bts:isSubgenre wd:Q1044478 .
+            bts:isSubgenre wd:Q1044478 ;
+            rdfs:label "rail shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q214932
 wd:Q214932 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "flight simulator"@en ;
-           bts:isSubgenre wd:Q1610017 .
+           bts:isSubgenre wd:Q1610017 ;
+           rdfs:label "flight simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21655489
 wd:Q21655489 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Grail to the Thief"@en ;
-             bts:isSubgenre wd:Q781048 .
+             bts:isSubgenre wd:Q781048 ;
+             rdfs:label "Grail to the Thief"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2176159
 wd:Q2176159 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "turn-based strategy video game"@en ;
-            bts:isSubgenre wd:Q472055 .
+            bts:isSubgenre wd:Q472055 ;
+            rdfs:label "turn-based strategy video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2187138
 wd:Q2187138 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "dance video game"@en ;
             bts:isSubgenre wd:Q2632782 ,
-                           wd:Q868217 .
+                           wd:Q868217 ;
+            rdfs:label "dance video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q221181
 wd:Q221181 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "train simulator"@en ;
-           bts:isSubgenre wd:Q578868 .
+           bts:isSubgenre wd:Q578868 ;
+           rdfs:label "train simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2281709
 wd:Q2281709 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "side-scrolling beat 'em up"@en ;
             bts:isSubgenre wd:Q1223895 ,
-                           wd:Q401831 .
+                           wd:Q401831 ;
+            rdfs:label "side-scrolling beat 'em up"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2313710
 wd:Q2313710 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "real-time tactics"@en ;
-            bts:isSubgenre wd:Q208189 .
+            bts:isSubgenre wd:Q208189 ;
+            rdfs:label "real-time tactics"@en .
 
 
 ###  http://www.wikidata.org/entity/Q23916
@@ -946,22 +1060,22 @@ wd:Q23916 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q2454898
 wd:Q2454898 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "computer wargame"@en ;
-            bts:isSubgenre wd:Q472055 .
+            bts:isSubgenre wd:Q472055 ;
+            rdfs:label "computer wargame"@en .
 
 
 ###  http://www.wikidata.org/entity/Q25351735
 wd:Q25351735 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Acme"@en ;
-             bts:isSubgenre wd:Q2056928 .
+             bts:isSubgenre wd:Q2056928 ;
+             rdfs:label "Acme"@en .
 
 
 ###  http://www.wikidata.org/entity/Q25377002
 wd:Q25377002 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "hidden object game"@en ;
-             bts:isSubgenre wd:Q54767 .
+             bts:isSubgenre wd:Q54767 ;
+             rdfs:label "hidden object game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q25397095
@@ -973,36 +1087,36 @@ wd:Q25397095 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q25450968
 wd:Q25450968 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "thrust-clone"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "thrust-clone"@en .
 
 
 ###  http://www.wikidata.org/entity/Q25861761
 wd:Q25861761 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "virtual petting simulator"@en ;
-             bts:isSubgenre wd:Q1199309 .
+             bts:isSubgenre wd:Q1199309 ;
+             rdfs:label "virtual petting simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2628513
 wd:Q2628513 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "graphic adventure game"@en ;
-            bts:isSubgenre wd:Q23916 .
+            bts:isSubgenre wd:Q23916 ;
+            rdfs:label "graphic adventure game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2632782
 wd:Q2632782 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "rhythm game"@en ;
-            bts:isSubgenre wd:Q584105 .
+            bts:isSubgenre wd:Q584105 ;
+            rdfs:label "rhythm game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2641207
 wd:Q2641207 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "competitive online role-playing game"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "competitive online role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q26692802
@@ -1020,16 +1134,16 @@ wd:Q270948 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q29021290
 wd:Q29021290 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "space combat simulator"@en ;
-             bts:isSubgenre wd:Q1892535 .
+             bts:isSubgenre wd:Q1892535 ;
+             rdfs:label "space combat simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q2941225
 wd:Q2941225 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Breakout clone"@en ;
             bts:isSubgenre wd:Q108901409 ,
-                           wd:Q111490490 .
+                           wd:Q111490490 ;
+            rdfs:label "Breakout clone"@en .
 
 
 ###  http://www.wikidata.org/entity/Q29471320
@@ -1041,204 +1155,204 @@ wd:Q29471320 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q30347815
 wd:Q30347815 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "twin-stick shooter"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "twin-stick shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q30607131
 wd:Q30607131 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "battle royale game"@en ;
              bts:isSubgenre wd:Q21030988 ,
-                            wd:Q4282636 .
+                            wd:Q4282636 ;
+             rdfs:label "battle royale game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q30680823
 wd:Q30680823 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "immersive sim"@en ;
-             bts:isSubgenre wd:Q343568 .
+             bts:isSubgenre wd:Q343568 ;
+             rdfs:label "immersive sim"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3093436
 wd:Q3093436 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Grand Theft Auto clone"@en ;
-            bts:isSubgenre wd:Q343568 .
+            bts:isSubgenre wd:Q343568 ;
+            rdfs:label "Grand Theft Auto clone"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3139142
 wd:Q3139142 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "grand strategy wargame"@en ;
-            bts:isSubgenre wd:Q2454898 .
+            bts:isSubgenre wd:Q2454898 ;
+            rdfs:label "grand strategy wargame"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3177952
 wd:Q3177952 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "equestrian video game"@en ;
-            bts:isSubgenre wd:Q868217 .
+            bts:isSubgenre wd:Q868217 ;
+            rdfs:label "equestrian video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3177953
 wd:Q3177953 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "boxing video game"@en ;
-            bts:isSubgenre wd:Q63645108 .
+            bts:isSubgenre wd:Q63645108 ;
+            rdfs:label "boxing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3177954
 wd:Q3177954 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "pinball video game"@en ;
             bts:isSubgenre wd:Q15613992 ,
-                           wd:Q1610017 .
+                           wd:Q1610017 ;
+            rdfs:label "pinball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q33183362
 wd:Q33183362 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "walking simulator"@en ;
-             bts:isSubgenre wd:Q2628513 .
+             bts:isSubgenre wd:Q2628513 ;
+             rdfs:label "walking simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q333967
 wd:Q333967 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "Romance"@en ;
            bts:isSubgenre wd:Q11338014 ,
-                          wd:Q343568 .
+                          wd:Q343568 ;
+           rdfs:label "Romance"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3362070
 wd:Q3362070 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "adult video game"@en ;
-            bts:isSubgenre wd:Q106542313 .
+            bts:isSubgenre wd:Q106542313 ;
+            rdfs:label "adult video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3434466
 wd:Q3434466 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "play-by-email role playing game"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "play-by-email role playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q343568
 wd:Q343568 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "action-adventure game"@en ;
            bts:isSubgenre wd:Q23916 ,
-                          wd:Q270948 .
+                          wd:Q270948 ;
+           rdfs:label "action-adventure game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q34685933
 wd:Q34685933 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "clumsy simulator "@en ;
-             bts:isSubgenre wd:Q1610017 .
+             bts:isSubgenre wd:Q1610017 ;
+             rdfs:label "clumsy simulator "@en .
 
 
 ###  http://www.wikidata.org/entity/Q3632939
 wd:Q3632939 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Talker"@en ;
-            bts:isSubgenre wd:Q751424 .
+            bts:isSubgenre wd:Q751424 ;
+            rdfs:label "Talker"@en .
 
 
 ###  http://www.wikidata.org/entity/Q372269
 wd:Q372269 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "disentanglement puzzle"@en ;
-           bts:isSubgenre wd:Q54767 .
+           bts:isSubgenre wd:Q54767 ;
+           rdfs:label "disentanglement puzzle"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3765017
 wd:Q3765017 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "online role-playing game"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "online role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3775539
 wd:Q3775539 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "government simulation game"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "government simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q380266
 wd:Q380266 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "third-person shooter"@en ;
            bts:isSubgenre wd:Q4282636 ,
-                          wd:Q60617960 .
+                          wd:Q60617960 ;
+           rdfs:label "third-person shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q3965952
 wd:Q3965952 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "light gun shooter"@en ;
-            bts:isSubgenre wd:Q4282636 .
+            bts:isSubgenre wd:Q4282636 ;
+            rdfs:label "light gun shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q401831
 wd:Q401831 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "beat 'em up"@en ;
-           bts:isSubgenre wd:Q846224 .
+           bts:isSubgenre wd:Q846224 ;
+           rdfs:label "beat 'em up"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4096094
 wd:Q4096094 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "massively multiplayer browser role-playing game"@en ;
             bts:isSubgenre wd:Q175173 ,
-                           wd:Q71683262 .
+                           wd:Q71683262 ;
+            rdfs:label "massively multiplayer browser role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4282636
 wd:Q4282636 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "shooter game"@en ;
-            bts:isSubgenre wd:Q270948 .
+            bts:isSubgenre wd:Q270948 ;
+            rdfs:label "shooter game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4304915
 wd:Q4304915 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "motocycle simulator"@en ;
-            bts:isSubgenre wd:Q578868 .
+            bts:isSubgenre wd:Q578868 ;
+            rdfs:label "motocycle simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4375640
 wd:Q4375640 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "turn-based tactics"@en ;
-            bts:isSubgenre wd:Q472055 .
+            bts:isSubgenre wd:Q472055 ;
+            rdfs:label "turn-based tactics"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4419886
 wd:Q4419886 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "mech simulator"@en ;
-            bts:isSubgenre wd:Q578868 .
+            bts:isSubgenre wd:Q578868 ;
+            rdfs:label "mech simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4438162
 wd:Q4438162 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "sports manager video game"@en ;
             bts:isSubgenre wd:Q1198141 ,
-                           wd:Q868217 .
+                           wd:Q868217 ;
+            rdfs:label "sports manager video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4451239
 wd:Q4451239 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "tank simulation game"@en ;
-            bts:isSubgenre wd:Q578868 .
+            bts:isSubgenre wd:Q578868 ;
+            rdfs:label "tank simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q472055
@@ -1250,53 +1364,53 @@ wd:Q472055 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q4740553
 wd:Q4740553 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "amateur flight simulation"@en ;
-            bts:isSubgenre wd:Q60617880 .
+            bts:isSubgenre wd:Q60617880 ;
+            rdfs:label "amateur flight simulation"@en .
 
 
 ###  http://www.wikidata.org/entity/Q48559493
 wd:Q48559493 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Dropquote"@en ;
-             bts:isSubgenre wd:Q54767 .
+             bts:isSubgenre wd:Q54767 ;
+             rdfs:label "Dropquote"@en .
 
 
 ###  http://www.wikidata.org/entity/Q48997688
 wd:Q48997688 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "collectible card video game"@en ;
              bts:isSubgenre wd:Q29471320 ,
-                            wd:Q7832342 .
+                            wd:Q7832342 ;
+             rdfs:label "collectible card video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q4969848
 wd:Q4969848 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "British Constitution"@en ;
-            bts:isSubgenre wd:Q2056928 .
+            bts:isSubgenre wd:Q2056928 ;
+            rdfs:label "British Constitution"@en .
 
 
 ###  http://www.wikidata.org/entity/Q536420
 wd:Q536420 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "god game"@en ;
-           bts:isSubgenre wd:Q1610017 .
+           bts:isSubgenre wd:Q1610017 ;
+           rdfs:label "god game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q5432283
 wd:Q5432283 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "falling-sand game"@en ;
             bts:isSubgenre wd:Q11756212 ,
                            wd:Q1610017 ,
-                           wd:Q25397095 .
+                           wd:Q25397095 ;
+            rdfs:label "falling-sand game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q5448778
 wd:Q5448778 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Fill-In"@en ;
-            bts:isSubgenre wd:Q54767 .
+            bts:isSubgenre wd:Q54767 ;
+            rdfs:label "Fill-In"@en .
 
 
 ###  http://www.wikidata.org/entity/Q54767
@@ -1308,46 +1422,46 @@ wd:Q54767 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q55058128
 wd:Q55058128 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "sailing simulator"@en ;
              bts:isSubgenre wd:Q1610017 ,
-                            wd:Q71476528 .
+                            wd:Q71476528 ;
+             rdfs:label "sailing simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q5521791
 wd:Q5521791 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Gaps"@en ;
-            bts:isSubgenre wd:Q2056928 .
+            bts:isSubgenre wd:Q2056928 ;
+            rdfs:label "Gaps"@en .
 
 
 ###  http://www.wikidata.org/entity/Q55335263
 wd:Q55335263 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "crossword video game"@en ;
-             bts:isSubgenre wd:Q54767 .
+             bts:isSubgenre wd:Q54767 ;
+             rdfs:label "crossword video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q56298645
 wd:Q56298645 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "association football management game"@en ;
              bts:isSubgenre wd:Q1478420 ,
-                            wd:Q4438162 .
+                            wd:Q4438162 ;
+             rdfs:label "association football management game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q57775833
 wd:Q57775833 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "endless runner game"@en ;
              bts:isSubgenre wd:Q26692802 ,
-                            wd:Q60982656 .
+                            wd:Q60982656 ;
+             rdfs:label "endless runner game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q578868
 wd:Q578868 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "vehicle simulation game"@en ;
-           bts:isSubgenre wd:Q1610017 .
+           bts:isSubgenre wd:Q1610017 ;
+           rdfs:label "vehicle simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q584105
@@ -1359,89 +1473,89 @@ wd:Q584105 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q588289
 wd:Q588289 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "city-building game"@en ;
            bts:isSubgenre wd:Q1036289 ,
                           wd:Q1610017 ,
-                          wd:Q472055 .
+                          wd:Q472055 ;
+           rdfs:label "city-building game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q58898459
 wd:Q58898459 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "interactive tutorial"@en ;
-             bts:isSubgenre wd:Q1224999 .
+             bts:isSubgenre wd:Q1224999 ;
+             rdfs:label "interactive tutorial"@en .
 
 
 ###  http://www.wikidata.org/entity/Q5923736
 wd:Q5923736 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "first-person adventure"@en ;
-            bts:isSubgenre wd:Q23916 .
+            bts:isSubgenre wd:Q23916 ;
+            rdfs:label "first-person adventure"@en .
 
 
 ###  http://www.wikidata.org/entity/Q5923834
 wd:Q5923834 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Eastern role-playing game"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "Eastern role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q59536813
 wd:Q59536813 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "supernatural horror game"@en ;
              bts:isSubgenre wd:Q101900049 ,
-                            wd:Q11338014 .
+                            wd:Q11338014 ;
+             rdfs:label "supernatural horror game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60256879
 wd:Q60256879 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "golf video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "golf video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q603481
 wd:Q603481 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "combat flight simulator"@en ;
-           bts:isSubgenre wd:Q60617880 .
+           bts:isSubgenre wd:Q60617880 ;
+           rdfs:label "combat flight simulator"@en .
 
 
 ###  http://www.wikidata.org/entity/Q603555
 wd:Q603555 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "4X"@en ;
-           bts:isSubgenre wd:Q472055 .
+           bts:isSubgenre wd:Q472055 ;
+           rdfs:label "4X"@en .
 
 
 ###  http://www.wikidata.org/entity/Q6043849
 wd:Q6043849 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Intelligence"@en ;
-            bts:isSubgenre wd:Q2056928 .
+            bts:isSubgenre wd:Q2056928 ;
+            rdfs:label "Intelligence"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60480500
 wd:Q60480500 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "run and gun"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "run and gun"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60616268
 wd:Q60616268 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "language learning video game"@en ;
-             bts:isSubgenre wd:Q1224999 .
+             bts:isSubgenre wd:Q1224999 ;
+             rdfs:label "language learning video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617574
 wd:Q60617574 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "brain fitness video game"@en ;
              bts:isSubgenre wd:Q1224999 ,
-                            wd:Q60617909 .
+                            wd:Q60617909 ;
+             rdfs:label "brain fitness video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617825
@@ -1453,23 +1567,23 @@ wd:Q60617825 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q60617834
 wd:Q60617834 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "empire-building video game"@en ;
              bts:isSubgenre wd:Q1610017 ,
-                            wd:Q472055 .
+                            wd:Q472055 ;
+             rdfs:label "empire-building video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617863
 wd:Q60617863 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "fashion and beauty video game"@en ;
-             bts:isSubgenre wd:Q1199309 .
+             bts:isSubgenre wd:Q1199309 ;
+             rdfs:label "fashion and beauty video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617880
 wd:Q60617880 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "flight simulation video game"@en ;
-             bts:isSubgenre wd:Q578868 .
+             bts:isSubgenre wd:Q578868 ;
+             rdfs:label "flight simulation video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617897
@@ -1487,9 +1601,9 @@ wd:Q60617909 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q60617925
 wd:Q60617925 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "logic video game"@en ;
              bts:isSubgenre wd:Q1050023 ,
-                            wd:Q54767 .
+                            wd:Q54767 ;
+             rdfs:label "logic video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q60617960
@@ -1501,465 +1615,465 @@ wd:Q60617960 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q60982656
 wd:Q60982656 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "auto-runner video game"@en ;
-             bts:isSubgenre wd:Q828322 .
+             bts:isSubgenre wd:Q828322 ;
+             rdfs:label "auto-runner video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61507686
 wd:Q61507686 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "space trading and combat game"@en ;
-             bts:isSubgenre wd:Q1892535 .
+             bts:isSubgenre wd:Q1892535 ;
+             rdfs:label "space trading and combat game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61654424
 wd:Q61654424 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Western role-playing game"@en ;
-             bts:isSubgenre wd:Q744038 .
+             bts:isSubgenre wd:Q744038 ;
+             rdfs:label "Western role-playing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61715376
 wd:Q61715376 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "match-three video game"@en ;
-             bts:isSubgenre wd:Q7802107 .
+             bts:isSubgenre wd:Q7802107 ;
+             rdfs:label "match-three video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61719251
 wd:Q61719251 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "bowling video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "bowling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61719571
 wd:Q61719571 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "detective video game"@en ;
-             bts:isSubgenre wd:Q60617825 .
+             bts:isSubgenre wd:Q60617825 ;
+             rdfs:label "detective video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61721552
 wd:Q61721552 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cricket video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "cricket video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61745129
 wd:Q61745129 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "air hockey video game"@en ;
-             bts:isSubgenre wd:Q63466098 .
+             bts:isSubgenre wd:Q63466098 ;
+             rdfs:label "air hockey video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61791393
 wd:Q61791393 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "miniature golf video game"@en ;
              bts:isSubgenre wd:Q1050023 ,
-                            wd:Q60256879 .
+                            wd:Q60256879 ;
+             rdfs:label "miniature golf video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61793874
 wd:Q61793874 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "surfing video game"@en ;
-             bts:isSubgenre wd:Q71476528 .
+             bts:isSubgenre wd:Q71476528 ;
+             rdfs:label "surfing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q61793886
 wd:Q61793886 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "tennis video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "tennis video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62019045
 wd:Q62019045 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "baseball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "baseball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62019057
 wd:Q62019057 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "rugby union video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "rugby union video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62019077
 wd:Q62019077 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "volleyball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "volleyball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62019097
 wd:Q62019097 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "beach volleyball video game"@en ;
-             bts:isSubgenre wd:Q62019077 .
+             bts:isSubgenre wd:Q62019077 ;
+             rdfs:label "beach volleyball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62019104
 wd:Q62019104 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "lacrosse video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "lacrosse video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62022558
 wd:Q62022558 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cue sports video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "cue sports video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q62591185
 wd:Q62591185 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "puzzle-platformer"@en ;
              bts:isSubgenre wd:Q54767 ,
-                            wd:Q828322 .
+                            wd:Q828322 ;
+             rdfs:label "puzzle-platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63106609
 wd:Q63106609 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cabal shooter"@en ;
-             bts:isSubgenre wd:Q111519486 .
+             bts:isSubgenre wd:Q111519486 ;
+             rdfs:label "cabal shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63243980
 wd:Q63243980 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "pool video game"@en ;
-             bts:isSubgenre wd:Q62022558 .
+             bts:isSubgenre wd:Q62022558 ;
+             rdfs:label "pool video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63465202
 wd:Q63465202 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "handball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "handball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63466098
 wd:Q63466098 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "hockey video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "hockey video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63644993
 wd:Q63644993 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cycling video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "cycling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645022
 wd:Q63645022 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "judo video game"@en ;
-             bts:isSubgenre wd:Q63645108 .
+             bts:isSubgenre wd:Q63645108 ;
+             rdfs:label "judo video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645033
 wd:Q63645033 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "sumo wrestling video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "sumo wrestling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645039
 wd:Q63645039 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "mixed martial arts video game"@en ;
-             bts:isSubgenre wd:Q63645108 .
+             bts:isSubgenre wd:Q63645108 ;
+             rdfs:label "mixed martial arts video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645079
 wd:Q63645079 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "karate video game"@en ;
-             bts:isSubgenre wd:Q63645108 .
+             bts:isSubgenre wd:Q63645108 ;
+             rdfs:label "karate video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645108
 wd:Q63645108 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "martial arts video game"@en ;
              bts:isSubgenre wd:Q846224 ,
-                            wd:Q868217 .
+                            wd:Q868217 ;
+             rdfs:label "martial arts video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63645120
 wd:Q63645120 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "athletics video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "athletics video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63914602
 wd:Q63914602 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "curling video game"@en ;
-             bts:isSubgenre wd:Q71467408 .
+             bts:isSubgenre wd:Q71467408 ;
+             rdfs:label "curling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63914682
 wd:Q63914682 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "drag racing video game"@en ;
-             bts:isSubgenre wd:Q860750 .
+             bts:isSubgenre wd:Q860750 ;
+             rdfs:label "drag racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63914753
 wd:Q63914753 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "air racing video game"@en ;
-             bts:isSubgenre wd:Q860750 .
+             bts:isSubgenre wd:Q860750 ;
+             rdfs:label "air racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63914800
 wd:Q63914800 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "darts video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "darts video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63914927
 wd:Q63914927 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "stunt racing video game"@en ;
-             bts:isSubgenre wd:Q860750 .
+             bts:isSubgenre wd:Q860750 ;
+             rdfs:label "stunt racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63915027
 wd:Q63915027 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "basketball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "basketball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63915162
 wd:Q63915162 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "dodgeball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "dodgeball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63915290
 wd:Q63915290 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Canadian football video game"@en ;
-             bts:isSubgenre wd:Q1478420 .
+             bts:isSubgenre wd:Q1478420 ;
+             rdfs:label "Canadian football video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63915391
 wd:Q63915391 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "American football video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "American football video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q63915650
 wd:Q63915650 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Australian football video game"@en ;
-             bts:isSubgenre wd:Q1478420 .
+             bts:isSubgenre wd:Q1478420 ;
+             rdfs:label "Australian football video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q642946
 wd:Q642946 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "gamebook"@en ;
-           bts:isSubgenre wd:Q1143118 .
+           bts:isSubgenre wd:Q1143118 ;
+           rdfs:label "gamebook"@en .
 
 
 ###  http://www.wikidata.org/entity/Q6481091
 wd:Q6481091 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "LambdaMOO"@en ;
-            bts:isSubgenre wd:Q751424 .
+            bts:isSubgenre wd:Q751424 ;
+            rdfs:label "LambdaMOO"@en .
 
 
 ###  http://www.wikidata.org/entity/Q65007441
 wd:Q65007441 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "humanitarian video game"@en ;
-             bts:isSubgenre wd:Q1224999 .
+             bts:isSubgenre wd:Q1224999 ;
+             rdfs:label "humanitarian video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q66230650
 wd:Q66230650 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "tube shooter"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "tube shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q66503439
 wd:Q66503439 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Kaizo"@en ;
-             bts:isSubgenre wd:Q828322 .
+             bts:isSubgenre wd:Q828322 ;
+             rdfs:label "Kaizo"@en .
 
 
 ###  http://www.wikidata.org/entity/Q67650958
 wd:Q67650958 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "auto battler"@en ;
              bts:isSubgenre wd:Q1189206 ,
-                            wd:Q472055 .
+                            wd:Q472055 ;
+             rdfs:label "auto battler"@en .
 
 
 ###  http://www.wikidata.org/entity/Q67943569
 wd:Q67943569 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "act"@en ;
-             bts:isSubgenre wd:Q689445 .
+             bts:isSubgenre wd:Q689445 ;
+             rdfs:label "act"@en .
 
 
 ###  http://www.wikidata.org/entity/Q689445
 wd:Q689445 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "visual novel"@en ;
-           bts:isSubgenre wd:Q1143118 .
+           bts:isSubgenre wd:Q1143118 ;
+           rdfs:label "visual novel"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7089173
 wd:Q7089173 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "olympic video game"@en ;
-            bts:isSubgenre wd:Q868217 .
+            bts:isSubgenre wd:Q868217 ;
+            rdfs:label "olympic video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7094075
 wd:Q7094075 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "online creation"@en ;
-            bts:isSubgenre wd:Q751424 .
+            bts:isSubgenre wd:Q751424 ;
+            rdfs:label "online creation"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71441946
 wd:Q71441946 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "snooker video game"@en ;
-             bts:isSubgenre wd:Q62022558 .
+             bts:isSubgenre wd:Q62022558 ;
+             rdfs:label "snooker video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71443011
 wd:Q71443011 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "paintball video game"@en ;
              bts:isSubgenre wd:Q185029 ,
-                            wd:Q868217 .
+                            wd:Q868217 ;
+             rdfs:label "paintball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71443612
 wd:Q71443612 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "wrestling video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "wrestling video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71467370
 wd:Q71467370 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "skiing video game"@en ;
-             bts:isSubgenre wd:Q71467408 .
+             bts:isSubgenre wd:Q71467408 ;
+             rdfs:label "skiing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71467408
 wd:Q71467408 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "winter sports video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "winter sports video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71468194
 wd:Q71468194 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "skateboarding video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "skateboarding video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71468383
 wd:Q71468383 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "table tennis video game"@en ;
-             bts:isSubgenre wd:Q61793886 .
+             bts:isSubgenre wd:Q61793886 ;
+             rdfs:label "table tennis video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71471444
 wd:Q71471444 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cheerleading video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "cheerleading video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71471935
 wd:Q71471935 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "extreme sports video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "extreme sports video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71472862
 wd:Q71472862 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "gaelic games video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "gaelic games video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71474253
 wd:Q71474253 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "hunting video game"@en ;
              bts:isSubgenre wd:Q1610017 ,
                             wd:Q185029 ,
-                            wd:Q868217 .
+                            wd:Q868217 ;
+             rdfs:label "hunting video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71474750
 wd:Q71474750 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "ice hockey video game"@en ;
              bts:isSubgenre wd:Q63466098 ,
-                            wd:Q71467408 .
+                            wd:Q71467408 ;
+             rdfs:label "ice hockey video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71475833
 wd:Q71475833 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "roller skating video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "roller skating video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71476528
 wd:Q71476528 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "water sports video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "water sports video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71477585
 wd:Q71477585 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "scuba diving video game"@en ;
-             bts:isSubgenre wd:Q71476528 .
+             bts:isSubgenre wd:Q71476528 ;
+             rdfs:label "scuba diving video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71477837
 wd:Q71477837 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "personal water craft racing video game"@en ;
              bts:isSubgenre wd:Q71476528 ,
-                            wd:Q860750 .
+                            wd:Q860750 ;
+             rdfs:label "personal water craft racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71593876
@@ -1971,36 +2085,36 @@ wd:Q71593876 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q71679871
 wd:Q71679871 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "chess video game"@en ;
-             bts:isSubgenre wd:Q71593876 .
+             bts:isSubgenre wd:Q71593876 ;
+             rdfs:label "chess video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71683262
 wd:Q71683262 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "massively multiplayer browser game"@en ;
-             bts:isSubgenre wd:Q862490 .
+             bts:isSubgenre wd:Q862490 ;
+             rdfs:label "massively multiplayer browser game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q71726635
 wd:Q71726635 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "kinetic novel"@en ;
-             bts:isSubgenre wd:Q689445 .
+             bts:isSubgenre wd:Q689445 ;
+             rdfs:label "kinetic novel"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7305265
 wd:Q7305265 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Red and Black"@en ;
-            bts:isSubgenre wd:Q2056928 .
+            bts:isSubgenre wd:Q2056928 ;
+            rdfs:label "Red and Black"@en .
 
 
 ###  http://www.wikidata.org/entity/Q73476571
 wd:Q73476571 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "off-road racing video game"@en ;
-             bts:isSubgenre wd:Q860750 .
+             bts:isSubgenre wd:Q860750 ;
+             rdfs:label "off-road racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q744038
@@ -2012,52 +2126,52 @@ wd:Q744038 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q751424
 wd:Q751424 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "MUD"@en ;
            bts:isSubgenre wd:Q175173 ,
-                          wd:Q1823737 .
+                          wd:Q1823737 ;
+           rdfs:label "MUD"@en .
 
 
 ###  http://www.wikidata.org/entity/Q75276527
 wd:Q75276527 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "factory simulation game"@en ;
-             bts:isSubgenre wd:Q1036289 .
+             bts:isSubgenre wd:Q1036289 ;
+             rdfs:label "factory simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7548531
 wd:Q7548531 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "snowboarding video game"@en ;
-            bts:isSubgenre wd:Q71467408 .
+            bts:isSubgenre wd:Q71467408 ;
+            rdfs:label "snowboarding video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7551387
 wd:Q7551387 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "social simulation game"@en ;
             bts:isSubgenre wd:Q1199309 ,
-                           wd:Q1610017 .
+                           wd:Q1610017 ;
+            rdfs:label "social simulation game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7700782
 wd:Q7700782 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Tentaizu"@en ;
-            bts:isSubgenre wd:Q54767 .
+            bts:isSubgenre wd:Q54767 ;
+            rdfs:label "Tentaizu"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7708433
 wd:Q7708433 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "text sim"@en ;
-            bts:isSubgenre wd:Q1610017 .
+            bts:isSubgenre wd:Q1610017 ;
+            rdfs:label "text sim"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7802107
 wd:Q7802107 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "tile-matching video game"@en ;
-            bts:isSubgenre wd:Q54767 .
+            bts:isSubgenre wd:Q54767 ;
+            rdfs:label "tile-matching video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q781048
@@ -2069,15 +2183,15 @@ wd:Q781048 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q78145485
 wd:Q78145485 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "multidirectional shooter"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "multidirectional shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7824561
 wd:Q7824561 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "Bop It"@en ;
-            bts:isSubgenre wd:Q781048 .
+            bts:isSubgenre wd:Q781048 ;
+            rdfs:label "Bop It"@en .
 
 
 ###  http://www.wikidata.org/entity/Q7832342
@@ -2089,72 +2203,72 @@ wd:Q7832342 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q7855619
 wd:Q7855619 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "turn-based MMORPG"@en ;
-            bts:isSubgenre wd:Q175173 .
+            bts:isSubgenre wd:Q175173 ;
+            rdfs:label "turn-based MMORPG"@en .
 
 
 ###  http://www.wikidata.org/entity/Q8018891
 wd:Q8018891 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "romance adventure game"@en ;
-            bts:isSubgenre wd:Q23916 .
+            bts:isSubgenre wd:Q23916 ;
+            rdfs:label "romance adventure game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q821157
 wd:Q821157 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "bullet hell"@en ;
-           bts:isSubgenre wd:Q1044478 .
+           bts:isSubgenre wd:Q1044478 ;
+           rdfs:label "bullet hell"@en .
 
 
 ###  http://www.wikidata.org/entity/Q828322
 wd:Q828322 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "platform game"@en ;
-           bts:isSubgenre wd:Q270948 .
+           bts:isSubgenre wd:Q270948 ;
+           rdfs:label "platform game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q84322930
 wd:Q84322930 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "denpa"@en ;
-             bts:isSubgenre wd:Q84322932 .
+             bts:isSubgenre wd:Q84322932 ;
+             rdfs:label "denpa"@en .
 
 
 ###  http://www.wikidata.org/entity/Q84322932
 wd:Q84322932 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "horror eroge"@en ;
-             bts:isSubgenre wd:Q11338014 .
+             bts:isSubgenre wd:Q11338014 ;
+             rdfs:label "horror eroge"@en .
 
 
 ###  http://www.wikidata.org/entity/Q846224
 wd:Q846224 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "fighting game"@en ;
-           bts:isSubgenre wd:Q270948 .
+           bts:isSubgenre wd:Q270948 ;
+           rdfs:label "fighting game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q84944905
 wd:Q84944905 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "This game may contain content not appropriate for all ages or may not be appropriate for viewing at work"@en ;
-             bts:isSubgenre wd:Q106542313 .
+             bts:isSubgenre wd:Q106542313 ;
+             rdfs:label "This game may contain content not appropriate for all ages or may not be appropriate for viewing at work"@en .
 
 
 ###  http://www.wikidata.org/entity/Q85797695
 wd:Q85797695 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "roguelike deck-building game"@en ;
-             bts:isSubgenre wd:Q1143132 .
+             bts:isSubgenre wd:Q1143132 ;
+             rdfs:label "roguelike deck-building game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q860750
 wd:Q860750 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "racing video game"@en ;
            bts:isSubgenre wd:Q578868 ,
-                          wd:Q868217 .
+                          wd:Q868217 ;
+           rdfs:label "racing video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q862490
@@ -2166,8 +2280,8 @@ wd:Q862490 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q868217
 wd:Q868217 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "sports video game"@en ;
-           bts:isSubgenre wd:Q1610017 .
+           bts:isSubgenre wd:Q1610017 ;
+           rdfs:label "sports video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q87741364
@@ -2179,141 +2293,141 @@ wd:Q87741364 rdf:type owl:NamedIndividual ,
 ###  http://www.wikidata.org/entity/Q92257769
 wd:Q92257769 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "reading game"@en ;
-             bts:isSubgenre wd:Q1224999 .
+             bts:isSubgenre wd:Q1224999 ;
+             rdfs:label "reading game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q92602121
 wd:Q92602121 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "figure skating video game"@en ;
-             bts:isSubgenre wd:Q71467408 .
+             bts:isSubgenre wd:Q71467408 ;
+             rdfs:label "figure skating video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q92608103
 wd:Q92608103 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "karaoke video game"@en ;
-             bts:isSubgenre wd:Q584105 .
+             bts:isSubgenre wd:Q584105 ;
+             rdfs:label "karaoke video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q9332384
 wd:Q9332384 rdf:type owl:NamedIndividual ,
                      bte:Genre ;
-            rdfs:label "SUD"@en ;
-            bts:isSubgenre wd:Q744038 .
+            bts:isSubgenre wd:Q744038 ;
+            rdfs:label "SUD"@en .
 
 
 ###  http://www.wikidata.org/entity/Q93876174
 wd:Q93876174 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "archery video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "archery video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q95124454
 wd:Q95124454 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "arcade racing game"@en ;
              bts:isSubgenre wd:Q15613992 ,
-                            wd:Q860750 .
+                            wd:Q860750 ;
+             rdfs:label "arcade racing game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q95124560
 wd:Q95124560 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "simcade racing"@en ;
              bts:isSubgenre wd:Q1417032 ,
-                            wd:Q95124454 .
+                            wd:Q95124454 ;
+             rdfs:label "simcade racing"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96102031
 wd:Q96102031 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "shogi video game"@en ;
-             bts:isSubgenre wd:Q71679871 .
+             bts:isSubgenre wd:Q71679871 ;
+             rdfs:label "shogi video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96146141
 wd:Q96146141 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "horizontally scrolling shooter"@en ;
              bts:isSubgenre wd:Q1037904 ,
-                            wd:Q1223895 .
+                            wd:Q1223895 ;
+             rdfs:label "horizontally scrolling shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96146237
 wd:Q96146237 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "vertically scrolling shooter"@en ;
              bts:isSubgenre wd:Q1037904 ,
-                            wd:Q17049225 .
+                            wd:Q17049225 ;
+             rdfs:label "vertically scrolling shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96146284
 wd:Q96146284 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "fixed shooter"@en ;
-             bts:isSubgenre wd:Q1044478 .
+             bts:isSubgenre wd:Q1044478 ;
+             rdfs:label "fixed shooter"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96195505
 wd:Q96195505 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "cinematic platformer"@en ;
-             bts:isSubgenre wd:Q828322 .
+             bts:isSubgenre wd:Q828322 ;
+             rdfs:label "cinematic platformer"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96475230
 wd:Q96475230 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Tron-like"@en ;
-             bts:isSubgenre wd:Q270948 .
+             bts:isSubgenre wd:Q270948 ;
+             rdfs:label "Tron-like"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96678034
 wd:Q96678034 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "BMX video game"@en ;
-             bts:isSubgenre wd:Q63644993 .
+             bts:isSubgenre wd:Q63644993 ;
+             rdfs:label "BMX video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q96741505
 wd:Q96741505 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "civilian vehicle simulation"@en ;
-             bts:isSubgenre wd:Q578868 .
+             bts:isSubgenre wd:Q578868 ;
+             rdfs:label "civilian vehicle simulation"@en .
 
 
 ###  http://www.wikidata.org/entity/Q97097760
 wd:Q97097760 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "floorball video game"@en ;
-             bts:isSubgenre wd:Q868217 .
+             bts:isSubgenre wd:Q868217 ;
+             rdfs:label "floorball video game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q975060
 wd:Q975060 rdf:type owl:NamedIndividual ,
                     bte:Genre ;
-           rdfs:label "massively multiplayer online first-person shooter game"@en ;
            bts:isSubgenre wd:Q185029 ,
-                          wd:Q862490 .
+                          wd:Q862490 ;
+           rdfs:label "massively multiplayer online first-person shooter game"@en .
 
 
 ###  http://www.wikidata.org/entity/Q97957575
 wd:Q97957575 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "Japanese adventure"@en ;
              bts:isSubgenre wd:Q23916 ,
-                            wd:Q689445 .
+                            wd:Q689445 ;
+             rdfs:label "Japanese adventure"@en .
 
 
 ###  http://www.wikidata.org/entity/Q99015944
 wd:Q99015944 rdf:type owl:NamedIndividual ,
                       bte:Genre ;
-             rdfs:label "parkour video game"@en ;
              bts:isSubgenre wd:Q828322 ,
-                            wd:Q868217 .
+                            wd:Q868217 ;
+             rdfs:label "parkour video game"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

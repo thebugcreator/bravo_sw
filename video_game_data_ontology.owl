@@ -15,15 +15,15 @@
 #    Object Properties
 #################################################################
 
-###  https://bravoteamis.us/entity/18+Genre#genreIncludes
-<https://bravoteamis.us/entity/18+Genre#genreIncludes> rdf:type owl:ObjectProperty ;
+###  https://bravoteamis.us/entity/schema#genreIncludes
+<https://bravoteamis.us/entity/schema#genreIncludes> rdf:type owl:ObjectProperty ;
                                                        owl:inverseOf bts:partofGenre ;
                                                        rdfs:domain bte:Genre ;
                                                        rdfs:range bte:VideoGame .
 
 
-###  https://bravoteamis.us/entity/18+Genre#seriesIncludes
-<https://bravoteamis.us/entity/18+Genre#seriesIncludes> rdf:type owl:ObjectProperty ;
+###  https://bravoteamis.us/entity/schema#seriesIncludes
+<https://bravoteamis.us/entity/schema#seriesIncludes> rdf:type owl:ObjectProperty ;
                                                         owl:inverseOf bts:partofSeries ;
                                                         rdfs:domain bte:Series ;
                                                         rdfs:range bte:VideoGame .
