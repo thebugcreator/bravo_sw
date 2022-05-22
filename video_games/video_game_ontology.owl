@@ -79,6 +79,27 @@ bts:fromReleaseDate rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  https://bravoteamis.us/entity/AdultGame
+bte:AdultGame rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty bts:partofGenre ;
+                                                           owl:someValuesFrom bte:AdultGenre
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( bte:VideoGame
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty bts:partofGenre ;
+                                                           owl:hasValue wd:Q106542313
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf <https://bravoteamis.us/entity/18+VideoGame> .
+
+
 ###  https://bravoteamis.us/entity/AdultGenre
 bte:AdultGenre rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -350,7 +371,7 @@ bte:ViolentGame rdf:type owl:Class ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf bte:VideoGame .
+                rdfs:subClassOf <https://bravoteamis.us/entity/18+VideoGame> .
 
 
 ###  https://bravoteamis.us/entity/ViolentGenre
@@ -369,3 +390,9 @@ bte:ViolentGenre rdf:type owl:Class ;
 ###  https://bravoteamis.us/entity/18+Genre
 <https://bravoteamis.us/entity/18+Genre> rdf:type owl:Class ;
                                          rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/18+VideoGame
+<https://bravoteamis.us/entity/18+VideoGame> rdf:type owl:Class ;
+                                             rdfs:subClassOf bte:VideoGame .
+
