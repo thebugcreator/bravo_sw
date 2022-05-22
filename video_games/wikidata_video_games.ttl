@@ -1,0 +1,3286 @@
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix bte: <https://bravoteamis.us/entity/> .
+@prefix bts: <https://bravoteamis.us/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object properties
+#################################################################
+
+###  https://bravoteamis.us/schema#hasModes
+bts:hasModes rdf:type owl:ObjectProperty .
+
+
+###  https://bravoteamis.us/schema#madebyPublisher
+bts:madebyPublisher rdf:type owl:ObjectProperty .
+
+
+###  https://bravoteamis.us/schema#partofGenre
+bts:partofGenre rdf:type owl:ObjectProperty .
+
+
+###  https://bravoteamis.us/schema#partofSeries
+bts:partofSeries rdf:type owl:ObjectProperty .
+
+
+###  https://bravoteamis.us/schema#usesPlatform
+bts:usesPlatform rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://bravoteamis.us/entity/Genre
+bte:Genre rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Mode
+bte:Mode rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Platform
+bte:Platform rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Publisher
+bte:Publisher rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Series
+bte:Series rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/VideoGame
+bte:VideoGame rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.wikidata.org/entity/Q100047
+wd:Q100047 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Commodore Amiga"@en .
+
+
+###  http://www.wikidata.org/entity/Q1044478
+wd:Q1044478 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "shoot 'em up"@en .
+
+
+###  http://www.wikidata.org/entity/Q1046812
+wd:Q1046812 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Sonic the Hedgehog"@en .
+
+
+###  http://www.wikidata.org/entity/Q1046862
+wd:Q1046862 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "ColecoVision"@en .
+
+
+###  http://www.wikidata.org/entity/Q1047516
+wd:Q1047516 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "Sega Mega-CD"@en .
+
+
+###  http://www.wikidata.org/entity/Q1054844
+wd:Q1054844 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Taito"@en .
+
+
+###  http://www.wikidata.org/entity/Q1061580
+wd:Q1061580 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Atari Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q1062171
+wd:Q1062171 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "The 3DO Company"@en .
+
+
+###  http://www.wikidata.org/entity/Q1063978
+wd:Q1063978 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "Sega 32X"@en .
+
+
+###  http://www.wikidata.org/entity/Q1064135
+wd:Q1064135 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Uncharted"@en .
+
+
+###  http://www.wikidata.org/entity/Q10676
+wd:Q10676 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Sega Mega Drive"@en .
+
+
+###  http://www.wikidata.org/entity/Q10677
+wd:Q10677 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "PlayStation"@en .
+
+
+###  http://www.wikidata.org/entity/Q10680
+wd:Q10680 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "PlayStation 2"@en .
+
+
+###  http://www.wikidata.org/entity/Q10683
+wd:Q10683 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "PlayStation 3"@en .
+
+
+###  http://www.wikidata.org/entity/Q107501713
+wd:Q107501713 rdf:type owl:NamedIndividual ,
+                       bte:Series ;
+              rdfs:label "Psychonauts"@en .
+
+
+###  http://www.wikidata.org/entity/Q107542272
+wd:Q107542272 rdf:type owl:NamedIndividual ,
+                       bte:Genre ;
+              rdfs:label "science fantasy video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q107542373
+wd:Q107542373 rdf:type owl:NamedIndividual ,
+                       bte:Genre ;
+              rdfs:label "space opera video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q107611775
+wd:Q107611775 rdf:type owl:NamedIndividual ,
+                       bte:Series ;
+              rdfs:label "Forza Horizon"@en .
+
+
+###  http://www.wikidata.org/entity/Q10902322
+wd:Q10902322 rdf:type owl:NamedIndividual ,
+                      bte:Publisher ;
+             rdfs:label "Suntendy Interactive Multimedia Co.,Ltd."@en .
+
+
+###  http://www.wikidata.org/entity/Q109250577
+wd:Q109250577 rdf:type owl:NamedIndividual ,
+                       bte:Series ;
+              rdfs:label "Lego Batman"@en .
+
+
+###  http://www.wikidata.org/entity/Q109653359
+wd:Q109653359 rdf:type owl:NamedIndividual ,
+                       bte:Series ;
+              rdfs:label "Battlezone"@en .
+
+
+###  http://www.wikidata.org/entity/Q11168
+wd:Q11168 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Super Mario Bros."@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q8093 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q4802838 ;
+          bts:usesPlatform wd:Q172742 .
+
+
+###  http://www.wikidata.org/entity/Q112912
+wd:Q112912 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Lego Batman 2: DC Super Heroes"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q2319420 ;
+           bts:partofGenre wd:Q21192427 ,
+                           wd:Q343568 ;
+           bts:partofSeries wd:Q109250577 ;
+           bts:usesPlatform wd:Q170325 ,
+                            wd:Q188808 .
+
+
+###  http://www.wikidata.org/entity/Q1143132
+wd:Q1143132 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "roguelike"@en .
+
+
+###  http://www.wikidata.org/entity/Q115529
+wd:Q115529 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Memories Off: Yubikiri no Kioku"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q2526471 ;
+           bts:partofGenre wd:Q1323555 ,
+                           wd:Q689445 ;
+           bts:partofSeries wd:Q843681 ;
+           bts:usesPlatform wd:Q10683 ,
+                            wd:Q188808 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q116578
+wd:Q116578 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Guitar Hero"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q3120829 ;
+           bts:partofGenre wd:Q2632782 ,
+                           wd:Q584105 ;
+           bts:partofSeries wd:Q533752 ;
+           bts:usesPlatform wd:Q10680 .
+
+
+###  http://www.wikidata.org/entity/Q11695301
+wd:Q11695301 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Dungeon Siege"@en .
+
+
+###  http://www.wikidata.org/entity/Q117859
+wd:Q117859 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Trine"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q3492217 ;
+           bts:partofGenre wd:Q2762504 ,
+                           wd:Q54767 ,
+                           wd:Q828322 ;
+           bts:partofSeries wd:Q32512828 ;
+           bts:usesPlatform wd:Q10683 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q170325 ,
+                            wd:Q388 ,
+                            wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q1188778
+wd:Q1188778 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "SAM Coupé"@en .
+
+
+###  http://www.wikidata.org/entity/Q1193867
+wd:Q1193867 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Tales"@en .
+
+
+###  http://www.wikidata.org/entity/Q1194763
+wd:Q1194763 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "2D computer graphics"@en .
+
+
+###  http://www.wikidata.org/entity/Q1198141
+wd:Q1198141 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "business simulation game"@en .
+
+
+###  http://www.wikidata.org/entity/Q1199309
+wd:Q1199309 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "life simulation game"@en .
+
+
+###  http://www.wikidata.org/entity/Q1199613
+wd:Q1199613 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Kunio-kun"@en .
+
+
+###  http://www.wikidata.org/entity/Q1210316
+wd:Q1210316 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Professor Layton"@en .
+
+
+###  http://www.wikidata.org/entity/Q122741
+wd:Q122741 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Sega"@en .
+
+
+###  http://www.wikidata.org/entity/Q1229035
+wd:Q1229035 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Disney Interactive Studios"@en .
+
+
+###  http://www.wikidata.org/entity/Q1235040
+wd:Q1235040 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Domark Software"@en .
+
+
+###  http://www.wikidata.org/entity/Q12384
+wd:Q12384 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Donkey Kong"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q8093 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q4803535 ,
+                           wd:Q65059083 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q1046862 ,
+                           wd:Q135321 ,
+                           wd:Q170434 ,
+                           wd:Q172742 ,
+                           wd:Q188642 ,
+                           wd:Q192851 ,
+                           wd:Q206261 ,
+                           wd:Q23882 ,
+                           wd:Q753600 ,
+                           wd:Q853547 ,
+                           wd:Q918232 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q12393
+wd:Q12393 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "The Legend of Zelda"@en .
+
+
+###  http://www.wikidata.org/entity/Q12395
+wd:Q12395 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "The Legend of Zelda"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q8093 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q12393 ;
+          bts:usesPlatform wd:Q135321 ,
+                           wd:Q172742 .
+
+
+###  http://www.wikidata.org/entity/Q1255578
+wd:Q1255578 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "IL-2 Sturmovik: Forgotten Battles"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q77202 ;
+            bts:partofGenre wd:Q603481 ;
+            bts:partofSeries wd:Q5971686 ;
+            bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q1257652
+wd:Q1257652 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "IL-2 Sturmovik"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q77202 ;
+            bts:partofGenre wd:Q603481 ;
+            bts:partofSeries wd:Q5971686 ;
+            bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q1257775
+wd:Q1257775 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Crash Twinsanity"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q2264873 ;
+            bts:partofGenre wd:Q828322 ;
+            bts:partofSeries wd:Q507898 ;
+            bts:usesPlatform wd:Q10680 ,
+                             wd:Q132020 ,
+                             wd:Q13361286 ,
+                             wd:Q19610114 ,
+                             wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q1261715
+wd:Q1261715 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "UFO: Enemy Unknown"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q652421 ;
+            bts:partofGenre wd:Q2176159 ,
+                            wd:Q27670585 ;
+            bts:partofSeries wd:Q578544 ;
+            bts:usesPlatform wd:Q10677 ,
+                             wd:Q1406 ,
+                             wd:Q170434 ,
+                             wd:Q471094 .
+
+
+###  http://www.wikidata.org/entity/Q1261992
+wd:Q1261992 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Caesar IV"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q494614 ;
+            bts:partofGenre wd:Q588289 ;
+            bts:partofSeries wd:Q3649550 ;
+            bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q1264433
+wd:Q1264433 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Duke Nukem"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q2858431 ;
+            bts:partofGenre wd:Q27670585 ,
+                            wd:Q828322 ;
+            bts:partofSeries wd:Q820568 ;
+            bts:usesPlatform wd:Q1406 ,
+                             wd:Q14116 ,
+                             wd:Q170434 .
+
+
+###  http://www.wikidata.org/entity/Q1264434
+wd:Q1264434 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Duke Nukem II"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q930354 ;
+            bts:partofGenre wd:Q27670585 ,
+                            wd:Q828322 ;
+            bts:partofSeries wd:Q820568 ;
+            bts:usesPlatform wd:Q1406 ,
+                             wd:Q14116 ,
+                             wd:Q170434 ,
+                             wd:Q48493 .
+
+
+###  http://www.wikidata.org/entity/Q1265742
+wd:Q1265742 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Dungeon Keeper"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q173941 ;
+            bts:partofGenre wd:Q208189 ;
+            bts:partofSeries wd:Q18352837 ;
+            bts:usesPlatform wd:Q1406 ,
+                             wd:Q14116 ,
+                             wd:Q170434 .
+
+
+###  http://www.wikidata.org/entity/Q1265745
+wd:Q1265745 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Dungeon Siege III"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q207784 ;
+            bts:partofGenre wd:Q1422746 ;
+            bts:partofSeries wd:Q11695301 ;
+            bts:usesPlatform wd:Q10683 ,
+                             wd:Q1406 ,
+                             wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q1265969
+wd:Q1265969 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Sly 3: Honor Among Thieves"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q18594 ;
+            bts:partofGenre wd:Q828322 ;
+            bts:partofSeries wd:Q2227411 ;
+            bts:usesPlatform wd:Q10680 ,
+                             wd:Q10683 ,
+                             wd:Q188808 .
+
+
+###  http://www.wikidata.org/entity/Q1277009
+wd:Q1277009 rdf:type owl:NamedIndividual ,
+                     bte:VideoGame ;
+            rdfs:label "Psychonauts"@en ;
+            bts:hasModes wd:Q208850 ;
+            bts:madebyPublisher wd:Q1972036 ,
+                                wd:Q403714 ,
+                                wd:Q580866 ;
+            bts:partofGenre wd:Q23916 ,
+                            wd:Q828322 ;
+            bts:partofSeries wd:Q107501713 ;
+            bts:usesPlatform wd:Q10680 ,
+                             wd:Q10683 ,
+                             wd:Q132020 ,
+                             wd:Q1406 ,
+                             wd:Q14116 ,
+                             wd:Q388 ,
+                             wd:Q48263 ,
+                             wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q128766
+wd:Q128766 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Forza"@en .
+
+
+###  http://www.wikidata.org/entity/Q132020
+wd:Q132020 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Xbox"@en .
+
+
+###  http://www.wikidata.org/entity/Q1323555
+wd:Q1323555 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "bishōjo game"@en .
+
+
+###  http://www.wikidata.org/entity/Q132730
+wd:Q132730 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Grand Theft Auto"@en .
+
+
+###  http://www.wikidata.org/entity/Q13361286
+wd:Q13361286 rdf:type owl:NamedIndividual ,
+                      bte:Platform ;
+             rdfs:label "Xbox One"@en .
+
+
+###  http://www.wikidata.org/entity/Q13409231
+wd:Q13409231 rdf:type owl:NamedIndividual ,
+                      bte:Publisher ;
+             rdfs:label "Atari, Inc."@en .
+
+
+###  http://www.wikidata.org/entity/Q1343212
+wd:Q1343212 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Enix"@en .
+
+
+###  http://www.wikidata.org/entity/Q13522376
+wd:Q13522376 rdf:type owl:NamedIndividual ,
+                      bte:Platform ;
+             rdfs:label "Classic Mac OS"@en .
+
+
+###  http://www.wikidata.org/entity/Q135321
+wd:Q135321 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Family Computer Disk System"@en .
+
+
+###  http://www.wikidata.org/entity/Q1353312
+wd:Q1353312 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "RiscPC"@en .
+
+
+###  http://www.wikidata.org/entity/Q1358751
+wd:Q1358751 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Runic Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q13631188
+wd:Q13631188 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Cannon Fodder"@en .
+
+
+###  http://www.wikidata.org/entity/Q13699
+wd:Q13699 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Stronghold: Crusader Extreme"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q5519987 ;
+          bts:partofGenre wd:Q208189 ;
+          bts:partofSeries wd:Q3701836 ;
+          bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q1406
+wd:Q1406 rdf:type owl:NamedIndividual ,
+                  bte:Platform ;
+         rdfs:label "Microsoft Windows"@en .
+
+
+###  http://www.wikidata.org/entity/Q14116
+wd:Q14116 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "macOS"@en .
+
+
+###  http://www.wikidata.org/entity/Q1422746
+wd:Q1422746 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "action role-playing game"@en .
+
+
+###  http://www.wikidata.org/entity/Q1437614
+wd:Q1437614 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Codemasters F1 series"@en .
+
+
+###  http://www.wikidata.org/entity/Q14428
+wd:Q14428 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Capcom"@en .
+
+
+###  http://www.wikidata.org/entity/Q14646
+wd:Q14646 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Solaris"@en .
+
+
+###  http://www.wikidata.org/entity/Q1481820
+wd:Q1481820 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Virgin Interactive"@en .
+
+
+###  http://www.wikidata.org/entity/Q1495819
+wd:Q1495819 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Gathering of Developers"@en .
+
+
+###  http://www.wikidata.org/entity/Q1501379
+wd:Q1501379 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Parker Brothers"@en .
+
+
+###  http://www.wikidata.org/entity/Q1501543
+wd:Q1501543 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "wargame"@en .
+
+
+###  http://www.wikidata.org/entity/Q15100798
+wd:Q15100798 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Star Wars: Rogue Squadron"@en .
+
+
+###  http://www.wikidata.org/entity/Q151531
+wd:Q151531 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Sonic Chaos"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q122741 ;
+           bts:partofGenre wd:Q828322 ;
+           bts:partofSeries wd:Q22974163 ;
+           bts:usesPlatform wd:Q209868 .
+
+
+###  http://www.wikidata.org/entity/Q151614
+wd:Q151614 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Sonic Colors"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q122741 ;
+           bts:partofGenre wd:Q828322 ;
+           bts:partofSeries wd:Q1046812 ;
+           bts:usesPlatform wd:Q170323 ,
+                            wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q1610017
+wd:Q1610017 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "simulation video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q1631855
+wd:Q1631855 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Lego Indiana Jones"@en .
+
+
+###  http://www.wikidata.org/entity/Q16338
+wd:Q16338 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "personal computer"@en .
+
+
+###  http://www.wikidata.org/entity/Q167835
+wd:Q167835 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Fallout"@en .
+
+
+###  http://www.wikidata.org/entity/Q16838077
+wd:Q16838077 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Fate"@en .
+
+
+###  http://www.wikidata.org/entity/Q170323
+wd:Q170323 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Nintendo DS"@en .
+
+
+###  http://www.wikidata.org/entity/Q170325
+wd:Q170325 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "PlayStation Portable"@en .
+
+
+###  http://www.wikidata.org/entity/Q170434
+wd:Q170434 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "DOS"@en .
+
+
+###  http://www.wikidata.org/entity/Q17138
+wd:Q17138 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Uncharted 3: Drake's Deception"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q18594 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q1064135 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q172742
+wd:Q172742 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Nintendo Entertainment System"@en .
+
+
+###  http://www.wikidata.org/entity/Q173941
+wd:Q173941 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Electronic Arts"@en .
+
+
+###  http://www.wikidata.org/entity/Q17452
+wd:Q17452 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Grand Theft Auto V"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q94912 ,
+                              wd:Q94933 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q132730 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q13361286 ,
+                           wd:Q1406 ,
+                           wd:Q48263 ,
+                           wd:Q5014725 ,
+                           wd:Q63184502 ,
+                           wd:Q98973368 .
+
+
+###  http://www.wikidata.org/entity/Q1747150
+wd:Q1747150 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Halo"@en .
+
+
+###  http://www.wikidata.org/entity/Q17517
+wd:Q17517 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "mobile phone"@en .
+
+
+###  http://www.wikidata.org/entity/Q1759524
+wd:Q1759524 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "Tatung Einstein"@en .
+
+
+###  http://www.wikidata.org/entity/Q1782700
+wd:Q1782700 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Infogrames"@en .
+
+
+###  http://www.wikidata.org/entity/Q178824
+wd:Q178824 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Blizzard Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q18005529
+wd:Q18005529 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Warlock series"@en .
+
+
+###  http://www.wikidata.org/entity/Q182172
+wd:Q182172 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Nintendo GameCube"@en .
+
+
+###  http://www.wikidata.org/entity/Q183259
+wd:Q183259 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Super Nintendo Entertainment System"@en .
+
+
+###  http://www.wikidata.org/entity/Q18352837
+wd:Q18352837 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Dungeon Keeper"@en .
+
+
+###  http://www.wikidata.org/entity/Q184198
+wd:Q184198 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Sega Dreamcast"@en .
+
+
+###  http://www.wikidata.org/entity/Q18450821
+wd:Q18450821 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Hearts of Iron"@en .
+
+
+###  http://www.wikidata.org/entity/Q184839
+wd:Q184839 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Nintendo 64"@en .
+
+
+###  http://www.wikidata.org/entity/Q185029
+wd:Q185029 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "first-person shooter"@en .
+
+
+###  http://www.wikidata.org/entity/Q18594
+wd:Q18594 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Sony Interactive Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q186437
+wd:Q186437 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Game Boy"@en .
+
+
+###  http://www.wikidata.org/entity/Q1868663
+wd:Q1868663 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Civilization"@en .
+
+
+###  http://www.wikidata.org/entity/Q188273
+wd:Q188273 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Ubisoft"@en .
+
+
+###  http://www.wikidata.org/entity/Q188642
+wd:Q188642 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Game Boy Advance"@en .
+
+
+###  http://www.wikidata.org/entity/Q188808
+wd:Q188808 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "PlayStation Vita"@en .
+
+
+###  http://www.wikidata.org/entity/Q1892535
+wd:Q1892535 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "space flight simulation game"@en .
+
+
+###  http://www.wikidata.org/entity/Q18940
+wd:Q18940 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Wolfenstein 3D"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q207922 ,
+                              wd:Q229459 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q4357563 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q183259 ,
+                           wd:Q188642 ,
+                           wd:Q201652 ,
+                           wd:Q202712 ,
+                           wd:Q229429 ,
+                           wd:Q29758 ,
+                           wd:Q380526 ,
+                           wd:Q41357 ,
+                           wd:Q471094 ,
+                           wd:Q47604 ,
+                           wd:Q48263 ,
+                           wd:Q48493 .
+
+
+###  http://www.wikidata.org/entity/Q189784
+wd:Q189784 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Doom"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q200491 ,
+                               wd:Q207922 ,
+                               wd:Q930354 ;
+           bts:partofGenre wd:Q107542272 ;
+           bts:partofSeries wd:Q655219 ;
+           bts:usesPlatform wd:Q1063978 ,
+                            wd:Q10676 ,
+                            wd:Q10677 ,
+                            wd:Q10683 ,
+                            wd:Q132020 ,
+                            wd:Q13522376 ,
+                            wd:Q1353312 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q14646 ,
+                            wd:Q170434 ,
+                            wd:Q183259 ,
+                            wd:Q188642 ,
+                            wd:Q19610114 ,
+                            wd:Q200912 ,
+                            wd:Q229429 ,
+                            wd:Q388 ,
+                            wd:Q471094 ,
+                            wd:Q48263 ,
+                            wd:Q48493 ,
+                            wd:Q627611 ,
+                            wd:Q650601 ,
+                            wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q192156
+wd:Q192156 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Call of Duty"@en .
+
+
+###  http://www.wikidata.org/entity/Q192851
+wd:Q192851 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "arcade game machine"@en .
+
+
+###  http://www.wikidata.org/entity/Q19308
+wd:Q19308 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Hitman"@en .
+
+
+###  http://www.wikidata.org/entity/Q193559
+wd:Q193559 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Valve Corporation"@en .
+
+
+###  http://www.wikidata.org/entity/Q19610114
+wd:Q19610114 rdf:type owl:NamedIndividual ,
+                      bte:Platform ;
+             rdfs:label "Nintendo Switch"@en .
+
+
+###  http://www.wikidata.org/entity/Q1972036
+wd:Q1972036 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Buka Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q200491
+wd:Q200491 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Activision Publishing"@en .
+
+
+###  http://www.wikidata.org/entity/Q200912
+wd:Q200912 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Sega Saturn"@en .
+
+
+###  http://www.wikidata.org/entity/Q201652
+wd:Q201652 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Apple II series"@en .
+
+
+###  http://www.wikidata.org/entity/Q202712
+wd:Q202712 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "IBM Personal Computer"@en .
+
+
+###  http://www.wikidata.org/entity/Q203597
+wd:Q203597 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Nintendo 3DS"@en .
+
+
+###  http://www.wikidata.org/entity/Q203992
+wd:Q203992 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Game Boy Color"@en .
+
+
+###  http://www.wikidata.org/entity/Q206261
+wd:Q206261 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Atari 2600"@en .
+
+
+###  http://www.wikidata.org/entity/Q20651008
+wd:Q20651008 rdf:type owl:NamedIndividual ,
+                      bte:Publisher ;
+             rdfs:label "Nintendo of America"@en .
+
+
+###  http://www.wikidata.org/entity/Q2070892
+wd:Q2070892 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "vehicular combat game"@en .
+
+
+###  http://www.wikidata.org/entity/Q207784
+wd:Q207784 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Square Enix"@en .
+
+
+###  http://www.wikidata.org/entity/Q207922
+wd:Q207922 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Atari"@en .
+
+
+###  http://www.wikidata.org/entity/Q208189
+wd:Q208189 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "real-time strategy"@en .
+
+
+###  http://www.wikidata.org/entity/Q208850
+wd:Q208850 rdf:type owl:NamedIndividual ,
+                    bte:Mode ;
+           rdfs:label "single-player video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q209868
+wd:Q209868 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Sega Master System"@en .
+
+
+###  http://www.wikidata.org/entity/Q210298
+wd:Q210298 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Call of Duty 2"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q200491 ,
+                               wd:Q45700 ,
+                               wd:Q738135 ;
+           bts:partofGenre wd:Q185029 ;
+           bts:partofSeries wd:Q192156 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q210844
+wd:Q210844 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Spore"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q173941 ,
+                               wd:Q4434012 ;
+           bts:partofGenre wd:Q1199309 ,
+                           wd:Q208189 ,
+                           wd:Q27670585 ,
+                           wd:Q536420 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q63034431 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q211096
+wd:Q211096 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "call"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q200491 ,
+                               wd:Q6805413 ,
+                               wd:Q738135 ;
+           bts:partofGenre wd:Q185029 ;
+           bts:partofSeries wd:Q192156 ;
+           bts:usesPlatform wd:Q10683 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q336434 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q21154509
+wd:Q21154509 rdf:type owl:NamedIndividual ,
+                      bte:Genre ;
+             rdfs:label "space combat simulation game"@en .
+
+
+###  http://www.wikidata.org/entity/Q211735
+wd:Q211735 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Assassin's Creed II"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q188273 ;
+           bts:partofGenre wd:Q343568 ,
+                           wd:Q380266 ,
+                           wd:Q858523 ;
+           bts:partofSeries wd:Q420292 ;
+           bts:usesPlatform wd:Q10683 ,
+                            wd:Q13361286 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q48263 ,
+                            wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q211858
+wd:Q211858 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "DK: King of Swing"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q8093 ;
+           bts:partofGenre wd:Q54767 ;
+           bts:partofSeries wd:Q37817874 ;
+           bts:usesPlatform wd:Q188642 .
+
+
+###  http://www.wikidata.org/entity/Q21192427
+wd:Q21192427 rdf:type owl:NamedIndividual ,
+                      bte:Genre ;
+             rdfs:label "fictional crossover"@en .
+
+
+###  http://www.wikidata.org/entity/Q21207
+wd:Q21207 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Windows Mobile"@en .
+
+
+###  http://www.wikidata.org/entity/Q213217
+wd:Q213217 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Mafia"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q10902322 ,
+                               wd:Q1495819 ;
+           bts:partofGenre wd:Q2070892 ,
+                           wd:Q380266 ;
+           bts:partofSeries wd:Q21526531 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q132020 ,
+                            wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q213911
+wd:Q213911 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "The Legend of Zelda: Ocarina of Time"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q8093 ;
+           bts:partofGenre wd:Q343568 ;
+           bts:partofSeries wd:Q12393 ;
+           bts:usesPlatform wd:Q182172 ,
+                            wd:Q184839 ,
+                            wd:Q203597 ,
+                            wd:Q8079 ,
+                            wd:Q821067 .
+
+
+###  http://www.wikidata.org/entity/Q214232
+wd:Q214232 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Final Fantasy VII"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q207784 ,
+                               wd:Q739552 ;
+           bts:partofGenre wd:Q54323360 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q99416119 ;
+           bts:usesPlatform wd:Q10677 ,
+                            wd:Q1406 ,
+                            wd:Q19610114 ,
+                            wd:Q48493 ,
+                            wd:Q5014725 ,
+                            wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q21526531
+wd:Q21526531 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Mafia"@en .
+
+
+###  http://www.wikidata.org/entity/Q215901
+wd:Q215901 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "JVC"@en .
+
+
+###  http://www.wikidata.org/entity/Q216572
+wd:Q216572 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Heroes of Might and Magic"@en .
+
+
+###  http://www.wikidata.org/entity/Q216611
+wd:Q216611 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "LucasArts"@en .
+
+
+###  http://www.wikidata.org/entity/Q217493
+wd:Q217493 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Paradox Interactive"@en .
+
+
+###  http://www.wikidata.org/entity/Q2176159
+wd:Q2176159 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "turn-based strategy video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q219795
+wd:Q219795 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Need for Speed: Carbon"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q173941 ;
+           bts:partofGenre wd:Q860750 ;
+           bts:partofSeries wd:Q55679 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q132020 ,
+                            wd:Q14116 ,
+                            wd:Q170323 ,
+                            wd:Q170325 ,
+                            wd:Q182172 ,
+                            wd:Q188642 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q220102
+wd:Q220102 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Zoo Tycoon"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q73801 ;
+           bts:partofGenre wd:Q1198141 ;
+           bts:partofSeries wd:Q5381702 ;
+           bts:usesPlatform wd:Q13522376 ,
+                            wd:Q1406 ,
+                            wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q220107
+wd:Q220107 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Zoo Tycoon 2"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q73801 ;
+           bts:partofGenre wd:Q1198141 ;
+           bts:partofSeries wd:Q5381702 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q220365
+wd:Q220365 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Need for Speed: Most Wanted"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q173941 ;
+           bts:partofGenre wd:Q860750 ;
+           bts:partofSeries wd:Q55679 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q132020 ,
+                            wd:Q1406 ,
+                            wd:Q16338 ,
+                            wd:Q170323 ,
+                            wd:Q170325 ,
+                            wd:Q182172 ,
+                            wd:Q188642 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q220767
+wd:Q220767 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Age of Empires"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q73801 ;
+           bts:partofGenre wd:Q208189 ;
+           bts:partofSeries wd:Q34811 ;
+           bts:usesPlatform wd:Q13522376 ,
+                            wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q220960
+wd:Q220960 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Diablo"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q178824 ;
+           bts:partofGenre wd:Q1422746 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q44165 ;
+           bts:usesPlatform wd:Q13522376 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q220965
+wd:Q220965 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Heroes of Might and Magic III"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q1062171 ,
+                               wd:Q188273 ;
+           bts:partofGenre wd:Q2176159 ;
+           bts:partofSeries wd:Q216572 ;
+           bts:usesPlatform wd:Q13522376 ,
+                            wd:Q1406 ,
+                            wd:Q388 ,
+                            wd:Q48493 ,
+                            wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q221164
+wd:Q221164 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Fallout 3"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q684425 ;
+           bts:partofGenre wd:Q1422746 ,
+                           wd:Q185029 ,
+                           wd:Q380266 ,
+                           wd:Q744038 ,
+                           wd:Q85422949 ;
+           bts:partofSeries wd:Q167835 ;
+           bts:usesPlatform wd:Q10683 ,
+                            wd:Q13361286 ,
+                            wd:Q1406 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q222473
+wd:Q222473 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Hearts of Iron III"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q217493 ;
+           bts:partofGenre wd:Q1501543 ,
+                           wd:Q208189 ,
+                           wd:Q3139142 ,
+                           wd:Q3177937 ;
+           bts:partofSeries wd:Q18450821 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q2227411
+wd:Q2227411 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Sly Cooper"@en .
+
+
+###  http://www.wikidata.org/entity/Q223381
+wd:Q223381 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Final Fantasy X"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q739552 ;
+           bts:partofGenre wd:Q744038 ;
+           bts:partofSeries wd:Q99416119 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q188808 .
+
+
+###  http://www.wikidata.org/entity/Q223629
+wd:Q223629 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Half-Life 2: Lost Coast"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q193559 ;
+           bts:partofGenre wd:Q185029 ;
+           bts:partofSeries wd:Q752241 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q388 .
+
+
+###  http://www.wikidata.org/entity/Q225861
+wd:Q225861 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Professor Layton and the Unwound Future"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q8093 ;
+           bts:partofGenre wd:Q23916 ,
+                           wd:Q24925 ,
+                           wd:Q54767 ,
+                           wd:Q6585139 ;
+           bts:partofSeries wd:Q1210316 ;
+           bts:usesPlatform wd:Q170323 ,
+                            wd:Q48493 .
+
+
+###  http://www.wikidata.org/entity/Q225912
+wd:Q225912 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Kingdom Hearts"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q739552 ;
+           bts:partofGenre wd:Q1422746 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q755167 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q13361286 ,
+                            wd:Q1406 ,
+                            wd:Q19610114 ,
+                            wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q2264873
+wd:Q2264873 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Vivendi Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q226805
+wd:Q226805 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Torchlight II"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q1358751 ;
+           bts:partofGenre wd:Q1422746 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q96280626 ;
+           bts:usesPlatform wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q19610114 ,
+                            wd:Q388 .
+
+
+###  http://www.wikidata.org/entity/Q227612
+wd:Q227612 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Fate: Undiscovered Realms"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q8000452 ;
+           bts:partofGenre wd:Q1143132 ,
+                           wd:Q1422746 ,
+                           wd:Q744038 ;
+           bts:partofSeries wd:Q16838077 ;
+           bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q229429
+wd:Q229429 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "3DO Interactive Multiplayer"@en .
+
+
+###  http://www.wikidata.org/entity/Q229459
+wd:Q229459 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "3D Realms"@en .
+
+
+###  http://www.wikidata.org/entity/Q22974163
+wd:Q22974163 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Sonic the Hedgehog"@en .
+
+
+###  http://www.wikidata.org/entity/Q2313710
+wd:Q2313710 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "real-time tactics"@en .
+
+
+###  http://www.wikidata.org/entity/Q2319420
+wd:Q2319420 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Warner Bros. Interactive Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q236821
+wd:Q236821 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Silent Hill"@en .
+
+
+###  http://www.wikidata.org/entity/Q2374
+wd:Q2374 rdf:type owl:NamedIndividual ,
+                  bte:VideoGame ;
+         rdfs:label "Civilization III"@en ;
+         bts:hasModes wd:Q208850 ;
+         bts:madebyPublisher wd:Q1782700 ,
+                             wd:Q207922 ,
+                             wd:Q3123991 ,
+                             wd:Q738135 ;
+         bts:partofGenre wd:Q1610017 ,
+                         wd:Q2176159 ,
+                         wd:Q3139142 ,
+                         wd:Q472055 ,
+                         wd:Q603555 ;
+         bts:partofSeries wd:Q1868663 ;
+         bts:usesPlatform wd:Q13522376 ,
+                          wd:Q1406 ,
+                          wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q2377
+wd:Q2377 rdf:type owl:NamedIndividual ,
+                  bte:VideoGame ;
+         rdfs:label "Civilization IV"@en ;
+         bts:hasModes wd:Q208850 ;
+         bts:madebyPublisher wd:Q738135 ,
+                             wd:Q77202 ,
+                             wd:Q94937 ;
+         bts:partofGenre wd:Q2176159 ,
+                         wd:Q3139142 ,
+                         wd:Q603555 ;
+         bts:partofSeries wd:Q1868663 ;
+         bts:usesPlatform wd:Q13522376 ,
+                          wd:Q1406 ,
+                          wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q2385
+wd:Q2385 rdf:type owl:NamedIndividual ,
+                  bte:VideoGame ;
+         rdfs:label "Civilization V"@en ;
+         bts:hasModes wd:Q208850 ;
+         bts:madebyPublisher wd:Q738135 ,
+                             wd:Q94937 ;
+         bts:partofGenre wd:Q2176159 ,
+                         wd:Q603555 ;
+         bts:partofSeries wd:Q1868663 ;
+         bts:usesPlatform wd:Q1406 ,
+                          wd:Q14116 ,
+                          wd:Q388 .
+
+
+###  http://www.wikidata.org/entity/Q2387
+wd:Q2387 rdf:type owl:NamedIndividual ,
+                  bte:VideoGame ;
+         rdfs:label "Commandos 2: Men of Courage"@en ;
+         bts:hasModes wd:Q208850 ;
+         bts:madebyPublisher wd:Q10902322 ,
+                             wd:Q679933 ;
+         bts:partofGenre wd:Q2313710 ;
+         bts:partofSeries wd:Q631273 ;
+         bts:usesPlatform wd:Q10680 ,
+                          wd:Q132020 ,
+                          wd:Q1406 ,
+                          wd:Q14116 .
+
+
+###  http://www.wikidata.org/entity/Q23882
+wd:Q23882 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "ZX Spectrum"@en .
+
+
+###  http://www.wikidata.org/entity/Q23899
+wd:Q23899 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Dizzy"@en .
+
+
+###  http://www.wikidata.org/entity/Q23901
+wd:Q23901 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Codemasters"@en .
+
+
+###  http://www.wikidata.org/entity/Q23916
+wd:Q23916 rdf:type owl:NamedIndividual ,
+                   bte:Genre ;
+          rdfs:label "adventure game"@en .
+
+
+###  http://www.wikidata.org/entity/Q239889
+wd:Q239889 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Hitman: Blood Money"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q679933 ;
+           bts:partofGenre wd:Q343568 ,
+                           wd:Q858523 ;
+           bts:partofSeries wd:Q19308 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q1406 ,
+                            wd:Q16338 .
+
+
+###  http://www.wikidata.org/entity/Q245006
+wd:Q245006 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Final Fantasy VIII"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q739552 ;
+           bts:partofGenre wd:Q107542272 ,
+                           wd:Q85422949 ;
+           bts:partofSeries wd:Q99416119 ;
+           bts:usesPlatform wd:Q10677 ,
+                            wd:Q48493 .
+
+
+###  http://www.wikidata.org/entity/Q247161
+wd:Q247161 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Dynasty Warriors 5"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q845047 ;
+           bts:partofGenre wd:Q270948 ;
+           bts:partofSeries wd:Q4467592 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q132020 ,
+                            wd:Q1406 ,
+                            wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q24925
+wd:Q24925 rdf:type owl:NamedIndividual ,
+                   bte:Genre ;
+          rdfs:label "science fiction"@en .
+
+
+###  http://www.wikidata.org/entity/Q252198
+wd:Q252198 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Deus Ex: Invisible War"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q679933 ;
+           bts:partofGenre wd:Q1422746 ;
+           bts:partofSeries wd:Q746459 ;
+           bts:usesPlatform wd:Q132020 ,
+                            wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q2526471
+wd:Q2526471 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "5pb."@en .
+
+
+###  http://www.wikidata.org/entity/Q25303216
+wd:Q25303216 rdf:type owl:NamedIndividual ,
+                      bte:Publisher ;
+             rdfs:label "TT Games Publishing"@en .
+
+
+###  http://www.wikidata.org/entity/Q253111
+wd:Q253111 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Dissidia Final Fantasy"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q207784 ;
+           bts:partofGenre wd:Q1422746 ;
+           bts:partofSeries wd:Q99416119 ;
+           bts:usesPlatform wd:Q170325 .
+
+
+###  http://www.wikidata.org/entity/Q254090
+wd:Q254090 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "F1 2011"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q23901 ;
+           bts:partofGenre wd:Q860750 ;
+           bts:partofSeries wd:Q1437614 ;
+           bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q254723
+wd:Q254723 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Cannon Fodder"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q1481820 ;
+           bts:partofGenre wd:Q1044478 ;
+           bts:partofSeries wd:Q13631188 ;
+           bts:usesPlatform wd:Q100047 ,
+                            wd:Q10676 ,
+                            wd:Q170434 ,
+                            wd:Q183259 ,
+                            wd:Q203992 ,
+                            wd:Q229429 ,
+                            wd:Q41357 ,
+                            wd:Q627302 .
+
+
+###  http://www.wikidata.org/entity/Q254851
+wd:Q254851 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Harry Potter and the Order of the Phoenix"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q173941 ;
+           bts:partofGenre wd:Q343568 ;
+           bts:partofSeries wd:Q4040432 ;
+           bts:usesPlatform wd:Q10680 ,
+                            wd:Q10683 ,
+                            wd:Q1406 ,
+                            wd:Q14116 ,
+                            wd:Q170323 ,
+                            wd:Q170325 ,
+                            wd:Q188642 ,
+                            wd:Q48263 ,
+                            wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q2632782
+wd:Q2632782 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "rhythm game"@en .
+
+
+###  http://www.wikidata.org/entity/Q270948
+wd:Q270948 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "action game"@en .
+
+
+###  http://www.wikidata.org/entity/Q2736040
+wd:Q2736040 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Firebird Software"@en .
+
+
+###  http://www.wikidata.org/entity/Q2762504
+wd:Q2762504 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "indie game"@en .
+
+
+###  http://www.wikidata.org/entity/Q27670585
+wd:Q27670585 rdf:type owl:NamedIndividual ,
+                      bte:Genre ;
+             rdfs:label "science fiction video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q2858431
+wd:Q2858431 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Apogee Software"@en .
+
+
+###  http://www.wikidata.org/entity/Q29579645
+wd:Q29579645 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Super Star Wars"@en .
+
+
+###  http://www.wikidata.org/entity/Q29580068
+wd:Q29580068 rdf:type owl:NamedIndividual ,
+                      bte:Publisher ;
+             rdfs:label "Black Pearl Software"@en .
+
+
+###  http://www.wikidata.org/entity/Q29580289
+wd:Q29580289 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Star Wars"@en .
+
+
+###  http://www.wikidata.org/entity/Q29582712
+wd:Q29582712 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Star Wars Rebel Assault"@en .
+
+
+###  http://www.wikidata.org/entity/Q29758
+wd:Q29758 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Pocket PC"@en .
+
+
+###  http://www.wikidata.org/entity/Q3017175
+wd:Q3017175 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "Apple II"@en .
+
+
+###  http://www.wikidata.org/entity/Q309996
+wd:Q309996 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Namco"@en .
+
+
+###  http://www.wikidata.org/entity/Q3120829
+wd:Q3120829 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "RedOctane"@en .
+
+
+###  http://www.wikidata.org/entity/Q3123991
+wd:Q3123991 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "MacSoft Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q3139142
+wd:Q3139142 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "grand strategy wargame"@en .
+
+
+###  http://www.wikidata.org/entity/Q3177937
+wd:Q3177937 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "historic game"@en .
+
+
+###  http://www.wikidata.org/entity/Q32512828
+wd:Q32512828 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Trine"@en .
+
+
+###  http://www.wikidata.org/entity/Q3362548
+wd:Q3362548 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Panzer Dragoon"@en .
+
+
+###  http://www.wikidata.org/entity/Q336434
+wd:Q336434 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "N-Gage"@en .
+
+
+###  http://www.wikidata.org/entity/Q3414918
+wd:Q3414918 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "R-Type"@en .
+
+
+###  http://www.wikidata.org/entity/Q342163
+wd:Q342163 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Acorn Electron"@en .
+
+
+###  http://www.wikidata.org/entity/Q343568
+wd:Q343568 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "action-adventure game"@en .
+
+
+###  http://www.wikidata.org/entity/Q34811
+wd:Q34811 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Age of Empires"@en .
+
+
+###  http://www.wikidata.org/entity/Q3492217
+wd:Q3492217 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "SouthPeak Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q3604604
+wd:Q3604604 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Acornsoft"@en .
+
+
+###  http://www.wikidata.org/entity/Q3649550
+wd:Q3649550 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Caesar"@en .
+
+
+###  http://www.wikidata.org/entity/Q3701836
+wd:Q3701836 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Stronghold"@en .
+
+
+###  http://www.wikidata.org/entity/Q3781101
+wd:Q3781101 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Imagineer"@en .
+
+
+###  http://www.wikidata.org/entity/Q37817874
+wd:Q37817874 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "DK"@en .
+
+
+###  http://www.wikidata.org/entity/Q380266
+wd:Q380266 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "third-person shooter"@en .
+
+
+###  http://www.wikidata.org/entity/Q380526
+wd:Q380526 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "AmigaOS"@en .
+
+
+###  http://www.wikidata.org/entity/Q3820235
+wd:Q3820235 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Lego Star Wars"@en .
+
+
+###  http://www.wikidata.org/entity/Q388
+wd:Q388 rdf:type owl:NamedIndividual ,
+                 bte:Platform ;
+        rdfs:label "Linux"@en .
+
+
+###  http://www.wikidata.org/entity/Q401831
+wd:Q401831 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "beat 'em up"@en .
+
+
+###  http://www.wikidata.org/entity/Q403714
+wd:Q403714 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Majesco Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q4040432
+wd:Q4040432 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Harry Potter"@en .
+
+
+###  http://www.wikidata.org/entity/Q4104
+wd:Q4104 rdf:type owl:NamedIndividual ,
+                  bte:VideoGame ;
+         rdfs:label "Need for Speed: Shift"@en ;
+         bts:hasModes wd:Q208850 ;
+         bts:madebyPublisher wd:Q173941 ;
+         bts:partofGenre wd:Q860750 ;
+         bts:partofSeries wd:Q55679 ;
+         bts:usesPlatform wd:Q10683 ,
+                          wd:Q1406 ,
+                          wd:Q170325 ,
+                          wd:Q21207 ,
+                          wd:Q48263 ,
+                          wd:Q483318 ,
+                          wd:Q48493 ,
+                          wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q41357
+wd:Q41357 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Acorn Archimedes"@en .
+
+
+###  http://www.wikidata.org/entity/Q420292
+wd:Q420292 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Assassin's Creed"@en .
+
+
+###  http://www.wikidata.org/entity/Q4282636
+wd:Q4282636 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "shooter game"@en .
+
+
+###  http://www.wikidata.org/entity/Q4357563
+wd:Q4357563 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Wolfenstein"@en .
+
+
+###  http://www.wikidata.org/entity/Q44165
+wd:Q44165 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Diablo"@en .
+
+
+###  http://www.wikidata.org/entity/Q4434012
+wd:Q4434012 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Softclub"@en .
+
+
+###  http://www.wikidata.org/entity/Q4467592
+wd:Q4467592 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Dynasty Warriors"@en .
+
+
+###  http://www.wikidata.org/entity/Q45028
+wd:Q45028 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Halo 4"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q73801 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q1747150 ;
+          bts:usesPlatform wd:Q13361286 ,
+                           wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q45700
+wd:Q45700 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Konami"@en .
+
+
+###  http://www.wikidata.org/entity/Q466530
+wd:Q466530 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "The Elder Scrolls"@en .
+
+
+###  http://www.wikidata.org/entity/Q471094
+wd:Q471094 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Amiga 1200"@en .
+
+
+###  http://www.wikidata.org/entity/Q472055
+wd:Q472055 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "strategy video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q47604
+wd:Q47604 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "MS-DOS"@en .
+
+
+###  http://www.wikidata.org/entity/Q478829
+wd:Q478829 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Amstrad CPC"@en .
+
+
+###  http://www.wikidata.org/entity/Q4802838
+wd:Q4802838 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Super Mario"@en .
+
+
+###  http://www.wikidata.org/entity/Q4803535
+wd:Q4803535 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Mario franchise"@en .
+
+
+###  http://www.wikidata.org/entity/Q48263
+wd:Q48263 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Xbox 360"@en .
+
+
+###  http://www.wikidata.org/entity/Q483318
+wd:Q483318 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Symbian"@en .
+
+
+###  http://www.wikidata.org/entity/Q48493
+wd:Q48493 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "iOS"@en .
+
+
+###  http://www.wikidata.org/entity/Q4885200
+wd:Q4885200 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "Windows Phone"@en .
+
+
+###  http://www.wikidata.org/entity/Q494614
+wd:Q494614 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Sierra Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q49607
+wd:Q49607 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "The Elder Scrolls IV: Oblivion"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q684425 ,
+                              wd:Q77202 ,
+                              wd:Q7933527 ,
+                              wd:Q94937 ;
+          bts:partofGenre wd:Q1422746 ,
+                          wd:Q744038 ;
+          bts:partofSeries wd:Q466530 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q16338 ,
+                           wd:Q17517 ,
+                           wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q5014725
+wd:Q5014725 rdf:type owl:NamedIndividual ,
+                     bte:Platform ;
+            rdfs:label "PlayStation 4"@en .
+
+
+###  http://www.wikidata.org/entity/Q507898
+wd:Q507898 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Crash Bandicoot"@en .
+
+
+###  http://www.wikidata.org/entity/Q533752
+wd:Q533752 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Guitar Hero"@en .
+
+
+###  http://www.wikidata.org/entity/Q536420
+wd:Q536420 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "god game"@en .
+
+
+###  http://www.wikidata.org/entity/Q5381702
+wd:Q5381702 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Zoo Tycoon"@en .
+
+
+###  http://www.wikidata.org/entity/Q54297
+wd:Q54297 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: Rogue Squadron"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ,
+                              wd:Q8093 ;
+          bts:partofGenre wd:Q270948 ,
+                          wd:Q4282636 ;
+          bts:partofSeries wd:Q15100798 ;
+          bts:usesPlatform wd:Q1406 ,
+                           wd:Q184839 .
+
+
+###  http://www.wikidata.org/entity/Q54300
+wd:Q54300 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Star Wars video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q54304
+wd:Q54304 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars Rogue Squadron III: Rebel Strike"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q270948 ;
+          bts:partofSeries wd:Q15100798 ;
+          bts:usesPlatform wd:Q182172 .
+
+
+###  http://www.wikidata.org/entity/Q54307
+wd:Q54307 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars Rogue Squadron II: Rogue Leader"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q200491 ,
+                              wd:Q216611 ;
+          bts:partofGenre wd:Q270948 ;
+          bts:partofSeries wd:Q15100798 ;
+          bts:usesPlatform wd:Q182172 .
+
+
+###  http://www.wikidata.org/entity/Q54317
+wd:Q54317 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1235040 ,
+                              wd:Q13409231 ,
+                              wd:Q1501379 ,
+                              wd:Q216611 ,
+                              wd:Q995863 ;
+          bts:partofGenre wd:Q1044478 ;
+          bts:partofSeries wd:Q29580289 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q1046862 ,
+                           wd:Q170434 ,
+                           wd:Q192851 ,
+                           wd:Q206261 ,
+                           wd:Q23882 ,
+                           wd:Q342163 ,
+                           wd:Q478829 ,
+                           wd:Q627302 ,
+                           wd:Q743222 ,
+                           wd:Q749976 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q54322
+wd:Q54322 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Super Star Wars"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1229035 ,
+                              wd:Q20651008 ,
+                              wd:Q215901 ,
+                              wd:Q216611 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q29579645 ;
+          bts:usesPlatform wd:Q183259 ,
+                           wd:Q188808 ,
+                           wd:Q5014725 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q54323360
+wd:Q54323360 rdf:type owl:NamedIndividual ,
+                      bte:Genre ;
+             rdfs:label "cyberpunk video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q54327
+wd:Q54327 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: The Empire Strikes Back"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1061580 ,
+                              wd:Q1235040 ;
+          bts:partofGenre wd:Q1044478 ;
+          bts:partofSeries wd:Q29580289 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q192851 ,
+                           wd:Q23882 ,
+                           wd:Q478829 ,
+                           wd:Q627302 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q54330
+wd:Q54330 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Super Star Wars: The Empire Strikes Back"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q215901 ,
+                              wd:Q216611 ,
+                              wd:Q580866 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q29579645 ;
+          bts:usesPlatform wd:Q183259 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q54334
+wd:Q54334 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: Return of the Jedi"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1235040 ,
+                              wd:Q13409231 ;
+          bts:partofGenre wd:Q1044478 ,
+                          wd:Q4282636 ,
+                          wd:Q860750 ;
+          bts:partofSeries wd:Q54300 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q170434 ,
+                           wd:Q192851 ,
+                           wd:Q23882 ,
+                           wd:Q478829 ,
+                           wd:Q627302 ,
+                           wd:Q749976 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q54335
+wd:Q54335 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Super Star Wars: Return of the Jedi"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q215901 ,
+                              wd:Q216611 ,
+                              wd:Q29580068 ,
+                              wd:Q580866 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q29579645 ;
+          bts:usesPlatform wd:Q183259 ,
+                           wd:Q186437 ,
+                           wd:Q751719 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q54767
+wd:Q54767 rdf:type owl:NamedIndividual ,
+                   bte:Genre ;
+          rdfs:label "puzzle video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q5519987
+wd:Q5519987 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Gamecock Media Group"@en .
+
+
+###  http://www.wikidata.org/entity/Q55239
+wd:Q55239 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Lego Star Wars II: The Original Trilogy"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q25303216 ;
+          bts:partofGenre wd:Q828322 ;
+          bts:partofSeries wd:Q3820235 ;
+          bts:usesPlatform wd:Q10680 ,
+                           wd:Q132020 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q170323 ,
+                           wd:Q170325 ,
+                           wd:Q182172 ,
+                           wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q55259
+wd:Q55259 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: Rebel Assault"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q1044478 ;
+          bts:partofSeries wd:Q29582712 ;
+          bts:usesPlatform wd:Q1047516 ,
+                           wd:Q13522376 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q229429 ,
+                           wd:Q751046 .
+
+
+###  http://www.wikidata.org/entity/Q55287
+wd:Q55287 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: Dark Forces"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q55305 ;
+          bts:usesPlatform wd:Q10677 ,
+                           wd:Q13522376 ,
+                           wd:Q1406 ,
+                           wd:Q170434 .
+
+
+###  http://www.wikidata.org/entity/Q55295
+wd:Q55295 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars Jedi Knight: Jedi Academy"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q55305 ;
+          bts:usesPlatform wd:Q19610114 .
+
+
+###  http://www.wikidata.org/entity/Q55305
+wd:Q55305 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Star Wars: Jedi Knight"@en .
+
+
+###  http://www.wikidata.org/entity/Q55311
+wd:Q55311 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Star Wars: X-Wing"@en .
+
+
+###  http://www.wikidata.org/entity/Q55312
+wd:Q55312 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: TIE Fighter"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q21154509 ;
+          bts:partofSeries wd:Q55311 ;
+          bts:usesPlatform wd:Q13522376 ,
+                           wd:Q1406 ,
+                           wd:Q170434 .
+
+
+###  http://www.wikidata.org/entity/Q55314
+wd:Q55314 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: X-Wing vs. TIE Fighter"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1229035 ;
+          bts:partofGenre wd:Q21154509 ;
+          bts:partofSeries wd:Q55311 ;
+          bts:usesPlatform wd:Q751046 .
+
+
+###  http://www.wikidata.org/entity/Q55616
+wd:Q55616 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Battlezone"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q13409231 ;
+          bts:partofGenre wd:Q1610017 ,
+                          wd:Q2070892 ;
+          bts:partofSeries wd:Q109653359 ;
+          bts:usesPlatform wd:Q170325 ,
+                           wd:Q170434 ,
+                           wd:Q206261 ,
+                           wd:Q23882 ,
+                           wd:Q627302 ,
+                           wd:Q918232 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q55673
+wd:Q55673 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "R-Type"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q617752 ;
+          bts:partofGenre wd:Q27670585 ;
+          bts:partofSeries wd:Q3414918 ;
+          bts:usesPlatform wd:Q23882 ,
+                           wd:Q48493 ,
+                           wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q55679
+wd:Q55679 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Need for Speed"@en .
+
+
+###  http://www.wikidata.org/entity/Q55815
+wd:Q55815 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Elite"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q2736040 ,
+                              wd:Q3604604 ,
+                              wd:Q3781101 ;
+          bts:partofGenre wd:Q1892535 ,
+                          wd:Q27670585 ;
+          bts:partofSeries wd:Q99435092 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q1188778 ,
+                           wd:Q170434 ,
+                           wd:Q172742 ,
+                           wd:Q1759524 ,
+                           wd:Q23882 ,
+                           wd:Q3017175 ,
+                           wd:Q342163 ,
+                           wd:Q41357 ,
+                           wd:Q478829 ,
+                           wd:Q627302 ,
+                           wd:Q749976 ,
+                           wd:Q853547 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q578544
+wd:Q578544 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "X-COM"@en .
+
+
+###  http://www.wikidata.org/entity/Q580866
+wd:Q580866 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "THQ"@en .
+
+
+###  http://www.wikidata.org/entity/Q584105
+wd:Q584105 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "music video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q588289
+wd:Q588289 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "city-building game"@en .
+
+
+###  http://www.wikidata.org/entity/Q59154
+wd:Q59154 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Mafia 2"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q94937 ;
+          bts:partofGenre wd:Q343568 ,
+                          wd:Q380266 ;
+          bts:partofSeries wd:Q21526531 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q5971686
+wd:Q5971686 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "IL-2 Sturmovik"@en .
+
+
+###  http://www.wikidata.org/entity/Q60102
+wd:Q60102 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Fallout"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q628249 ;
+          bts:partofGenre wd:Q744038 ;
+          bts:partofSeries wd:Q167835 ;
+          bts:usesPlatform wd:Q13522376 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q170434 .
+
+
+###  http://www.wikidata.org/entity/Q603481
+wd:Q603481 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "combat flight simulator"@en .
+
+
+###  http://www.wikidata.org/entity/Q603555
+wd:Q603555 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "4X"@en .
+
+
+###  http://www.wikidata.org/entity/Q604725
+wd:Q604725 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "psychological horror"@en .
+
+
+###  http://www.wikidata.org/entity/Q608108
+wd:Q608108 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Hi-Res Adventure"@en .
+
+
+###  http://www.wikidata.org/entity/Q615908
+wd:Q615908 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Dragon Quest"@en .
+
+
+###  http://www.wikidata.org/entity/Q617752
+wd:Q617752 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Irem"@en .
+
+
+###  http://www.wikidata.org/entity/Q627302
+wd:Q627302 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Atari ST"@en .
+
+
+###  http://www.wikidata.org/entity/Q627611
+wd:Q627611 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "IRIX"@en .
+
+
+###  http://www.wikidata.org/entity/Q628249
+wd:Q628249 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Interplay Entertainment"@en .
+
+
+###  http://www.wikidata.org/entity/Q63034431
+wd:Q63034431 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Spore"@en .
+
+
+###  http://www.wikidata.org/entity/Q631273
+wd:Q631273 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Commandos"@en .
+
+
+###  http://www.wikidata.org/entity/Q63184502
+wd:Q63184502 rdf:type owl:NamedIndividual ,
+                      bte:Platform ;
+             rdfs:label "PlayStation 5"@en .
+
+
+###  http://www.wikidata.org/entity/Q65059083
+wd:Q65059083 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Donkey Kong"@en .
+
+
+###  http://www.wikidata.org/entity/Q650601
+wd:Q650601 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Atari Jaguar"@en .
+
+
+###  http://www.wikidata.org/entity/Q652421
+wd:Q652421 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "MicroProse"@en .
+
+
+###  http://www.wikidata.org/entity/Q655219
+wd:Q655219 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Doom"@en .
+
+
+###  http://www.wikidata.org/entity/Q6585139
+wd:Q6585139 rdf:type owl:NamedIndividual ,
+                     bte:Genre ;
+            rdfs:label "mystery fiction"@en .
+
+
+###  http://www.wikidata.org/entity/Q679933
+wd:Q679933 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Eidos Interactive"@en .
+
+
+###  http://www.wikidata.org/entity/Q6805413
+wd:Q6805413 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "MediaQuest Holdings, Inc."@en .
+
+
+###  http://www.wikidata.org/entity/Q684425
+wd:Q684425 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Bethesda Softworks"@en .
+
+
+###  http://www.wikidata.org/entity/Q689445
+wd:Q689445 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "visual novel"@en .
+
+
+###  http://www.wikidata.org/entity/Q69503180
+wd:Q69503180 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Wii Sports"@en .
+
+
+###  http://www.wikidata.org/entity/Q71932
+wd:Q71932 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Call of Duty: Black Ops: Declassified"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q200491 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q192156 ;
+          bts:usesPlatform wd:Q188808 .
+
+
+###  http://www.wikidata.org/entity/Q71936
+wd:Q71936 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Wii Sports"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q8093 ;
+          bts:partofGenre wd:Q868217 ;
+          bts:partofSeries wd:Q69503180 ,
+                           wd:Q74058 ;
+          bts:usesPlatform wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q73801
+wd:Q73801 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Xbox Game Studios"@en .
+
+
+###  http://www.wikidata.org/entity/Q738135
+wd:Q738135 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Aspyr"@en .
+
+
+###  http://www.wikidata.org/entity/Q739552
+wd:Q739552 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Square"@en .
+
+
+###  http://www.wikidata.org/entity/Q74058
+wd:Q74058 rdf:type owl:NamedIndividual ,
+                   bte:Series ;
+          rdfs:label "Wii game series"@en .
+
+
+###  http://www.wikidata.org/entity/Q74061
+wd:Q74061 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars: Rebel Assault II: The Hidden Empire"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q1044478 ;
+          bts:partofSeries wd:Q29582712 ;
+          bts:usesPlatform wd:Q10677 ,
+                           wd:Q13522376 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q751046 .
+
+
+###  http://www.wikidata.org/entity/Q743222
+wd:Q743222 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Atari 5200"@en .
+
+
+###  http://www.wikidata.org/entity/Q744038
+wd:Q744038 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "role-playing video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q74545
+wd:Q74545 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Lego Batman: The Videogame"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q2319420 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q109250577 ;
+          bts:usesPlatform wd:Q10680 ,
+                           wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q170323 ,
+                           wd:Q170325 ,
+                           wd:Q48263 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q74630
+wd:Q74630 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Lego Indiana Jones: The Original Adventures"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q1631855 ;
+          bts:usesPlatform wd:Q10680 ,
+                           wd:Q10683 ,
+                           wd:Q132020 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q170323 ,
+                           wd:Q170325 ,
+                           wd:Q48263 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q746459
+wd:Q746459 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Deus Ex"@en .
+
+
+###  http://www.wikidata.org/entity/Q74669
+wd:Q74669 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Star Wars Knights of the Old Republic II: The Sith Lords"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q107542373 ,
+                          wd:Q744038 ;
+          bts:partofSeries wd:Q7601095 ;
+          bts:usesPlatform wd:Q132020 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q388 ,
+                           wd:Q48493 ,
+                           wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q74683
+wd:Q74683 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Lego Indiana Jones 2: The Adventure Continues"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q216611 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q1631855 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q170323 ,
+                           wd:Q170325 ,
+                           wd:Q48263 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q749976
+wd:Q749976 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "BBC Micro"@en .
+
+
+###  http://www.wikidata.org/entity/Q751046
+wd:Q751046 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "IBM PC compatible"@en .
+
+
+###  http://www.wikidata.org/entity/Q751719
+wd:Q751719 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Sega Game Gear"@en .
+
+
+###  http://www.wikidata.org/entity/Q751936
+wd:Q751936 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Devil May Cry 4"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q14428 ;
+           bts:partofGenre wd:Q343568 ;
+           bts:partofSeries wd:Q7676662 ;
+           bts:usesPlatform wd:Q48263 ,
+                            wd:Q48493 ,
+                            wd:Q5014725 .
+
+
+###  http://www.wikidata.org/entity/Q752241
+wd:Q752241 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Half-Life"@en .
+
+
+###  http://www.wikidata.org/entity/Q752835
+wd:Q752835 rdf:type owl:NamedIndividual ,
+                    bte:VideoGame ;
+           rdfs:label "Silent Hill 2"@en ;
+           bts:hasModes wd:Q208850 ;
+           bts:madebyPublisher wd:Q45700 ;
+           bts:partofGenre wd:Q604725 ;
+           bts:partofSeries wd:Q236821 ;
+           bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q753600
+wd:Q753600 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Atari 7800"@en .
+
+
+###  http://www.wikidata.org/entity/Q755167
+wd:Q755167 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Kingdom Hearts"@en .
+
+
+###  http://www.wikidata.org/entity/Q7601095
+wd:Q7601095 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Star Wars: Knights of the Old Republic"@en .
+
+
+###  http://www.wikidata.org/entity/Q76255
+wd:Q76255 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Call of Duty 4: Modern Warfare"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q200491 ,
+                              wd:Q207784 ;
+          bts:partofGenre wd:Q185029 ;
+          bts:partofSeries wd:Q192156 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q48263 ,
+                           wd:Q8079 .
+
+
+###  http://www.wikidata.org/entity/Q7676662
+wd:Q7676662 rdf:type owl:NamedIndividual ,
+                     bte:Series ;
+            rdfs:label "Devil May Cry"@en .
+
+
+###  http://www.wikidata.org/entity/Q76868
+wd:Q76868 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Assassin's Creed III: Liberation"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q188273 ;
+          bts:partofGenre wd:Q343568 ,
+                          wd:Q858523 ;
+          bts:partofSeries wd:Q420292 ;
+          bts:usesPlatform wd:Q10683 ,
+                           wd:Q1406 ,
+                           wd:Q188808 ,
+                           wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q77202
+wd:Q77202 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "1C Company"@en .
+
+
+###  http://www.wikidata.org/entity/Q7933527
+wd:Q7933527 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "Vir2L Studios"@en .
+
+
+###  http://www.wikidata.org/entity/Q8000452
+wd:Q8000452 rdf:type owl:NamedIndividual ,
+                     bte:Publisher ;
+            rdfs:label "WildTangent"@en .
+
+
+###  http://www.wikidata.org/entity/Q8079
+wd:Q8079 rdf:type owl:NamedIndividual ,
+                  bte:Platform ;
+         rdfs:label "Wii"@en .
+
+
+###  http://www.wikidata.org/entity/Q8093
+wd:Q8093 rdf:type owl:NamedIndividual ,
+                  bte:Publisher ;
+         rdfs:label "Nintendo"@en .
+
+
+###  http://www.wikidata.org/entity/Q81288
+wd:Q81288 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Dragon Quest III"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1343212 ;
+          bts:partofGenre wd:Q744038 ;
+          bts:partofSeries wd:Q615908 ;
+          bts:usesPlatform wd:Q172742 ,
+                           wd:Q183259 ,
+                           wd:Q19610114 ,
+                           wd:Q48493 ,
+                           wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q81777
+wd:Q81777 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Panzer Dragoon Saga"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q122741 ;
+          bts:partofGenre wd:Q744038 ;
+          bts:partofSeries wd:Q3362548 ;
+          bts:usesPlatform wd:Q200912 .
+
+
+###  http://www.wikidata.org/entity/Q82050
+wd:Q82050 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Tales of the Abyss"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q309996 ;
+          bts:partofGenre wd:Q1422746 ,
+                          wd:Q744038 ;
+          bts:partofSeries wd:Q1193867 ;
+          bts:usesPlatform wd:Q10680 ,
+                           wd:Q203597 .
+
+
+###  http://www.wikidata.org/entity/Q820568
+wd:Q820568 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Duke Nukem"@en .
+
+
+###  http://www.wikidata.org/entity/Q821067
+wd:Q821067 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Virtual Console"@en .
+
+
+###  http://www.wikidata.org/entity/Q828322
+wd:Q828322 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "platform game"@en .
+
+
+###  http://www.wikidata.org/entity/Q83115
+wd:Q83115 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Fantasy World Dizzy"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q23901 ;
+          bts:partofGenre wd:Q343568 ,
+                          wd:Q828322 ;
+          bts:partofSeries wd:Q23899 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q170434 ,
+                           wd:Q23882 ,
+                           wd:Q478829 ,
+                           wd:Q627302 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q83265
+wd:Q83265 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Grand Theft Auto: San Andreas"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q94912 ;
+          bts:partofGenre wd:Q343568 ,
+                          wd:Q380266 ;
+          bts:partofSeries wd:Q132730 ;
+          bts:usesPlatform wd:Q10680 ,
+                           wd:Q10683 ,
+                           wd:Q132020 ,
+                           wd:Q1406 ,
+                           wd:Q14116 ,
+                           wd:Q48263 ,
+                           wd:Q48493 ,
+                           wd:Q4885200 ,
+                           wd:Q94 .
+
+
+###  http://www.wikidata.org/entity/Q83843
+wd:Q83843 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Forza Horizon"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q73801 ;
+          bts:partofGenre wd:Q860750 ;
+          bts:partofSeries wd:Q107611775 ,
+                           wd:Q128766 ;
+          bts:usesPlatform wd:Q48263 .
+
+
+###  http://www.wikidata.org/entity/Q83995
+wd:Q83995 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Warlock: Master of the Arcane"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q217493 ;
+          bts:partofGenre wd:Q2176159 ,
+                          wd:Q2762504 ,
+                          wd:Q603555 ;
+          bts:partofSeries wd:Q18005529 ;
+          bts:usesPlatform wd:Q1406 .
+
+
+###  http://www.wikidata.org/entity/Q843681
+wd:Q843681 rdf:type owl:NamedIndividual ,
+                    bte:Series ;
+           rdfs:label "Memories Off"@en .
+
+
+###  http://www.wikidata.org/entity/Q845047
+wd:Q845047 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Koei"@en .
+
+
+###  http://www.wikidata.org/entity/Q853547
+wd:Q853547 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "MSX"@en .
+
+
+###  http://www.wikidata.org/entity/Q85422949
+wd:Q85422949 rdf:type owl:NamedIndividual ,
+                      bte:Genre ;
+             rdfs:label "video game with LGBT character"@en .
+
+
+###  http://www.wikidata.org/entity/Q858523
+wd:Q858523 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "stealth game"@en .
+
+
+###  http://www.wikidata.org/entity/Q860750
+wd:Q860750 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "racing video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q868217
+wd:Q868217 rdf:type owl:NamedIndividual ,
+                    bte:Genre ;
+           rdfs:label "sports video game"@en .
+
+
+###  http://www.wikidata.org/entity/Q88649
+wd:Q88649 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Mission: Asteroid"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q494614 ;
+          bts:partofGenre wd:Q23916 ;
+          bts:partofSeries wd:Q608108 ;
+          bts:usesPlatform wd:Q3017175 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q88742
+wd:Q88742 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Bubble Dizzy"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q23901 ;
+          bts:partofGenre wd:Q270948 ;
+          bts:partofSeries wd:Q23899 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q170434 ,
+                           wd:Q23882 ,
+                           wd:Q478829 ,
+                           wd:Q627302 .
+
+
+###  http://www.wikidata.org/entity/Q88947
+wd:Q88947 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Renegade"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q1054844 ;
+          bts:partofGenre wd:Q1194763 ,
+                          wd:Q401831 ;
+          bts:partofSeries wd:Q1199613 ;
+          bts:usesPlatform wd:Q100047 ,
+                           wd:Q170434 ,
+                           wd:Q172742 ,
+                           wd:Q23882 ,
+                           wd:Q478829 ,
+                           wd:Q99775 .
+
+
+###  http://www.wikidata.org/entity/Q918232
+wd:Q918232 rdf:type owl:NamedIndividual ,
+                    bte:Platform ;
+           rdfs:label "Commodore VIC-20"@en .
+
+
+###  http://www.wikidata.org/entity/Q930354
+wd:Q930354 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "GT Interactive Software"@en .
+
+
+###  http://www.wikidata.org/entity/Q94
+wd:Q94 rdf:type owl:NamedIndividual ,
+                bte:Platform ;
+       rdfs:label "Android"@en .
+
+
+###  http://www.wikidata.org/entity/Q94460
+wd:Q94460 rdf:type owl:NamedIndividual ,
+                   bte:VideoGame ;
+          rdfs:label "Grand Theft Auto 2"@en ;
+          bts:hasModes wd:Q208850 ;
+          bts:madebyPublisher wd:Q94912 ;
+          bts:partofGenre wd:Q343568 ;
+          bts:partofSeries wd:Q132730 ;
+          bts:usesPlatform wd:Q10677 ,
+                           wd:Q1406 ,
+                           wd:Q184198 ,
+                           wd:Q203992 .
+
+
+###  http://www.wikidata.org/entity/Q94912
+wd:Q94912 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Rockstar Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q94933
+wd:Q94933 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "Take-Two Interactive"@en .
+
+
+###  http://www.wikidata.org/entity/Q94937
+wd:Q94937 rdf:type owl:NamedIndividual ,
+                   bte:Publisher ;
+          rdfs:label "2K Games"@en .
+
+
+###  http://www.wikidata.org/entity/Q96280626
+wd:Q96280626 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Torchlight"@en .
+
+
+###  http://www.wikidata.org/entity/Q98973368
+wd:Q98973368 rdf:type owl:NamedIndividual ,
+                      bte:Platform ;
+             rdfs:label "Xbox Series X and Series S"@en .
+
+
+###  http://www.wikidata.org/entity/Q99416119
+wd:Q99416119 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Final Fantasy"@en .
+
+
+###  http://www.wikidata.org/entity/Q99435092
+wd:Q99435092 rdf:type owl:NamedIndividual ,
+                      bte:Series ;
+             rdfs:label "Elite"@en .
+
+
+###  http://www.wikidata.org/entity/Q995863
+wd:Q995863 rdf:type owl:NamedIndividual ,
+                    bte:Publisher ;
+           rdfs:label "Broderbund"@en .
+
+
+###  http://www.wikidata.org/entity/Q99775
+wd:Q99775 rdf:type owl:NamedIndividual ,
+                   bte:Platform ;
+          rdfs:label "Commodore 64"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

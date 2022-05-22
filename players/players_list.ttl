@@ -1,0 +1,21 @@
+@prefix bts: <https://bravoteamis.us/schema#> .
+@prefix bte: <https://bravoteamis.us/entity/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+
+bte:keenjo a bte:Player.
+bte:keenjo bts:hasUsername "keenjo"@en.
+
+bte:joeyxnv a bte:Player.
+bte:joeyxnv bts:hasUsername "joeyxnv"@en.
+
+bte:sahil a bte:Player.
+bte:sahil bts:hasUsername "sahil"@en.
+
+bte:kevinchan a bte:Player.
+bte:kevinchan bts:hasUsername "kevinchan"@en.
+

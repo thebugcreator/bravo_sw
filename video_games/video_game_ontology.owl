@@ -1,0 +1,350 @@
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix bte: <https://bravoteamis.us/entity/> .
+@prefix bts: <https://bravoteamis.us/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://bravoteamis.us/entity/schema#genreIncludes
+<https://bravoteamis.us/entity/schema#genreIncludes> rdf:type owl:ObjectProperty ;
+                                                     owl:inverseOf bts:partofGenre ;
+                                                     rdfs:domain bte:Genre ;
+                                                     rdfs:range bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/schema#seriesIncludes
+<https://bravoteamis.us/entity/schema#seriesIncludes> rdf:type owl:ObjectProperty ;
+                                                      owl:inverseOf bts:partofSeries ;
+                                                      rdfs:domain bte:Series ;
+                                                      rdfs:range bte:VideoGame .
+
+
+###  https://bravoteamis.us/schema#hasModes
+bts:hasModes rdf:type owl:ObjectProperty ;
+             rdfs:domain bte:VideoGame ;
+             rdfs:range bte:Mode .
+
+
+###  https://bravoteamis.us/schema#isSubgenre
+bts:isSubgenre rdf:type owl:ObjectProperty ;
+               rdfs:domain bte:Genre ;
+               rdfs:range bte:Genre .
+
+
+###  https://bravoteamis.us/schema#madebyPublisher
+bts:madebyPublisher rdf:type owl:ObjectProperty ;
+                    rdfs:domain bte:VideoGame ;
+                    rdfs:range bte:Publisher .
+
+
+###  https://bravoteamis.us/schema#partofGenre
+bts:partofGenre rdf:type owl:ObjectProperty ;
+                rdfs:domain bte:VideoGame ;
+                rdfs:range bte:Genre .
+
+
+###  https://bravoteamis.us/schema#partofSeries
+bts:partofSeries rdf:type owl:ObjectProperty ;
+                 rdfs:domain bte:VideoGame ;
+                 rdfs:range bte:Series .
+
+
+###  https://bravoteamis.us/schema#usesPlatform
+bts:usesPlatform rdf:type owl:ObjectProperty ;
+                 rdfs:domain bte:VideoGame ;
+                 rdfs:range bte:Platform .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://bravoteamis.us/schema#fromReleaseDate
+bts:fromReleaseDate rdf:type owl:DatatypeProperty ;
+                    rdfs:domain bte:Platform ;
+                    rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://bravoteamis.us/entity/AdultGenre
+bte:AdultGenre rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty bts:isSubgenre ;
+                                     owl:hasValue wd:Q106542313
+                                   ] ;
+               rdfs:subClassOf <https://bravoteamis.us/entity/18+Genre> .
+
+
+###  https://bravoteamis.us/entity/Genre
+bte:Genre rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Mode
+bte:Mode rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/ModernGame
+bte:ModernGame rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty bts:usesPlatform ;
+                                                            owl:someValuesFrom bte:ModernPlatform
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/ModernPlatform
+bte:ModernPlatform rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( bte:Platform
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty bts:fromReleaseDate ;
+                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:dateTime ;
+                                                                                     owl:withRestrictions ( [ xsd:minInclusive "2000-01-01T00:00:00+00:00"^^xsd:dateTime
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf bte:Platform .
+
+
+###  https://bravoteamis.us/entity/OldSchoolGame
+bte:OldSchoolGame rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty bts:usesPlatform ;
+                                                               owl:someValuesFrom bte:OldSchoolPlatform
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/OldSchoolPlatform
+bte:OldSchoolPlatform rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( bte:Platform
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty bts:fromReleaseDate ;
+                                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                        owl:onDatatype xsd:dateTime ;
+                                                                                        owl:withRestrictions ( [ xsd:maxInclusive "1999-12-31T00:00:00+00:00"^^xsd:dateTime
+                                                                                                               ]
+                                                                                                             )
+                                                                                      ]
+                                                                 ]
+                                                               ) ;
+                                            rdf:type owl:Class
+                                          ] ;
+                      rdfs:subClassOf bte:Platform .
+
+
+###  https://bravoteamis.us/entity/Platform
+bte:Platform rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/Publisher
+bte:Publisher rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/RacingGame
+bte:RacingGame rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty bts:partofGenre ;
+                                                            owl:someValuesFrom bte:RacingGenre
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ,
+                                   [ owl:intersectionOf ( bte:VideoGame
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty bts:partofGenre ;
+                                                            owl:hasValue wd:Q860750
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/RacingGenre
+bte:RacingGenre rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( bte:Genre
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty bts:isSubgenre ;
+                                                             owl:hasValue wd:Q111411020
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( bte:Genre
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty bts:isSubgenre ;
+                                                             owl:hasValue wd:Q860750
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/Series
+bte:Series rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/SimulationGame
+bte:SimulationGame rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty bts:partofGenre ;
+                                                                owl:someValuesFrom bte:SimulationGenre
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/SimulationGenre
+bte:SimulationGenre rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1036289
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1198141
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1199309
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1610017
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q1892535
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q578868
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty bts:isSubgenre ;
+                                          owl:hasValue wd:Q60617880
+                                        ] ;
+                    rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/SportsGenre
+bte:SportsGenre rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q1478420
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q60256879
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q62019077
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63466098
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63644993
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q63645108
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71467370
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71467408
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71474750
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q71476528
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty bts:isSubgenre ;
+                                      owl:hasValue wd:Q868217
+                                    ] ;
+                rdfs:subClassOf bte:Genre .
+
+
+###  https://bravoteamis.us/entity/VideoGame
+bte:VideoGame rdf:type owl:Class .
+
+
+###  https://bravoteamis.us/entity/ViolentGame
+bte:ViolentGame rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty bts:partofGenre ;
+                                                             owl:someValuesFrom bte:ViolentGenre
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( bte:VideoGame
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty bts:partofGenre ;
+                                                             owl:hasValue wd:Q4282636
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf bte:VideoGame .
+
+
+###  https://bravoteamis.us/entity/ViolentGenre
+bte:ViolentGenre rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty bts:isSubgenre ;
+                                       owl:hasValue wd:Q185029
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty bts:isSubgenre ;
+                                       owl:hasValue wd:Q4282636
+                                     ] ;
+                 rdfs:subClassOf <https://bravoteamis.us/entity/18+Genre> .
+
+
+###  https://bravoteamis.us/entity/18+Genre
+<https://bravoteamis.us/entity/18+Genre> rdf:type owl:Class ;
+                                         rdfs:subClassOf bte:Genre .
