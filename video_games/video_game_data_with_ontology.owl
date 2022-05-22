@@ -258,6 +258,27 @@ bte:SimulationGenre rdf:type owl:Class ;
                     rdfs:subClassOf bte:Genre .
 
 
+###  https://bravoteamis.us/entity/SportsGame
+bte:SportsGame rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( bte:VideoGame
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty bts:partofGenre ;
+                                                            owl:someValuesFrom bte:SportsGenre
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ,
+                                   [ owl:intersectionOf ( bte:VideoGame
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty bts:partofGenre ;
+                                                            owl:hasValue wd:Q868217
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf bte:VideoGame .
+
+
 ###  https://bravoteamis.us/entity/SportsGenre
 bte:SportsGenre rdf:type owl:Class ;
                 owl:equivalentClass [ rdf:type owl:Restriction ;
