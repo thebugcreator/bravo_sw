@@ -17,16 +17,16 @@
 
 ###  https://bravoteamis.us/entity/schema#genreIncludes
 <https://bravoteamis.us/entity/schema#genreIncludes> rdf:type owl:ObjectProperty ;
-                                                       owl:inverseOf bts:partofGenre ;
-                                                       rdfs:domain bte:Genre ;
-                                                       rdfs:range bte:VideoGame .
+                                                     owl:inverseOf bts:partofGenre ;
+                                                     rdfs:domain bte:Genre ;
+                                                     rdfs:range bte:VideoGame .
 
 
 ###  https://bravoteamis.us/entity/schema#seriesIncludes
 <https://bravoteamis.us/entity/schema#seriesIncludes> rdf:type owl:ObjectProperty ;
-                                                        owl:inverseOf bts:partofSeries ;
-                                                        rdfs:domain bte:Series ;
-                                                        rdfs:range bte:VideoGame .
+                                                      owl:inverseOf bts:partofSeries ;
+                                                      rdfs:domain bte:Series ;
+                                                      rdfs:range bte:VideoGame .
 
 
 ###  https://bravoteamis.us/schema#hasModes
@@ -347,6 +347,14 @@ bte:ViolentGame rdf:type owl:Class ;
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty bts:partofGenre ;
                                                              owl:someValuesFrom bte:ViolentGenre
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( bte:VideoGame
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty bts:partofGenre ;
+                                                             owl:hasValue wd:Q4282636
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
