@@ -9,13 +9,98 @@
 
 bte:keenjo a bte:Player.
 bte:keenjo bts:hasUsername "keenjo"@en.
+bte:keenjo bts:hasName "Joe Keenan"@en.
+bte:keenjo bts:hasGender "Male".
+bte:keenjo bts:hasAge "24".
+bte:keenjo bts:hasPlayed wd:Q11168.
+bte:keenjo bts:hasLiked wd:Q11168,
+                        wd:Q74061.
+
+bte:keenjo bts:playersPlatforms wd:Q1406.
+bte:keenjo bts:playersModes wd:Q208850.
+
+
 
 bte:joeyxnv a bte:Player.
 bte:joeyxnv bts:hasUsername "joeyxnv"@en.
+bte:joeyxnv bts:hasName "Joey"@en.
+bte:joeyxnv bts:hasGender "Male".
+bte:joeyxnv bts:hasAge "22".
+bte:joeyxnv bts:hasPlayed wd:Q1257652,
+                         wd:Q1261715,
+                         wd:Q211096,
+                         wd:Q1257775,
+                         wd:Q211735,
+                         wd:Q211858.
+bte:joeyxnv bts:hasLiked wd:Q1257775,
+                         wd:Q211735,
+                         wd:Q211858.
+bte:joeyxnv bts:playersPlatforms wd:Q10677,
+        wd:Q1406,
+        wd:Q170434,
+        wd:Q471094.
+bte:joeyxnv bts:playersModes wd:Q208850.
+
 
 bte:sahil a bte:Player.
 bte:sahil bts:hasUsername "sahil"@en.
+bte:sahil bts:hasName "Sahil Chopra"@en.
+bte:sahil bts:hasGender "Male".
+bte:sahil bts:hasAge "15".
+bte:sahil bts:hasPlayed wd:Q18940,
+                wd:Q17452,
+                wd:Q213217,
+                wd:Q71932.
+bte:sahil bts:hasLiked wd:Q18940,
+                 wd:Q71932,
+                 wd:Q17452,
+                 wd:Q213217.
+bte:sahil bts:playersPlatforms wd:Q1406.
+bte:sahil bts:playersModes  wd:Q208850.
+
 
 bte:kevinchan a bte:Player.
 bte:kevinchan bts:hasUsername "kevinchan"@en.
+bte:kevinchan bts:hasName "Kevin Chan"@en.
+bte:kevinchan bts:hasGender "Male".
+bte:kevinchan bts:hasAge "25".
+bte:kevinchan bts:hasPlayed wd:Q210844,
+                           wd:Q11168,
+                           wd:Q213911,
+                           wd:Q214232.
+bte:kevinchan bts:hasLiked wd:Q11168,
+                           wd:Q213911,
+                           wd:Q214232.
+bte:kevinchan bts:playersPlatforms wd:Q10683,
+        wd:Q1406,
+        wd:Q183259,
+        wd:Q188642,
+        wd:Q201652,
+        wd:Q202712,
+        wd:Q229429,
+        wd:Q29758,
+        wd:Q380526,
+        wd:Q41357,
+        wd:Q471094,
+        wd:Q47604,
+        wd:Q48263,
+        wd:Q48493.
+bte:kevinchan bts:playersModes wd:Q208850.
+
+bte:barack a bte:Player.
+bte:barack bts:hasUsername "barack"@en.
+bte:barack bts:hasName "Barak Obama"@en.
+bte:barack bts:hasGender "Male".
+bte:barack bts:hasAge "53".
+bte:barack bts:hasPlayed wd:Q219795,
+         wd:Q220102.
+bte:barack bts:hasLiked wd:Q219795,
+         wd:Q220107,
+         wd:Q220102,
+         wd:Q76255.
+bte:barack bts:playersPlatforms  wd:Q1406,
+        wd:Q14116.
+bte:barack bts:playersModes  wd:Q208850.
+
+
 
