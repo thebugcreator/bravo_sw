@@ -1,0 +1,115 @@
+Queries used to collect video game data:
+
+
+1.) To get the basic information about video games from wikidata
+
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bts: <https://bravoteamis.us/schema#>
+PREFIX bte: <https://bravoteamis.us/entity/>
+
+CONSTRUCT {
+?game a bte:VideoGame ;
+      rdfs:label ?gamelabel ;
+      bts:partofGenre ?genre ;
+      bts:hasModes ?model ;
+      bts:usesPlatform ?console ;
+      bts:partofSeries ?series ;
+      bts:madebyPublisher ?publisher .
+
+?genre a bte:Genre ;
+         rdfs:label ?genrelabel .
+  
+?mode a bte:Mode ;
+        rdfs:label ?modelabel .
+  
+?console a bte:Platform ;
+        rdfs:label ?consolelabel .
+  
+?series a bte:Series ;
+        rdfs:label ?serieslabel .
+  
+?publisher a bte:Publisher ;
+           rdfs:label ?publisherlabel .
+
+ }
+WHERE {
+?game wdt:P31 wd:Q7889 ;
+      wdt:P136 ?genre ;
+      wdt:P404 ?mode ;
+      wdt:P400 ?console ;
+      wdt:P179 ?series ;
+      wdt:P123 ?publisher .
+
+  ?game rdfs:label ?gamelabel .
+  ?genre rdfs:label ?genrelabel .
+  ?mode rdfs:label ?modelabel .
+  ?console rdfs:label ?consolelabel .
+  ?series rdfs:label ?serieslabel .
+  ?publisher rdfs:label ?publisherlabel .
+
+  FILTER (lang(?gamelabel) = 'en')
+  FILTER (lang(?genrelabel) = 'en')
+  FILTER (lang(?modelabel) = 'en')
+  FILTER (lang(?consolelabel) = 'en')
+  FILTER (lang(?serieslabel) = 'en')
+  FILTER (lang(?publisherlabel) = 'en')
+} LIMIT 1000
+
+----------------------------------------
+----------------------------------------
+2.) To get all of the wikidata video game genres and subgenres
+
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bts: <https://bravoteamis.us/schema#>
+PREFIX bte: <https://bravoteamis.us/entity/>
+
+CONSTRUCT
+{
+?genre a bte:Genre ;
+       rdfs:label ?glabel .
+?subgenre bts:isSubgenre ?genre ;
+          rdfs:label ?slabel .
+}
+WHERE{
+    ?genre wdt:P31 wd:Q659563 .
+    ?subgenre wdt:P279 ?genre .
+  
+    ?genre rdfs:label ?glabel .
+    ?subgenre rdfs:label ?slabel .
+  
+    FILTER (lang(?glabel) = 'en') .
+    FILTER (lang(?slabel) = 'en')
+}
+
+----------------------------------------
+----------------------------------------
+3.) To get names of many potential video game platforms and their release date
+
+PREFIX bts: <https://bravoteamis.us/schema#>
+PREFIX bte: <https://bravoteamis.us/entity/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+
+CONSTRUCT {
+?platform a bte:Platform ;
+      rdfs:label ?platformlabel ;
+      bts:fromReleaseDate ?release_date .
+                       
+ }
+WHERE {
+{?platform wdt:P279 wd:Q473708 ;
+            wdt:P577 ?release_date . } UNION
+{?platform wdt:P279 wd:Q8076 ;
+            wdt:P577 ?release_date .} UNION
+{?platform wdt:P279 wd:Q17589470 ;
+            wdt:P577 ?release_date .}
+
+?platform rdfs:label ?platformlabel .
+
+  FILTER (lang(?platformlabel) = 'en')
+}
