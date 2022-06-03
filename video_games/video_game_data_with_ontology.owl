@@ -2787,7 +2787,7 @@ wd:Q211096 rdf:type owl:NamedIndividual ,
                             wd:Q14116 ,
                             wd:Q336434 ,
                             wd:Q48263 ;
-           rdfs:label "call"@en .
+           rdfs:label "Call of Duty"@en .
 
 
 ###  http://www.wikidata.org/entity/Q21154509
