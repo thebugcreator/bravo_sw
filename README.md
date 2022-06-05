@@ -5,7 +5,7 @@ The repository for BravoTeam Semantic Web Project
 - `ontology.owl` contains _____
 - `players` contains all of the information about players.
   - `players_vocab.ttl` contains the vocabulary used to describe players.
-  - `players_list.ttl` contains _____
+  - `players_list.ttl` contains all the players along with the details containing basic information and games liked.
 - `video_games` contains all of the information and ontologies about video games.
   - `video_game_data_with_ontology.owl` is a file containing all of the data and ontologies in the `video_games` folder. If using protégé or blazegraph it is probably easiest to load this file alone so you don't have to load multiple files to vizualize or query the data.
   - `gave_voc.ttl` contains only the vocabulary used to describe video games.
