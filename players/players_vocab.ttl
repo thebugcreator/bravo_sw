@@ -4,6 +4,7 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 bts:hasUsername rdf:Property bte:Player .
 bts:hasName rdf:Property bte:Player .
@@ -17,12 +18,12 @@ bts:playersModes rdf:Property bte:Player .
 bts:hasUsername rdfs:domain bte:Player ;
 			rdfs:range bte:Username.
 bts:hasName rdfs:domain bte:Player ;
-			rdfs:range bte:Name.
+			rdfs:range foaf:name.
 bts:hasGender rdfs:domain bte:Player ;
 			rdfs:range bte:Gender.
 bts:hasAge rdfs:domain bte:Player ;
 			rdfs:range bte:Age.
-bts:hasPlayed rdfs:domain bte:Player ;
+bts:hasPlayed rdfs:domain bte:VideoGame ;
 			rdfs:range bte:Played.
 bts:hasLiked rdfs:domain bte:Player ;
 			rdfs:range bte:Liked.

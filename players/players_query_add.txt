@@ -1,0 +1,22 @@
+1.) query to add new players to the players_list
+
+PREFIX bts: <https://bravoteamis.us/schema#>
+PREFIX bte: <https://bravoteamis.us/entity/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
+
+INSERT DATA {
+  bte:miguel a bte:Player.
+bte:miguel bts:hasUsername "Miguel"@en.
+bte:miguel bts:hasName "Miguel Courcero"@en;
+            foaf:name "Miguel Courcero"@en .
+bte:miguel bts:hasGender "Male".
+bte:miguel bts:hasAge "50".
+bte:miguel bts:hasPlayed wd:Q11168.
+bte:miguel bts:hasLiked wd:Q11168,
+                        wd:Q74061.
+
+}
