@@ -9,9 +9,10 @@
 
 bte:keenjo a bte:Player.
 bte:keenjo bts:hasUsername "keenjo"@en.
-bte:keenjo bts:hasName "Joe Keenan"@en.
-bte:keenjo bts:hasGender "Male".
-bte:keenjo bts:hasAge "24".
+bte:keenjo bts:hasName "Joe Keenan"@en;
+               foaf:name  "Joe Keenan"@en.
+bte:keenjo bts:hasGender bte:genderMale.
+bte:keenjo bts:hasAge "24"^^xsd:integer.
 bte:keenjo bts:hasPlayed wd:Q11168.
 bte:keenjo bts:hasLiked wd:Q11168,
                         wd:Q74061.
@@ -23,9 +24,10 @@ bte:keenjo bts:playersModes wd:Q208850.
 
 bte:joeyxnv a bte:Player.
 bte:joeyxnv bts:hasUsername "joeyxnv"@en.
-bte:joeyxnv bts:hasName "Joey"@en.
-bte:joeyxnv bts:hasGender "Male".
-bte:joeyxnv bts:hasAge "22".
+bte:joeyxnv bts:hasName "Joey"@en;
+       foaf:name  "Joey"@en.
+bte:joeyxnv bts:hasGender bte:genderFemale.
+bte:joeyxnv bts:hasAge "22"^^xsd:integer.
 bte:joeyxnv bts:hasPlayed wd:Q1257652,
                          wd:Q1261715,
                          wd:Q211096,
@@ -44,9 +46,10 @@ bte:joeyxnv bts:playersModes wd:Q208850.
 
 bte:sahil a bte:Player.
 bte:sahil bts:hasUsername "sahil"@en.
-bte:sahil bts:hasName "Sahil Chopra"@en.
-bte:sahil bts:hasGender "Male".
-bte:sahil bts:hasAge "15".
+bte:sahil bts:hasName "Sahil Chopra"@en;
+            foaf:name  "Sahil Chopra"@en.
+bte:sahil bts:hasGender bte:genderMale.
+bte:sahil bts:hasAge "15"^^xsd:integer.
 bte:sahil bts:hasPlayed wd:Q18940,
                 wd:Q17452,
                 wd:Q213217,
@@ -61,9 +64,10 @@ bte:sahil bts:playersModes  wd:Q208850.
 
 bte:kevinchan a bte:Player.
 bte:kevinchan bts:hasUsername "kevinchan"@en.
-bte:kevinchan bts:hasName "Kevin Chan"@en.
-bte:kevinchan bts:hasGender "Male".
-bte:kevinchan bts:hasAge "25".
+bte:kevinchan bts:hasName "Kevin Chan"@en;
+            foaf:name "Kevin Chan"@en .
+bte:kevinchan bts:hasGender bte:genderMale.
+bte:kevinchan bts:hasAge "25"^^xsd:integer.
 bte:kevinchan bts:hasPlayed wd:Q210844,
                            wd:Q11168,
                            wd:Q213911,
@@ -89,9 +93,10 @@ bte:kevinchan bts:playersModes wd:Q208850.
 
 bte:barack a bte:Player.
 bte:barack bts:hasUsername "barack"@en.
-bte:barack bts:hasName "Barak Obama"@en.
-bte:barack bts:hasGender "Male".
-bte:barack bts:hasAge "53".
+bte:barack bts:hasName "Barak Obama"@en;
+              foaf:name "Barak Obama"@en.
+bte:barack bts:hasGender bte:genderMale.
+bte:barack bts:hasAge "53"^^xsd:integer.
 bte:barack bts:hasPlayed wd:Q219795,
          wd:Q220102.
 bte:barack bts:hasLiked wd:Q219795,
