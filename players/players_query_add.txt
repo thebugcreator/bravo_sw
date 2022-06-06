@@ -12,7 +12,7 @@ INSERT DATA {
   bte:miguel a bte:Player.
 bte:miguel bts:hasUsername "Miguel"@en.
 bte:miguel bts:hasName "Miguel Courcero"@en;
-            foaf:name "Miguel Courcero"@en .
+            foaf:name "Miguel Courcero"@en.
 bte:miguel bts:hasGender bte:genderMale.
 bte:miguel bts:hasAge "50"^^xsd:integer.
 bte:miguel bts:hasPlayed wd:Q11168.
