@@ -50,14 +50,12 @@ bte:sahil bts:hasName "Sahil Chopra"@en;
             foaf:name  "Sahil Chopra"@en.
 bte:sahil bts:hasGender bte:genderMale.
 bte:sahil bts:hasAge "15"^^xsd:integer.
-bte:sahil bts:hasPlayed wd:Q18940,
-                wd:Q17452,
-                wd:Q213217,
-                wd:Q71932.
-bte:sahil bts:hasLiked wd:Q18940,
-                 wd:Q71932,
-                 wd:Q17452,
-                 wd:Q213217.
+bte:sahil bts:hasPlayed wd:Q207922,
+                wd:Q225912,
+                wd:Q71936.
+bte:sahil bts:hasLiked wd:Q207922,
+                       wd:Q225912,
+                       wd:Q71936.
 bte:sahil bts:playersPlatforms wd:Q1406.
 bte:sahil bts:playersModes  wd:Q208850.
 
