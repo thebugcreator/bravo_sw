@@ -1,0 +1,86 @@
+A sample statement to create a player instance into the graph:
+
+INSERT DATA {
+    bte:keenjo 
+    	bts:hasUsername "keenjo"@en ;
+    	bts:hasName "Joe Keenan"@en ;
+    	bts:hasGender bte:genderMale ;
+    	bts:hasAge "24"^^xsd:integer ;
+    	bts:hasPlayed wdt:Q11168 ;
+    	bts:hasLiked wdt:Q11168 , wdt:Q74061 ;
+    	bts:playersPlatforms wdt:Q1406 ;
+    	bts:playersModes wdt:Q208850 ;
+    	a bte:Player . 
+}
+
+# Recommendation queries
+For the next 2 SPARQL queries, each query suggests up to 25 games per request, and are run for the player \textit{barack}.
+
+## Game recommendation according to the player's favorite video game genres:
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix bts: <https://bravoteamis.us/schema#>
+prefix bte: <https://bravoteamis.us/entity/>
+
+SELECT DISTINCT ?game  WHERE {
+?player bts:hasUsername 'barack'@en. #change username for another player
+?player bts:hasLiked ?g1.   
+?g1 bts:partofGenre ?genre.  
+?ref bts:partofGenre ?genre; 
+rdfs:label ?game.    
+MINUS{ ?player bts:hasPlayed ?ref.}
+FILTER(langMatches(lang(?game),'en'))
+} ORDER BY RAND() LIMIT 25
+
+
+## Game recommendation according to the video game series that the player has liked: 
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix bts: <https://bravoteamis.us/schema#>
+prefix bte: <https://bravoteamis.us/entity/>
+
+SELECT DISTINCT ?game  WHERE {
+
+  ?player bts:hasUsername "barack"@en. #change username for another player
+  
+  ?player bts:hasLiked ?wkd_ref. 
+  ?wkd_ref bts:partofSeries ?series.
+  ?ref a bte:VideoGame ;
+  rdfs:label ?game ;
+  bts:partofSeries ?series.
+
+MINUS { 
+  ?player bts:hasPlayed ?ref.
+}
+FILTER(langMatches(lang(?game),'en'))
+} ORDER BY RAND() LIMIT 25
+
+# Filters 
+For the following queries, the lines have to be added inside the brackets before the MINUS line. It is possible to use several filters within a query. 
+
+## Show games that are available on platforms you have
+
+    ?player bts:Platform ?platform.
+    ?ref bts:UsesPlatform ?platform.
+
+## Show games that have a solo or multiplayer mode depending on the player's preferences.
+
+    ?player bts:Mode ?mode.
+    ?ref bts:hasMode ?mode.
+
+## Filter adult games (erotic/violent games) if the user is less than 18 years old:
+
+player bts:hasAge ?age.
+?ref a ?x.
+    
+FILTER(xsd:integer(?age) >=18 || ?x != bte:ViolentGame)
+FILTER(xsd:integer(?age) >=18 || ?x != bte:AdultGame)
+FILTER(xsd:integer(?age) >=18 || ?x != bte:18+VideoGame)
+MINUS{?ref a bte:Liked}
+MINUS{?ref a bte:Played}
+MINUS{?ref a bte:ModernGame}
+MINUS{?ref a bte:OldSchoolGame}
+
+Note: while the previous queries can be run on Blzaegraph, the we found that this last query did not work with the inference capabilities of Blazegraph and thus must be run on a store with stronger inference capabilities (e.g. Stardog).
