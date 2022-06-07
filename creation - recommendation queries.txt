@@ -84,3 +84,37 @@ MINUS{?ref a bte:ModernGame}
 MINUS{?ref a bte:OldSchoolGame}
 
 Note: while the previous queries can be run on Blzaegraph, the we found that this last query did not work with the inference capabilities of Blazegraph and thus must be run on a store with stronger inference capabilities (e.g. Stardog).
+
+## Example of query with all the filters enabled:
+Context: User Sahil, 15yo, looks for games belonging to the genres he likes, available on platforms he has, and have game modes that he prefers, while hiding the games not adapted to his age.
+
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix bts: <https://bravoteamis.us/schema#>
+prefix bte: <https://bravoteamis.us/entity/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?game where {
+?player bts:hasUsername "sahil"@en;
+  bts:hasAge ?age;
+  bts:hasLiked ?g1.   
+  
+?g1 bts:partofGenre ?genre.  
+?ref bts:partofGenre ?genre; 
+     a ?x;
+rdfs:label ?game.
+?player bts:Platform ?platform.
+?ref bts:UsesPlatform ?platform.
+?player bts:Mode ?mode.
+?ref bts:hasMode ?mode.
+FILTER(xsd:integer(?age) >=18 || ?x != bte:ViolentGame)
+FILTER(xsd:integer(?age) >=18 || ?x != bte:AdultGame)
+FILTER(xsd:integer(?age) >=18 || ?x != bte:18\+VideoGame)
+MINUS{?ref a bte:Liked}
+MINUS{?ref a  bte:Played}
+MINUS{?ref a bte:ModernGame}
+MINUS{?ref a bte:OldSchoolGame}
+MINUS{ ?player bts:hasPlayed ?ref.}
+FILTER(langMatches(lang(?game),'en'))
+} ORDER BY RAND() LIMIT 25
