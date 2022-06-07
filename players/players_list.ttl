@@ -4,13 +4,15 @@
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
-
+bte:keenjo a foaf:Person;
+    rdfs:label "Joe Keenan" ;
+    foaf:name  "Joe Keenan" .
 bte:keenjo a bte:Player.
 bte:keenjo bts:hasUsername "keenjo"@en.
-bte:keenjo bts:hasName "Joe Keenan"@en;
-               foaf:name  "Joe Keenan"@en.
+bte:keenjo bts:hasName "Joe Keenan"@en.
 bte:keenjo bts:hasGender bte:genderMale.
 bte:keenjo bts:hasAge "24"^^xsd:integer.
 bte:keenjo bts:hasPlayed wd:Q11168.
@@ -20,12 +22,12 @@ bte:keenjo bts:hasLiked wd:Q11168,
 bte:keenjo bts:playersPlatforms wd:Q1406.
 bte:keenjo bts:playersModes wd:Q208850.
 
-
-
+bte:joeyxnv a foaf:Person;
+    rdfs:label "Joey" ;
+    foaf:name  "Joey".
 bte:joeyxnv a bte:Player.
 bte:joeyxnv bts:hasUsername "joeyxnv"@en.
-bte:joeyxnv bts:hasName "Joey"@en;
-       foaf:name  "Joey"@en.
+bte:joeyxnv bts:hasName "Joey"@en.
 bte:joeyxnv bts:hasGender bte:genderFemale.
 bte:joeyxnv bts:hasAge "22"^^xsd:integer.
 bte:joeyxnv bts:hasPlayed wd:Q1257652,
@@ -43,11 +45,12 @@ bte:joeyxnv bts:playersPlatforms wd:Q10677,
         wd:Q471094.
 bte:joeyxnv bts:playersModes wd:Q208850.
 
-
+bte:sahil a foaf:Person;
+    rdfs:label "Sahil Chopra" ;
+    foaf:name  "Sahil Chopra" .
 bte:sahil a bte:Player.
 bte:sahil bts:hasUsername "sahil"@en.
-bte:sahil bts:hasName "Sahil Chopra"@en;
-            foaf:name  "Sahil Chopra"@en.
+bte:sahil bts:hasName "Sahil Chopra"@en .
 bte:sahil bts:hasGender bte:genderMale.
 bte:sahil bts:hasAge "15"^^xsd:integer.
 bte:sahil bts:hasPlayed wd:Q207922,
@@ -60,10 +63,12 @@ bte:sahil bts:playersPlatforms wd:Q1406.
 bte:sahil bts:playersModes  wd:Q208850.
 
 
+bte:kevinchan a foaf:Person;
+    rdfs:label "kevinchan" ;
+    foaf:name  "kevinchan" .
 bte:kevinchan a bte:Player.
 bte:kevinchan bts:hasUsername "kevinchan"@en.
-bte:kevinchan bts:hasName "Kevin Chan"@en;
-            foaf:name "Kevin Chan"@en .
+bte:kevinchan bts:hasName "Kevin Chan"@en.
 bte:kevinchan bts:hasGender bte:genderMale.
 bte:kevinchan bts:hasAge "25"^^xsd:integer.
 bte:kevinchan bts:hasPlayed wd:Q210844,
@@ -89,10 +94,12 @@ bte:kevinchan bts:playersPlatforms wd:Q10683,
         wd:Q48493.
 bte:kevinchan bts:playersModes wd:Q208850.
 
+bte:barack a foaf:Person;
+    rdfs:label "Barak Obama" ;
+    foaf:name  "Barak Obama" .
 bte:barack a bte:Player.
 bte:barack bts:hasUsername "barack"@en.
-bte:barack bts:hasName "Barak Obama"@en;
-              foaf:name "Barak Obama"@en.
+bte:barack bts:hasName "Barak Obama"@en.
 bte:barack bts:hasGender bte:genderMale.
 bte:barack bts:hasAge "53"^^xsd:integer.
 bte:barack bts:hasPlayed wd:Q219795,
@@ -104,6 +111,10 @@ bte:barack bts:hasLiked wd:Q219795,
 bte:barack bts:playersPlatforms  wd:Q1406,
         wd:Q14116.
 bte:barack bts:playersModes  wd:Q208850.
+
+
+
+
 
 
 

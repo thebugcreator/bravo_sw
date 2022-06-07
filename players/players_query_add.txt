@@ -9,6 +9,9 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/> .
 
 INSERT DATA {
+bte:miguel a foaf:Person;
+    rdfs:label Miguel Courcero" ;
+    foaf:name  Miguel Courcero" .
   bte:miguel a bte:Player.
 bte:miguel bts:hasUsername "Miguel"@en.
 bte:miguel bts:hasName "Miguel Courcero"@en;
