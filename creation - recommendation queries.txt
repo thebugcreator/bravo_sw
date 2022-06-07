@@ -1,4 +1,4 @@
-A sample statement to create a player instance into the graph:
+# A sample statement to create a player instance into the graph:
 
 INSERT DATA {
     bte:keenjo 
