@@ -12,6 +12,9 @@ The repository for BravoTeam Semantic Web Project
   - `wikidata_video_games.ttl` is the base of all of our video game information. It contains wikidata video games along with their genre, modes, platform, series, and publisher.
   - `wikidata_genres.ttl` contains all of the wikidata video game genres and their subgenres.
   - `wikidata_platforms.ttl` contains wikidata platforms of the following types: video game console (Q8076), home video game console (Q17589470), and home computer (Q473708), along with their release dates.
+- `images` contains some graphical images of our ontology.
+- `quert_outputs` has some files containing the outputs when our main query is applied to one of our players.
+- `creation - recommendation queries.txt` contains all of the SPARQL Recommendation queries that we have created.
 
 ## Files to import when running queries on our data
 - Video game data:
